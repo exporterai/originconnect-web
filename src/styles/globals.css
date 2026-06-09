@@ -1,0 +1,48 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+#logo,
+#footerLogo {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#logo {
+  color: #2C2825;
+}
+
+#footerLogo {
+  color: #F5F1EC;
+}
+
+@media (max-width:480px) {
+  #logo,
+  #footerLogo {
+    font-size: 14px;
+  }
+}

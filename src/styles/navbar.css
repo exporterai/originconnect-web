@@ -1,0 +1,20 @@
+.mobile-nav {
+  padding: 10px 5%;
+}
+
+.nav-btn {
+  background: transparent;
+  color: #2C2825;
+  border: .8px solid #2C282559;
+  padding: 8px 28px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: #2C2825;
+  color: white;
+}
