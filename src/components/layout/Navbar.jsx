@@ -1,13 +1,9 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { categories } from "@/data/categories";
 
 const navLinks = [
-    {
-        label: "Categories",
-        path: "/categories",
-    },
     {
         label: "Products",
         path: "/products",
@@ -30,27 +26,47 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="sticky top-0 left-0 right-0 z-50  bg-[#F5F1ECE0] backdrop-blur-md border-b border-black/5">
+        <header className="sticky top-0 left-0 right-0 z-50 bg-[#F5F1ECE0] backdrop-blur-md border-b border-black/5">
             <nav className="container relative">
+
                 <div className="flex lg:h-15 h-12 items-center justify-between">
-                    {/* Logo */}
-                    <Link
-                        to="/"
-                        id="logo"
-                    >
+
+                    <Link to="/" id="logo">
                         Origin Connect
                     </Link>
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex items-center gap-5">
+
+                        {/* Categories Dropdown */}
+                        <div className="category-dropdown">
+                            <button className="category-dropdown-btn">
+                                Categories
+                                <ChevronDown size={14} />
+                            </button>
+
+                            <div className="category-dropdown-menu">
+                                {categories.map((category) => (
+                                    <Link
+                                        key={category.id}
+                                        to={`/categories/${category.slug}`}
+                                        className="category-dropdown-item"
+                                    >
+                                        {category.slug}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+
                         {navLinks.map((item) => (
                             <NavLink
                                 key={item.path}
                                 to={item.path}
                                 className={({ isActive }) =>
-                                    `text-[12px] font-medium transition-all duration-300 uppercase tracking-[1px] ${isActive
-                                        ? "text-black"
-                                        : "text-[#7A7268] hover:text-black"
+                                    `text-[12px] uppercase tracking-[1px] transition-all duration-300 ${
+                                        isActive
+                                            ? "text-black"
+                                            : "text-[#7A7268] hover:text-black"
                                     }`
                                 }
                             >
@@ -59,7 +75,6 @@ const Navbar = () => {
                         ))}
                     </div>
 
-                    {/* Desktop Button */}
                     <div className="hidden lg:block">
                         <button className="nav-btn">
                             ENQUIRE NOW
@@ -73,22 +88,45 @@ const Navbar = () => {
                     >
                         {isOpen ? <X size={20} /> : <Menu size={20} />}
                     </button>
+
                 </div>
 
                 {/* Mobile Menu */}
                 <div
-                    className={`lg:hidden mobile-nav absolute top-12 left-0 right-0 bg-[#F5F1EC] border-t border-black/10 transition-all duration-300 ease-in-out ${isOpen
-                        ? "translate-y-0 opacity-100 visible"
-                        : "-translate-y-10 opacity-0 invisible"
-                        }`}>
+                    className={`lg:hidden mobile-nav absolute top-12 left-0 right-0 bg-[#F5F1EC] border-t border-black/10 transition-all duration-300 ${
+                        isOpen
+                            ? "translate-y-0 opacity-100 visible"
+                            : "-translate-y-10 opacity-0 invisible"
+                    }`}
+                >
                     <div className="flex flex-col gap-3">
+
+                        {/* Mobile Categories */}
+                        <div className="mobile-category">
+                            <p className="mobile-category-title">
+                                Categories
+                            </p>
+
+                            <div className="mobile-category-list">
+                                {categories.map((category) => (
+                                    <Link
+                                        key={category.id}
+                                        to={`/categories/${category.slug}`}
+                                        onClick={() => setIsOpen(false)}
+                                        className="mobile-category-item"
+                                    >
+                                        {category.slug}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+
                         {navLinks.map((item) => (
                             <NavLink
                                 key={item.path}
                                 to={item.path}
                                 onClick={() => setIsOpen(false)}
-                                className={`text-[11px] font-medium transition-all duration-300 uppercase tracking-[1px] text-[#7A7268] hover:text-black
-                                    `}
+                                className="text-[11px] uppercase tracking-[1px] text-[#7A7268]"
                             >
                                 {item.label}
                             </NavLink>
@@ -97,8 +135,10 @@ const Navbar = () => {
                         <button className="nav-btn">
                             ENQUIRE NOW
                         </button>
+
                     </div>
                 </div>
+
             </nav>
         </header>
     );
