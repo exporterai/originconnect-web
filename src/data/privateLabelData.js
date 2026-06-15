@@ -1,5 +1,8 @@
 
-import towelStep1 from "@/assets/images/towel-step1.jpg";
+import towelStep1 from "@/assets/images/towel-privateLable1.png";
+import towelStep2 from "@/assets/images/towel-privateLable2.png";
+import towelStep3 from "@/assets/images/towel-privateLable3.png";
+import towelStep4 from "@/assets/images/towel-privateLable4.png";
 export const privateLabelData = {
   tag: "PRIVATE LABEL & BRANDING",
 
@@ -24,15 +27,15 @@ export const privateLabelData = {
       label: "Bespoke Bathrobes",
     },
     {
-      image: towelStep1,
+      image: towelStep2,
       label: "Branded Towel Sets",
     },
     {
-      image: towelStep1,
+      image: towelStep3,
       label: "Custom Monograms",
     },
     {
-      image: towelStep1,
+      image: towelStep4,
       label: "Suite Collections",
     },
   ],

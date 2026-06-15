@@ -20,12 +20,6 @@ export const footerSections = [
   },
 
   {
-    title: "Company",
-    links: [
-      { label: "Quality", path: "/quality" },
-      { label: "Private Label", path: "/private-label" },
-      { label: "Contact", path: "/contact" },
-      { label: "Products", path: "/products" },
-    ],
+    title: "Contact",
   },
 ];

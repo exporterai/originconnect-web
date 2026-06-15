@@ -2,10 +2,11 @@ import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Navigation, Autoplay } from "swiper/modules";
+import { Autoplay, Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 import "swiper/css";
 import "swiper/css/navigation";
+import 'swiper/css/pagination';
 
 import { subcategories } from "@/data/subcategories";
 
@@ -14,24 +15,32 @@ import SubCategoryCard from "@/components/categoryType/SubCategoryCard";
 function SubcategorySwiper() {
   return (
     <section className="subcategorySwiper section">
-     <div className="container">
-       <h2
-        className="heading dark-heading mb-4"
-      >
-        Browse the Collection
-      </h2>
-     </div>
+      <div className="container">
+        <h2
+          className="heading dark-heading mb-4"
+        >
+          Browse the Collection
+        </h2>
+      </div>
       <Swiper
-        modules={[Navigation, Autoplay]}
+        modules={[
+          Navigation,
+          Pagination,
+          Autoplay,
+          Mousewheel,
+          Keyboard,
+        ]}
+        navigation
+        pagination={{
+          clickable: true,
+        }}
         slidesPerView={1}
-        spaceBetween={20}
-        loop={true}
+        loop
         speed={1000}
         autoplay={{
-          delay: 5000,
+          delay: 50000,
           disableOnInteraction: false,
         }}
-        navigation
       >
         {subcategories.towels.map((item) => (
           <SwiperSlide key={item.id}>

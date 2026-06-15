@@ -1,4 +1,4 @@
-import towelHero from "@/assets/images/towel-hero.jpg";
+import towelHero from "@/assets/images/towel-hero.png";
 
 export const categories = [
     {

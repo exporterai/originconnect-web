@@ -4,7 +4,7 @@ import resortTowel from "@/assets/images/resort-towel.jpg";
 import poolTowel from "@/assets/images/pool-towel.jpg";
 import gymTowel from "@/assets/images/gym-towel.jpg";
 import handTowel from "@/assets/images/hand-towel.jpg";
-import faceTowel from "@/assets/images/face-towel.jpg";
+import faceTowel from "@/assets/images/face-towel.png";
 import bathrobes from "@/assets/images/bathrobes.jpg";
 
 export const subcategories = {

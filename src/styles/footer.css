@@ -1,4 +1,65 @@
-.footer {
+footer {
   background: #1E1C1A;
+  color: rgba(245, 241, 236, 0.55);
+}
+footer .logosection p{
+  max-width: 300px;
+}
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-col ul li {
+  font-size: 0.88rem;
+}
+
+.footer-col ul li a {
+  color: rgba(255,255,255,0.55);
+  transition: color 0.25s;
+}
+
+.footer-col ul li a:hover {
+  color: var(--white);
+}
+
+/* Contact column */
+.contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.footer-contact-icon {
   color: white;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.footer-socials {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.5);
+  transition: all 0.4s ease;
+}
+
+.footer-socials a:hover {
+  background: white;
+  color: #2C2825;
 }
