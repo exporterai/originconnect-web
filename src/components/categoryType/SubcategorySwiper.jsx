@@ -38,7 +38,7 @@ function SubcategorySwiper() {
         loop
         speed={1000}
         autoplay={{
-          delay: 50000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
       >

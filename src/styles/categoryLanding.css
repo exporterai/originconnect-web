@@ -14,7 +14,7 @@
     linear-gradient(90deg,
       rgba(0, 0, 0, .5),
       rgba(0, 0, 0, .6)); */
-      background: linear-gradient(0deg, rgba(26, 25, 23, 0.85) 0%, rgba(26, 25, 23, 0.15) 50%, rgba(0, 0, 0, 0.00) 100%);
+  background: linear-gradient(0deg, rgba(26, 25, 23, 0.85) 0%, rgba(26, 25, 23, 0.15) 50%, rgba(0, 0, 0, 0.00) 100%);
 }
 
 .category-hero .category-tag {
@@ -700,8 +700,20 @@
     gap: 15px;
   }
 
+  .privateLabelGrid {
+    gap: 6px;
+  }
+
   .privateLabelCard img {
     height: 200px;
+  }
+
+  .privateLabelOverlay {
+    left: 10px;
+    bottom: 10px;
+    font-size: 8px;
+    padding: 4px 10px;
+    letter-spacing: 1px;
   }
 
   .subCategoryCard {
