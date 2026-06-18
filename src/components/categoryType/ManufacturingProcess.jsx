@@ -1,4 +1,4 @@
-import { categoryContent } from "@/data/categoryContent";
+import { categoryContent } from "@/data/categoryType/categoryContent";
 
 const ManufacturingProcess = ({ category }) => {
   const content = categoryContent[category];

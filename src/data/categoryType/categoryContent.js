@@ -18,33 +18,33 @@ export const categoryContent = {
       "From fibre selection to final finishing, every decision is guided by the standards of the world's finest hospitality environments.",
     aboutSteps: [
       {
-        title: "Long-Staple Fibres",
-        description: "Extra-long staple fibres grown along the Nile Delta deliver maximum tensile strength and a silken texture that only deepens with use.",
+        title: "Exceptional Softness",
+        description: "Crafted from carefully selected extra-long staple cotton fibres that create a smoother, silkier touch and lasting durability.",
         image: aboutTowel1,
         tags: [
-          "900–1400 GSM range",
-          "ELS certified",
-          "Nile Delta origin"
+          "Extra-Long Staple Cotton",
+          "Luxury Hand Feel",
+          "Superior Strength"
         ]
       },
       {
-        title: "Plush Absorbency",
-        description: "Untwisted yarns create a high-pile, high-absorbency construction that grows measurably softer through every laundry cycle.",
+        title: "Elevated Guest Comfort",
+        description: "Dense terry construction delivers exceptional absorbency and a plush feel that remains inviting through repeated hospitality laundering.",
         image: aboutTowel2,
         tags: [
-          "15% faster absorption",
-          "Hypoallergenic",
+          "High-Pile Terry",
+          "Fast Absorption",
           "Low-lint finish"
         ]
       },
       {
-        title: "Global Standards",
-        description: "Every batch is pressure-tested to international hospitality standards and custom hotel QC protocols before leaving our mills.",
+        title: "Trusted Quality",
+        description: "Every batch undergoes rigorous testing for absorbency, durability, and consistency to meet international hospitality expectations.",
         image: aboutTowel3,
         tags: [
           "Oeko-Tex 100",
           "GOTS certified",
-          "5-star QC protocols"
+          "Hospitality QC"
         ]
       },
     ],

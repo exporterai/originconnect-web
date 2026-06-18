@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import 'swiper/css/pagination';
 
-import { subcategories } from "@/data/subcategories";
+import { subcategories } from "@/data/categoryType/subcategories";
 
 import SubCategoryCard from "@/components/categoryType/SubCategoryCard";
 

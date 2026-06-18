@@ -22,7 +22,7 @@ const CategoryCTA = () => {
                     </p>
 
                     <div className="btn-wrapper">
-                        <button className="btn enquire-btn">
+                        <button className="btn dark-btn">
                             ENQUIRE NOW
                         </button>
                         <button className="btn transparent-btn">

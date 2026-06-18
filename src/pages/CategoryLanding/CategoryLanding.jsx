@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-import { categories } from "@/data/categories";
+import { categories } from "@/data/categoryType/categories";
 
 import CategoryHero from "@/components/categoryType/CategoryHero";
 import CategoryAbout from "@/components/categoryType/CategoryAbout";
