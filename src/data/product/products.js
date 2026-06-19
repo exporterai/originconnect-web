@@ -1,10 +1,11 @@
-import hotelTowel from "@/assets/images/product/hotel-towel.jpg";
-import spaTowel from "@/assets/images/product/spa-towel.jpg";
-import resortTowel from "@/assets/images/product/resort-towel.jpg";
-import poolTowel from "@/assets/images/product/pool-towel.jpg";
-import bathrobes from "@/assets/images/product/bathrobes.jpg";
-import handTowel from "@/assets/images/product/hand-towel.jpg";
-import faceTowel from "@/assets/images/product/spa-towel.jpg";
+import hotelTowel from "@/assets/images/product/hotel-towel.png";
+import spaTowel from "@/assets/images/product/spa-towel.png";
+import resortTowel from "@/assets/images/product/resort-towel.png";
+import poolTowel from "@/assets/images/product/pool-towel.png";
+import gymTowel from "@/assets/images/product/gym-towel.png";
+import bathrobes from "@/assets/images/product/bathrobes.png";
+import handTowel from "@/assets/images/product/hand-towel.png";
+import faceTowel from "@/assets/images/product/face-towel.png";
 import bathTowel from "@/assets/images/product/bath-towel.png";
 import beachTowel from "@/assets/images/product/beach-towel.png";
 import kitchenTowel from "@/assets/images/product/kitchen-towel.png";
@@ -98,7 +99,7 @@ export const products = [
         manufacturing: "private-label",
         label: "GYM TOWELS",
         title: "Gym Towels",
-        image: poolTowel,
+        image: gymTowel,
         description:
             "Compact performance towels crafted for fitness facilities, featuring quick-dry technology and commercial durability.",
         tags: [
