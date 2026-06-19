@@ -16,6 +16,12 @@ function ProductSidebar({
   selectedManufacturing,
   setSelectedManufacturing
 }) {
+  const resetFilters = () => {
+    setSelectedCategory("towels");
+    setSelectedProductTypes([]);
+    setSelectedIndustries([]);
+    setSelectedManufacturing([]);
+  }
   const [open, setOpen] = useState({
     category: true,
     productType: false,
@@ -30,6 +36,39 @@ function ProductSidebar({
   };
   return (
     <aside className="productSidebar">
+      <div className="filter-top">
+        <h3>
+          Filters
+        </h3>
+        <button
+          onClick={resetFilters}
+        >
+          CLEAR ALL
+        </button>
+      </div>
+      <div className="activeFilters">
+        {
+          selectedCategory
+          &&
+          <span>
+            {selectedCategory}
+          </span>
+        }
+        {
+          selectedProductTypes.map(item =>
+            <span key={item}>
+              {item}
+              <button
+                onClick={() =>
+                  setSelectedProductTypes(
+                    selectedProductTypes.filter(
+                      v => v !== item))}>
+                ×
+              </button>
+            </span>
+          )
+        }
+      </div>
       {/* Category */}
       <div className="filter-section">
         <div
