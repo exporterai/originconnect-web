@@ -15,12 +15,11 @@ function Products() {
   const subcategory = searchParams.get("subcategory") || "";
   const [selectedCategory, setSelectedCategory] = useState(category);
   const [selectedProductTypes, setSelectedProductTypes] = useState(subcategory ? [subcategory] : []);
-  // const category = searchParams.get("category") || "bedsheets";
-
   const [selectedIndustries, setSelectedIndustries]
     = useState([]);
   const [selectedManufacturing, setSelectedManufacturing]
     = useState([]);
+  const [showFilter, setShowFilter] = useState(false);
   const filteredProducts = products.filter(
     (item) => {
       const categoryMatch =

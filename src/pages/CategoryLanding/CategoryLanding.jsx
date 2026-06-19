@@ -24,7 +24,7 @@ const CategoryLanding = () => {
     <>
       <CategoryHero category={categoryData} />
       <CategoryAbout category={category} />
-      <SubcategorySwiper/>
+      <SubcategorySwiper category={category} />
       <CategoryPrivateLabel />
       <ManufacturingProcess category={category} />
       <CategoryCTA />

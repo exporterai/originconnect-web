@@ -1,8 +1,8 @@
 
-import towelStep1 from "@/assets/images/towel-privateLable1.png";
-import towelStep2 from "@/assets/images/towel-privateLable2.png";
-import towelStep3 from "@/assets/images/towel-privateLable3.png";
-import towelStep4 from "@/assets/images/towel-privateLable4.png";
+import towelStep1 from "@/assets/images/towel/towel-privateLable1.png";
+import towelStep2 from "@/assets/images/towel/towel-privateLable2.png";
+import towelStep3 from "@/assets/images/towel/towel-privateLable3.png";
+import towelStep4 from "@/assets/images/towel/towel-privateLable4.png";
 export const privateLabelData = {
   tag: "PRIVATE LABEL & BRANDING",
 

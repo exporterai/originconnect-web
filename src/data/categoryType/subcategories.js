@@ -1,11 +1,11 @@
-import hotelTowel from "@/assets/images/hotel-towel.png";
-import spaTowel from "@/assets/images/spa-towel.png";
-import resortTowel from "@/assets/images/resort-towel.png";
-import poolTowel from "@/assets/images/pool-towel.png";
-import gymTowel from "@/assets/images/gym-towel1.png";
-import handTowel from "@/assets/images/hand-towel.png";
-import faceTowel from "@/assets/images/face-towel.png";
-import bathrobes from "@/assets/images/bathrobes.png";
+import hotelTowel from "@/assets/images/towel/hotel-towel.png";
+import spaTowel from "@/assets/images/towel/spa-towel.png";
+import resortTowel from "@/assets/images/towel/resort-towel.png";
+import poolTowel from "@/assets/images/towel/pool-towel.png";
+import gymTowel from "@/assets/images/towel/gym-towel1.png";
+import handTowel from "@/assets/images/towel/hand-towel.png";
+import faceTowel from "@/assets/images/towel/face-towel.png";
+import bathrobes from "@/assets/images/towel/bathrobes.png";
 
 export const subcategories = {
   towels: [
