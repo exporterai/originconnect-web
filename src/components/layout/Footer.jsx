@@ -71,9 +71,9 @@ const Footer = () => {
                                             <li>
                                                 <Mail size={14} className="footer-contact-icon" />
                                                 <span>
-                                                    <a href="mailto:commercial@oceanmarque.com">
+                                                    {/* <a href="mailto:commercial@oceanmarque.com">
                                                         commercial@oceanmarque.com
-                                                    </a>
+                                                    </a> */}
                                                 </span>
                                             </li>
                                         </ul>

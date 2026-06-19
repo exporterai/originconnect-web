@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, X, ChevronDown, ArrowBigLeft, ArrowRight, ArrowRightIcon, MoveRight } from "lucide-react";
+import { Menu, X, ChevronDown, MoveRight } from "lucide-react";
 import { categories } from "@/data/categoryType/categories";
 
 const navLinks = [

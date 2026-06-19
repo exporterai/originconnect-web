@@ -1,11 +1,11 @@
 export const footerSections = [
   {
-    title: "Collections",
+    title: "Categories",
     links: [
-      { label: "Towels", path: "/collections/towels" },
-      { label: "Bedsheets", path: "/collections/bedsheets" },
-      { label: "Bathrobes", path: "/collections/bathrobes" },
-      { label: "Blankets", path: "/collections/blankets" },
+      { label: "Towels", path: "/categories/towels" },
+      { label: "Bedsheets", path: "/categories/bedsheets" },
+      { label: "Bathrobes", path: "/categories/bathrobes" },
+      { label: "Blankets", path: "/categories/blankets" },
     ],
   },
 
