@@ -31,7 +31,7 @@ function ManufacturingEcosystem() {
                             MANUFACTURING ECOSYSTEM ACCESS
                         </span>
 
-                        <h2 className="heading light-heading">
+                        <h2 className="heading light-heading mb-4">
                             Access India's Manufacturing Ecosystem
                         </h2>
                         <p className="description light-description">
@@ -72,7 +72,6 @@ function ManufacturingEcosystem() {
                             </div>
                         ))}
                     </div>
-
                 </div>
             </section>
         </>

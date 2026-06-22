@@ -131,7 +131,7 @@
 }
 
 .whatWeDo-card p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.5;
     color: #6B7280;
 }
@@ -146,8 +146,8 @@
 
 .whatWeDo-card:hover .icon {
     border-color: rgb(253, 253, 253);
-    /* color: #B8915D; */
-    color: inherit;
+    color: #B8915D;
+    /* color: inherit; */
 }
 
 .whatWeDo-card:hover h3 {

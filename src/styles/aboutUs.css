@@ -1,0 +1,634 @@
+.aboutUs .category-tag {
+  font-weight: 700;
+  font-family: 'Jost', serif;
+  /* color: #FFFFFF; */
+  color: rgba(245, 241, 236, 0.65);
+}
+
+.aboutUs .light-bg .category-tag,
+.aboutUs .missionVision .category-tag {
+  color: #987C62;
+}
+
+/* ==========================
+  AboutUs aboutUsHero
+========================== */
+.aboutUsHero {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ==========================
+  AboutUs aboutUsHighlights
+========================== */
+.aboutUsHighlights {
+  width: 100%;
+  background: #FAF8F5;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cacac9;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.aboutUsHighlights.active {
+  background: #B88646;
+}
+
+.aboutUsHighlights .marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.aboutUsHighlights .marquee-content {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+  gap: 20px;
+}
+
+.aboutUsHighlights .highlight-item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 18px 0;
+}
+
+.aboutUsHighlights .highlight-item span.text {
+  font-size: 18px;
+  color: #0B192DB2;
+  font-weight: 400;
+  transition: color 0.5s ease;
+}
+
+.aboutUsHighlights.active .highlight-item span.text {
+  color: #fff;
+}
+
+.aboutUsHighlights .dot {
+  margin: 0 10px 0px 0px;
+  background: #d28b42;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
+}
+
+.aboutUsHighlights.active .dot {
+  background: #fff;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.aboutUsHighlights:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* ==========================
+  AboutUs ourStory
+========================== */
+.ourStory-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 50px;
+  align-items: center;
+}
+
+.ourStory-image {
+  grid-row: span 4;
+}
+
+.ourStory-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ourStory-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #D4D4D4;
+}
+
+.ourStory-card .icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background: #8a6a4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.ourStory-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #6B7280;
+  font-weight: 400;
+}
+
+/* ==========================
+  AboutUs WHAT MAKES DIFFERENT 
+========================== */
+
+.whatMakesDifferent-grid {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+
+.whatMakesDifferent-card {
+  border: 1px solid rgba(255, 255, 255, .95);
+  border-radius: 12px;
+  padding: 15px;
+  transition: all .3s ease;
+}
+
+.whatMakesDifferent-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, .04);
+}
+
+/* ICON */
+.whatMakesDifferent-card .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  color: #A68B70;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+/* TITLE */
+.whatMakesDifferent-card h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.whatMakesDifferent-card p {
+  color: #f8f6f6a9;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ==========================
+  AboutUs Lets Connect
+========================== */
+.letsConnect-wrapper {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+/* Dark overlay */
+.letsConnect-wrapper .overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(14, 12, 10, 0.98) 0%, rgba(14, 12, 10, 0.75232) 11.54%, rgba(14, 12, 10, 0.6) 29.81%, rgba(14, 12, 10, 0) 46.63%);
+}
+
+.letsConnect-content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.letsConnect-heading-border {
+  width: 120px;
+  border: 1px solid #80664E;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.letsConnect-btn {
+  border: none;
+  background: #fff;
+  color: #111;
+  padding: 9px 15px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.letsConnect-btn span {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #F3F3F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letsConnect-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, .15);
+}
+
+/* ==========================
+  AboutUs HowCreateValue  
+========================== */
+/* ==========================
+HOW CREATE VALUE
+========================== */
+
+.howCreateValue-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.howCreateValue-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #E8E8E8;
+  transition: all .3s ease;
+  height: 100%;
+}
+
+.howCreateValue-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+}
+
+/* ==========================
+IMAGE
+========================== */
+.howCreateValue-image-wrapper {
+  position: relative;
+  height: 230px;
+}
+
+.howCreateValue-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================
+ICON
+========================== */
+.howCreateValue-icon {
+  position: absolute;
+  left: 50%;
+  bottom: -28px;
+  transform: translateX(-50%);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #9B7E63;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  z-index: 2;
+}
+
+.howCreateValue-icon .icon-svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* ==========================
+CONTENT
+========================== */
+.howCreateValue-content {
+  padding: 48px 20px 25px;
+  text-align: center;
+}
+
+.howCreateValue-content h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+/* Line */
+.howCreateValue-content .line {
+  width: 95px;
+  height: 1px;
+  background-color: #987C62;
+  ;
+  /* border: 0.5px solid #987C62; */
+  margin: 10px auto 24px;
+}
+
+/* Paragraph */
+.howCreateValue-content p {
+  color: #3E4145;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* ==========================
+  AboutUs MissionVision 
+========================== */
+.missionVision-grid {
+  margin-top: 30px;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 7px;
+  padding: 50px 70px;
+  gap: 28px;
+  border: 1px solid #E9C5AA;
+}
+
+/* Center Golden Line */
+.missionVision-grid::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 1px;
+  background: #E9C5AA;
+  z-index: 0;
+}
+
+/* CARD */
+.missionVision-card {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+}
+
+/* LEFT CARD */
+.missionVision-card:first-child {
+  justify-self: start;
+}
+
+/* RIGHT CARD */
+.missionVision-card:last-child {
+  justify-self: end;
+}
+
+/* SMALL TITLE */
+.missionVision-card .title {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2.39px;
+  text-transform: uppercase;
+  color: #987C62;
+  font-family: 'Jost', serif;
+}
+
+/* Title Line */
+.missionVision-card .title-line {
+  width: 45px;
+  /* height: 1px;
+  background: #C8A883; */
+  border: #C8A883 solid 1px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+.missionVision-card h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+/* Golden Line */
+.missionVision-card .line {
+  width: 30px;
+  height: 1px;
+  background: #987C62;
+  margin-bottom: 30px;
+}
+
+/* Paragraph */
+.missionVision-card p {
+  color: #3E4145;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ==========================
+  AboutUs Responsive
+========================== */
+@media (max-width: 992px) {
+  .whatMakesDifferent-grid {
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 20px;
+  }
+
+  .howCreateValue-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .missionVision-grid {
+    padding: 30px 40px;
+  }
+
+}
+
+@media (max-width: 850px) {
+  .whatMakesDifferent-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutUsHighlights .highlight-item span.text {
+    font-size: 15px;
+  }
+
+  .aboutUsHighlights .highlight-item {
+    padding: 14px 0;
+  }
+
+  .ourStory-grid {
+    grid-template-columns: 1fr;
+    gap: 10 25px;
+    margin-top: 25px;
+  }
+
+  .ourStory-image {
+    grid-row: unset;
+    margin-bottom: 20px;
+  }
+
+  .ourStory-card p {
+    font-size: 14px;
+  }
+
+  .letsConnect-btn {
+    font-size: 11px;
+  }
+
+  .howCreateValue-grid {
+    margin-top: 25px;
+  }
+
+  .howCreateValue-image-wrapper {
+    height: 220px;
+  }
+
+  .howCreateValue-content {
+    padding: 40px 16px 20px;
+  }
+
+  .howCreateValue-content h3 {
+    font-size: 16px;
+  }
+
+  .howCreateValue-content p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .howCreateValue-icon {
+    width: 55px;
+    height: 55px;
+    bottom: -26px;
+  }
+
+  .howCreateValue-icon .icon-svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .missionVision-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+.missionVision-grid::after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1px;
+  width: 100%;
+}
+  .missionVision-card {
+    max-width: auto;
+  }
+
+    .missionVision-card:last-child {
+      justify-self: start;
+      margin-top: 30px;
+    }
+
+  .missionVision-card .title {
+    font-size: 14px;
+    letter-spacing: 1.39px;
+  }
+
+  .missionVision-card h3 {
+    font-size: 16px;
+  }
+
+  .missionVision-card p {
+    color: #3E4145;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 568px) {
+  .ourStory-card .icon {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+  }
+
+  .ourStory-card {
+    gap: 10px;
+    padding-bottom: 6px;
+  }
+
+  .ourStory-card p {
+    font-size: 14px;
+    /* font-size: 12px; */
+  }
+
+  .whatMakesDifferent-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .whatMakesDifferent-card h3 {
+    font-size: 16px;
+  }
+
+  .letsConnect-btn {
+    padding: 5px 12px;
+    font-size: 10px;
+  }
+
+  .howCreateValue-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .howCreateValue-icon {
+    width: 45px;
+    height: 45px;
+    bottom: -20px;
+  }
+
+  .howCreateValue-icon .icon-svg {
+    width: 22px;
+    height: 22px;
+  }
+  .missionVision-grid {
+        padding: 20px;
+    }
+    .missionVision-card:last-child {
+    margin-top: 20px;
+  }
+}

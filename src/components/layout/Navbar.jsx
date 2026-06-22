@@ -6,7 +6,7 @@ import { categories } from "@/data/categoryType/categories";
 const navLinks = [
     {
         label: "About Us",
-        path: "/aboutus",
+        path: "/aboutUs",
         type: "link",
     },
 

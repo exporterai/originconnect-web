@@ -1,3 +1,4 @@
+import homeHero from "@/assets/images/home/home-hero.png";
 import homeHero1 from "@/assets/images/home/home-hero1.png";
 import homeHero2 from "@/assets/images/home/home-hero2.png";
 import homeHero3 from "@/assets/images/home/home-hero3.png";
@@ -9,7 +10,7 @@ export const homeHeroSlides = [
     title: "India's Manufacturing Ecosystem",
     description:
       "A vast network of industrial clusters, modern infrastructure and specialized manufacturing capabilities driving global business growth.",
-    image: homeHero1,
+    image: homeHero,
   },
   {
     id: 2,
