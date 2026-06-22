@@ -404,6 +404,12 @@
 }
 
 /* ==========================
+  HOME originConnectModel
+========================== */
+.originConnectModel .category-tag{
+    color: rgba(245, 241, 236, 0.65);
+}
+/* ==========================
   Responsive
 ========================== */
 @media(max-width:991px) {
