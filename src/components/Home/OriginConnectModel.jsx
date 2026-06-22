@@ -1,5 +1,5 @@
 import React from 'react'
-import originConnectModel from '@/assets/images/home/originConnectModel.png'
+import originConnectModel from '@/assets/images/home/originConnectModel.svg'
 
 function OriginConnectModel() {
   return (
