@@ -7,6 +7,7 @@ import Products from "@/pages/Products";
 import ProductDetails from "@/pages/ProductDetails";
 import NotFound from "@/pages/NotFound";
 import AboutUs from "@/pages/AboutUs";
+import Service from "@/pages/Service";
 
 const AppRoutes = () => {
   return (
@@ -17,6 +18,15 @@ const AppRoutes = () => {
       {/* AboutUs */}
       <Route path="/aboutUs" element={<AboutUs />} />
 
+      {/* Products Listing */}
+      <Route path="/products" element={<Products />} />
+
+      {/* Product Details */}
+      <Route
+        path="/product/:slug"
+        element={<ProductDetails />}
+      />
+
       {/* Categories */}
       <Route path="/categories" element={<Categories />} />
 
@@ -26,14 +36,8 @@ const AppRoutes = () => {
         element={<CategoryLanding />}
       />
 
-      {/* Products Listing */}
-      <Route path="/products" element={<Products />} />
-
-      {/* Product Details */}
-      <Route
-        path="/product/:slug"
-        element={<ProductDetails />}
-      />
+      {/* Service */}
+      <Route path="/services" element={<Service />} />
 
       {/* 404 */}
       <Route path="*" element={<NotFound />} />
