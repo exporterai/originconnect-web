@@ -33,7 +33,8 @@
 }
 
 .aboutUsHighlights.active {
-  background: #B88646;
+  /* background: #B88646; */
+  background-color: rgba(152, 124, 98, 1);
 }
 
 .aboutUsHighlights .marquee {
@@ -69,7 +70,8 @@
 
 .aboutUsHighlights .dot {
   margin: 0 10px 0px 0px;
-  background: #d28b42;
+  /* background: #d28b42; */
+  background: rgba(152, 124, 98, 1);
   width: 10px;
   height: 10px;
   border-radius: 50%;
