@@ -278,9 +278,10 @@
     width: 100%;
 }
 
-.mobile-filter-btn .filter-icon{
+.mobile-filter-btn .filter-icon {
     position: relative;
 }
+
 .mobile-filter-btn .filter-icon span {
     position: absolute;
     text-align: center;
@@ -299,8 +300,11 @@
 /* ProductSidebar */
 .productSidebar {
     position: sticky;
-    top: 90px;
-    max-height: calc(100vh - 110px);
+    top: 62px;
+    bottom: 10px;
+    /* max-height: calc(100vh - 110px); */
+    max-height: calc(100vh - 65px);
+    /* max-height: 100vh; */
     overflow-y: auto;
     background: white;
     border: 1px solid rgba(44, 40, 37, .08);
@@ -464,7 +468,7 @@
     .mobile-filter-btn-wrap {
         display: block;
         position: sticky;
-        top: 50px;
+        top: 48px;
         z-index: 99;
         background: #ffffff;
     }
