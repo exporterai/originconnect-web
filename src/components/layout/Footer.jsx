@@ -6,6 +6,7 @@ import {
     FaLinkedinIn,
     FaInstagram,
     FaXTwitter,
+    FaWhatsapp,
 } from "react-icons/fa6";
 
 const Footer = () => {
@@ -69,11 +70,17 @@ const Footer = () => {
                                                 </a>
                                             </li>
                                             <li>
+                                                <FaWhatsapp size={14} className="footer-contact-icon" />
+                                                <a href="https://wa.me/919327041987">
+                                                    <span>+91 932 704 1987</span>
+                                                </a>
+                                            </li>
+                                            <li>
                                                 <Mail size={14} className="footer-contact-icon" />
                                                 <span>
-                                                    {/* <a href="mailto:commercial@oceanmarque.com">
-                                                        commercial@oceanmarque.com
-                                                    </a> */}
+                                                    <a href="mailto:export@originconnect.com">
+                                                        export@originconnect.com
+                                                    </a>
                                                 </span>
                                             </li>
                                         </ul>

@@ -354,6 +354,17 @@ ARROW
 }
 
 @media (max-width:768px) {
+  .serviceHero .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(125deg, rgba(14, 12, 10, 0.98) 0%, rgba(14, 12, 10, 0.75232) 11.54%, rgba(14, 12, 10, 0.6) 39.81%, rgba(14, 12, 10, 0) 66.63%);
+  }
+
+  .serviceHero-content {
+    text-align: center;
+    margin-inline: auto;
+  }
+
   .service .letsConnect-btn {
     font-size: 11px;
   }

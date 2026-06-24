@@ -1,5 +1,19 @@
+import CategoriesHero from "@/components/categories/CategoriesHero";
+import CategoriesSwiper from "@/components/categories/CategoriesSwiper";
+import ExpansionRoadmap from "@/components/categories/ExpansionRoadmap";
+import HowCategoriesEnterEcosystem from "@/components/categories/HowCategoriesEnterEcosystem";
+import LetsConnect from "@/components/categories/LetsConnect";
+
 const Categories = () => {
-  return <h1>Categories Page</h1>;
+  return(
+    <>
+    <CategoriesHero/>
+    <CategoriesSwiper/>
+    <ExpansionRoadmap/>
+    <HowCategoriesEnterEcosystem/>
+    <LetsConnect/>
+    </>
+  )
 };
 
 export default Categories;
