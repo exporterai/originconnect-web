@@ -20,7 +20,7 @@ const howCreateValueContent = [
   {
     image: howCreateValue2,
     icon: Tag,
-    title: "Private Label Partnerner",
+    title: "Private Label Partner",
     para: "Supporting custom manufacturing programs tailored to your brand requirements.",
     tags: [
       "DTC Brands",

@@ -44,16 +44,17 @@
     position: relative;
     z-index: 2;
     height: 100%;
+    display: flex;
+    align-items: center; /* vertical center */
 }
 
 /* CONTENT */
+
 .homeHeroCard-content {
-    position: absolute;
-    /* top: 25%; */
-    left: 6%;
-    transform: translateY(40%);
-    max-width: 600px;
+    max-width: 500px;
     color: white;
+    margin-left: 6%;
+    transform: none;
 }
 
 .homeHeroCard-title {
@@ -406,9 +407,10 @@
 /* ==========================
   HOME originConnectModel
 ========================== */
-.originConnectModel .category-tag{
+.originConnectModel .category-tag {
     color: rgba(245, 241, 236, 0.65);
 }
+
 /* ==========================
   Responsive
 ========================== */
@@ -418,7 +420,7 @@
     }
 
     .homeHeroCard-content {
-        transform: translateY(50%);
+        /* transform: translateY(50%); */
         max-width: 480px;
     }
 
@@ -452,9 +454,9 @@
     }
 
     .homeHeroCard-content {
-        left: 5%;
-        right: 5%;
-        transform: translateY(80%);
+        /* left: 5%;
+        right: 5%; */
+        /* transform: translateY(80%); */
         max-width: 100%;
         text-align: center;
     }
@@ -496,9 +498,9 @@
 }
 
 @media(max-width:567px) {
-    .homeHeroCard-content {
-        transform: translateY(60%);
-    }
+    /* .homeHeroCard-content {
+        transform: translateY(70%);
+    } */
 
     .whatWeDo-grid {
         grid-template-columns: 1fr;
@@ -530,29 +532,31 @@
     .manufacturingEcosystem-content .comingSoon {
         font-size: 11px;
     }
-    .whoWeServe-card{
-        min-height:240px;
+
+    .whoWeServe-card {
+        min-height: 240px;
     }
 
-    .whoWeServe-content{
-        padding:20px;
-        max-width:80%;
+    .whoWeServe-content {
+        padding: 20px;
+        max-width: 80%;
     }
+
     .whoWeServe-content .category-tag {
-    font-size: 8px;
-    letter-spacing: 1.2px;
-    padding: 3px 6px;
-}
-
-    .whoWeServe-content h3{
-        font-size:18px;
+        font-size: 8px;
+        letter-spacing: 1.2px;
+        padding: 3px 6px;
     }
-    
-.whoWeServe-content a {
-    padding: 6px 10px;
-    font-size: 10px;
-    font-weight: 550;
-}
+
+    .whoWeServe-content h3 {
+        font-size: 18px;
+    }
+
+    .whoWeServe-content a {
+        padding: 6px 10px;
+        font-size: 10px;
+        font-weight: 550;
+    }
 }
 
 @media(max-width:480px) {
@@ -560,9 +564,9 @@
         height: 400px;
     }
 
-    .homeHeroCard-content {
+    /* .homeHeroCard-content {
         transform: translateY(80%);
-    }
+    } */
 
     .homeHeroCard-title {
         font-size: 30px;
@@ -575,13 +579,15 @@
 }
 
 @media(max-width:400px) {
-    .homeHeroCard-content {
+    /* .homeHeroCard-content {
         transform: translateY(60%);
-    }
+    } */
+
     .manufacturingEcosystem-content h3 {
         font-size: 16px;
     }
-    .whoWeServe-content h3{
-        font-size:16px;
+
+    .whoWeServe-content h3 {
+        font-size: 16px;
     }
 }
