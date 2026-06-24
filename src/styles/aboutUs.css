@@ -100,7 +100,7 @@
 /* ==========================
   AboutUs ourStory
 ========================== */
-.ourStory-grid {
+.aboutUs .ourStory-grid {
   margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -108,18 +108,18 @@
   align-items: center;
 }
 
-.ourStory-image {
+.aboutUs .ourStory-image {
   grid-row: span 4;
 }
 
-.ourStory-image img {
+.aboutUs .ourStory-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.ourStory-card {
+.aboutUs .ourStory-card {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -127,7 +127,7 @@
   border-bottom: 0.5px solid #D4D4D4;
 }
 
-.ourStory-card .icon {
+.aboutUs .ourStory-card .icon {
   width: 40px;
   height: 40px;
   min-width: 40px;
@@ -139,7 +139,7 @@
   color: #fff;
 }
 
-.ourStory-card p {
+.aboutUs .ourStory-card p {
   margin: 0;
   font-size: 16px;
   line-height: 1.2;
@@ -151,7 +151,7 @@
   AboutUs WHAT MAKES DIFFERENT 
 ========================== */
 
-.whatMakesDifferent-grid {
+.aboutUs .whatMakesDifferent-grid {
   margin-top: 55px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -159,20 +159,20 @@
 }
 
 
-.whatMakesDifferent-card {
+.aboutUs .whatMakesDifferent-card {
   border: 1px solid rgba(255, 255, 255, .95);
   border-radius: 12px;
   padding: 15px;
   transition: all .3s ease;
 }
 
-.whatMakesDifferent-card:hover {
+.aboutUs .whatMakesDifferent-card:hover {
   transform: translateY(-4px);
   background: rgba(255, 255, 255, .04);
 }
 
 /* ICON */
-.whatMakesDifferent-card .icon {
+.aboutUs .whatMakesDifferent-card .icon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -185,7 +185,7 @@
 }
 
 /* TITLE */
-.whatMakesDifferent-card h3 {
+.aboutUs .whatMakesDifferent-card h3 {
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -194,7 +194,7 @@
 }
 
 /* DESCRIPTION */
-.whatMakesDifferent-card p {
+.aboutUs .whatMakesDifferent-card p {
   color: #f8f6f6a9;
   font-size: 14px;
   line-height: 1.5;
@@ -205,7 +205,7 @@
 /* ==========================
   AboutUs Lets Connect
 ========================== */
-.letsConnect-wrapper {
+.aboutUs .letsConnect-wrapper {
   position: relative;
   min-height: 300px;
   overflow: hidden;
@@ -217,27 +217,27 @@
 }
 
 /* Dark overlay */
-.letsConnect-wrapper .overlay {
+.aboutUs .letsConnect-wrapper .overlay {
   position: absolute;
   inset: 0;
   background:
     linear-gradient(90deg, rgba(14, 12, 10, 0.98) 0%, rgba(14, 12, 10, 0.75232) 11.54%, rgba(14, 12, 10, 0.6) 29.81%, rgba(14, 12, 10, 0) 46.63%);
 }
 
-.letsConnect-content {
+.aboutUs .letsConnect-content {
   position: relative;
   z-index: 2;
   max-width: 500px;
 }
 
-.letsConnect-heading-border {
+.aboutUs .letsConnect-heading-border {
   width: 120px;
   border: 1px solid #80664E;
   margin-bottom: 20px;
 }
 
 /* Button */
-.letsConnect-btn {
+.aboutUs .letsConnect-btn {
   border: none;
   background: #fff;
   color: #111;
@@ -253,7 +253,7 @@
   transition: .3s ease;
 }
 
-.letsConnect-btn span {
+.aboutUs .letsConnect-btn span {
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -263,7 +263,7 @@
   justify-content: center;
 }
 
-.letsConnect-btn:hover {
+.aboutUs .letsConnect-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(255, 255, 255, .15);
 }
@@ -271,11 +271,8 @@
 /* ==========================
   AboutUs HowCreateValue  
 ========================== */
-/* ==========================
-HOW CREATE VALUE
-========================== */
 
-.howCreateValue-grid {
+.aboutUs .howCreateValue-grid {
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -283,7 +280,7 @@ HOW CREATE VALUE
 }
 
 /* Card */
-.howCreateValue-card {
+.aboutUs .howCreateValue-card {
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
@@ -292,7 +289,7 @@ HOW CREATE VALUE
   height: 100%;
 }
 
-.howCreateValue-card:hover {
+.aboutUs .howCreateValue-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
 }
@@ -300,12 +297,12 @@ HOW CREATE VALUE
 /* ==========================
 IMAGE
 ========================== */
-.howCreateValue-image-wrapper {
+.aboutUs .howCreateValue-image-wrapper {
   position: relative;
   height: 230px;
 }
 
-.howCreateValue-image {
+.aboutUs .howCreateValue-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -315,7 +312,7 @@ IMAGE
 /* ==========================
 ICON
 ========================== */
-.howCreateValue-icon {
+.aboutUs .howCreateValue-icon {
   position: absolute;
   left: 50%;
   bottom: -28px;
@@ -332,7 +329,7 @@ ICON
   z-index: 2;
 }
 
-.howCreateValue-icon .icon-svg {
+.aboutUs .howCreateValue-icon .icon-svg {
   width: 32px;
   height: 32px;
 }
@@ -340,19 +337,19 @@ ICON
 /* ==========================
 CONTENT
 ========================== */
-.howCreateValue-content {
+.aboutUs .howCreateValue-content {
   padding: 48px 20px 25px;
   text-align: center;
 }
 
-.howCreateValue-content h3 {
+.aboutUs .howCreateValue-content h3 {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.25;
 }
 
 /* Line */
-.howCreateValue-content .line {
+.aboutUs .howCreateValue-content .line {
   width: 95px;
   height: 1px;
   background-color: #987C62;
@@ -362,7 +359,7 @@ CONTENT
 }
 
 /* Paragraph */
-.howCreateValue-content p {
+.aboutUs .howCreateValue-content p {
   color: #3E4145;
   font-size: 16px;
   line-height: 1.5;
@@ -372,7 +369,7 @@ CONTENT
 /* ==========================
   AboutUs MissionVision 
 ========================== */
-.missionVision-grid {
+.aboutUs .missionVision-grid {
   margin-top: 30px;
   position: relative;
   background-size: contain;
@@ -387,7 +384,7 @@ CONTENT
 }
 
 /* Center Golden Line */
-.missionVision-grid::after {
+.aboutUs .missionVision-grid::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -400,24 +397,24 @@ CONTENT
 }
 
 /* CARD */
-.missionVision-card {
+.aboutUs .missionVision-card {
   position: relative;
   z-index: 1;
   max-width: 300px;
 }
 
 /* LEFT CARD */
-.missionVision-card:first-child {
+.aboutUs .missionVision-card:first-child {
   justify-self: start;
 }
 
 /* RIGHT CARD */
-.missionVision-card:last-child {
+.aboutUs .missionVision-card:last-child {
   justify-self: end;
 }
 
 /* SMALL TITLE */
-.missionVision-card .title {
+.aboutUs .missionVision-card .title {
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 2.39px;
@@ -427,7 +424,7 @@ CONTENT
 }
 
 /* Title Line */
-.missionVision-card .title-line {
+.aboutUs .missionVision-card .title-line {
   width: 45px;
   /* height: 1px;
   background: #C8A883; */
@@ -437,7 +434,7 @@ CONTENT
 }
 
 /* Heading */
-.missionVision-card h3 {
+.aboutUs .missionVision-card h3 {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.25;
@@ -445,7 +442,7 @@ CONTENT
 }
 
 /* Golden Line */
-.missionVision-card .line {
+.aboutUs .missionVision-card .line {
   width: 30px;
   height: 1px;
   background: #987C62;
@@ -453,7 +450,7 @@ CONTENT
 }
 
 /* Paragraph */
-.missionVision-card p {
+.aboutUs .missionVision-card p {
   color: #3E4145;
   font-size: 16px;
   line-height: 1.5;
@@ -463,24 +460,24 @@ CONTENT
   AboutUs Responsive
 ========================== */
 @media (max-width: 992px) {
-  .whatMakesDifferent-grid {
+  .aboutUs .whatMakesDifferent-grid {
     /* grid-template-columns: repeat(2, 1fr); */
     gap: 20px;
   }
 
-  .howCreateValue-grid {
+  .aboutUs .howCreateValue-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
-  .missionVision-grid {
+  .aboutUs .missionVision-grid {
     padding: 30px 40px 150px;
   }
 
 }
 
 @media (max-width: 850px) {
-  .whatMakesDifferent-grid {
+  .aboutUs .whatMakesDifferent-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -494,75 +491,76 @@ CONTENT
     padding: 14px 0;
   }
 
-  .ourStory-grid {
+  .aboutUs .ourStory-grid {
     grid-template-columns: 1fr;
     gap: 10 25px;
     margin-top: 25px;
   }
 
-  .ourStory-image {
+  .aboutUs .ourStory-image {
     grid-row: unset;
     margin-bottom: 20px;
   }
 
-  .ourStory-card p {
+  .aboutUs .ourStory-card p {
     font-size: 14px;
   }
 
-  .letsConnect-btn {
+  .aboutUs .letsConnect-btn {
     font-size: 11px;
   }
 
-  .howCreateValue-grid {
+  .aboutUs .howCreateValue-grid {
     margin-top: 25px;
   }
 
-  .howCreateValue-image-wrapper {
+  .aboutUs .howCreateValue-image-wrapper {
     height: 220px;
   }
 
-  .howCreateValue-content {
+  .aboutUs .howCreateValue-content {
     padding: 40px 16px 20px;
   }
 
-  .howCreateValue-content h3 {
+  .aboutUs .howCreateValue-content h3 {
     font-size: 16px;
   }
 
-  .howCreateValue-content p {
+  .aboutUs .howCreateValue-content p {
     font-size: 14px;
     line-height: 1.4;
   }
 
-  .howCreateValue-icon {
+  .aboutUs .howCreateValue-icon {
     width: 55px;
     height: 55px;
     bottom: -26px;
   }
 
-  .howCreateValue-icon .icon-svg {
+  .aboutUs .howCreateValue-icon .icon-svg {
     width: 27px;
     height: 27px;
   }
 
-  .missionVision-grid {
+  .aboutUs .missionVision-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-            padding: 30px 40px 100px;
+    padding: 30px 40px 100px;
   }
 
-  .missionVision-grid::after {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 0px;
-  width: 100%;
-}
-  .missionVision-card {
+  .aboutUs .missionVision-grid::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0px;
+    width: 100%;
+  }
+
+  .aboutUs .missionVision-card {
     max-width: 100%;
   }
 
-  .missionVision-card:last-child::after {
+  .aboutUs .missionVision-card:last-child::after {
     content: "";
     position: absolute;
     background: #E9C5AA;
@@ -574,85 +572,86 @@ CONTENT
     width: 100%;
   }
 
-  .missionVision-card:last-child {
+  .aboutUs .missionVision-card:last-child {
     justify-self: start;
     margin-top: 30px;
   }
 
-  .missionVision-card .title {
+  .aboutUs .missionVision-card .title {
     font-size: 14px;
     letter-spacing: 1.39px;
   }
 
-  .missionVision-card h3 {
+  .aboutUs .missionVision-card h3 {
     font-size: 16px;
   }
 
-  .missionVision-card p {
+  .aboutUs .missionVision-card p {
     color: #3E4145;
     font-size: 14px;
     line-height: 1.5;
   }
 }
 
-@media (max-width: 568px) {
-  .ourStory-card .icon {
+@media (max-width: 576px) {
+  .aboutUs .ourStory-card .icon {
     width: 35px;
     height: 35px;
     min-width: 35px;
   }
 
-  .ourStory-card {
+  .aboutUs .ourStory-card {
     gap: 10px;
     padding-bottom: 6px;
   }
 
-  .ourStory-card p {
+  .aboutUs .ourStory-card p {
     font-size: 14px;
     /* font-size: 12px; */
   }
 
-  .whatMakesDifferent-grid {
+  .aboutUs .whatMakesDifferent-grid {
     grid-template-columns: 1fr;
   }
 
-  .whatMakesDifferent-card h3 {
+  .aboutUs .whatMakesDifferent-card h3 {
     font-size: 16px;
   }
 
-  .letsConnect-btn {
+  .aboutUs .letsConnect-btn {
     padding: 5px 12px;
     font-size: 10px;
   }
 
-  .howCreateValue-grid {
+  .aboutUs .howCreateValue-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 480px) {
-  .howCreateValue-icon {
+  .aboutUs .howCreateValue-icon {
     width: 45px;
     height: 45px;
     bottom: -20px;
   }
 
-  .howCreateValue-icon .icon-svg {
+  .aboutUs .howCreateValue-icon .icon-svg {
     width: 22px;
     height: 22px;
   }
 
-  .missionVision-grid {
+  .aboutUs .missionVision-grid {
     padding: 20px;
     padding-bottom: 80px;
   }
 
-  .missionVision-card:last-child {
+  .aboutUs .missionVision-card:last-child {
     margin-top: 20px;
   }
 }
+
 @media (max-width: 400px) {
- .missionVision-grid {
+  .aboutUs .missionVision-grid {
     padding-bottom: 60px;
   }
 }

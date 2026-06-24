@@ -10,7 +10,6 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5%;
 }
 
 h1,
@@ -40,6 +39,11 @@ h6 {
   color: #F5F1EC;
 }
 
+@media (max-width:1250px) {
+.container {
+    padding: 0 5%;
+}
+}
 @media (max-width:480px) {
   #logo,
   #footerLogo {
