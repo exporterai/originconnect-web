@@ -327,10 +327,6 @@ ARROW
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
   }
-
-  /* .service .howWorkTogether-grid .arrow-wrapper {
-    display: none;
-  } */
 }
 
 @media (max-width:992px) {
@@ -363,6 +359,10 @@ ARROW
   .serviceHero-content {
     text-align: center;
     margin-inline: auto;
+  }
+
+  .service .letsConnect-content {
+    max-width: 400px;
   }
 
   .service .letsConnect-btn {

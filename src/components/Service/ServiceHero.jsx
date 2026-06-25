@@ -13,11 +13,10 @@ function ServiceHero() {
         <div className="overlay"></div>
         <div className="container">
           <div className="serviceHero-content">
-            <h2 className="heading light-heading mb-4">
+            <h2 className="heading light-heading mb-6">
               {/* LET'S WORK TOGETHER */}
               Flexible Partnership Models For Global Growth
             </h2>
-            <div className="serviceHero-heading-border"></div>
             <p className="description text-[#C4CDD7] mb-6">
               Whether you're sourcing from India, building a private label brand, or expanding into new markets, Origin Connect provides the expertise and manufacturing access to help you grow.
             </p>

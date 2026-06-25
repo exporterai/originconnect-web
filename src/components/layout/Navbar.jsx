@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, ChevronDown, MoveRight } from "lucide-react";
-import { categories } from "@/data/categoryType/categories";
+import { categoriesBanner } from "@/data/categoryType/categoriesBanner";
 
 const navLinks = [
     {
@@ -54,43 +54,6 @@ const Navbar = () => {
                     </Link>
 
                     {/* Desktop Menu */}
-                    {/* <div className="hidden lg:flex items-center gap-5">
-
-                        <div className="category-dropdown">
-                            <button className="category-dropdown-btn">
-                                Categories
-                                <ChevronDown size={14} />
-                            </button>
-
-                            <div className="category-dropdown-menu">
-                                {categories.map((category) => (
-                                    <Link
-                                        key={category.id}
-                                        to={`/categories/${category.slug}`}
-                                        className="category-dropdown-item"
-                                    >
-                                        {category.slug}
-                                    </Link>
-                                ))}
-                            </div>
-                        </div>
-
-                        {navLinks.map((item) => (
-                            <NavLink
-                                key={item.path}
-                                to={item.path}
-                                className={({ isActive }) =>
-                                    `text-[12px] uppercase tracking-[1px] transition-all duration-300 ${
-                                        isActive
-                                            ? "text-black"
-                                            : "text-[#7A7268] hover:text-black"
-                                    }`
-                                }
-                            >
-                                {item.label}
-                            </NavLink>
-                        ))}
-                    </div> */}
                     <div className="hidden lg:flex items-center gap-5">
 
                         {navLinks.map((item) => (
@@ -117,7 +80,7 @@ const Navbar = () => {
 
                                         <div className="category-dropdown-menu">
 
-                                            {categories.map((category) => (
+                                            {categoriesBanner.map((category) => (
 
                                                 <Link
                                                     key={category.id}
@@ -172,43 +135,6 @@ const Navbar = () => {
                         : "-translate-y-10 opacity-0 invisible"
                         }`}
                 >
-                    {/* <div className="flex flex-col gap-3">
-
-                        <div className="mobile-category">
-                            <p className="mobile-category-title">
-                                Categories
-                            </p>
-
-                            <div className="mobile-category-list">
-                                {categories.map((category) => (
-                                    <Link
-                                        key={category.id}
-                                        to={`/categories/${category.slug}`}
-                                        onClick={() => setIsOpen(false)}
-                                        className="mobile-category-item"
-                                    >
-                                        {category.slug}
-                                    </Link>
-                                ))}
-                            </div>
-                        </div>
-
-                        {navLinks.map((item) => (
-                            <NavLink
-                                key={item.path}
-                                to={item.path}
-                                onClick={() => setIsOpen(false)}
-                                className="text-[11px] uppercase tracking-[1px] text-[#7A7268]"
-                            >
-                                {item.label}
-                            </NavLink>
-                        ))}
-
-                        <button className="nav-btn">
-                            ENQUIRE NOW
-                        </button>
-
-                    </div> */}
                     <div className="flex flex-col gap-3">
                         {navLinks.map((item) => (
                             item.type === "scroll" ? (
@@ -233,7 +159,7 @@ const Navbar = () => {
                                             {item.label}
                                         </p>
                                         <div className="mobile-category-list">
-                                            {categories.map((category) => (
+                                            {categoriesBanner.map((category) => (
                                                 <Link
                                                     key={category.id}
                                                     to={`/categories/${category.slug}`}

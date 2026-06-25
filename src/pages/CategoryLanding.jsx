@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-import { categories } from "@/data/categoryType/categories";
+import { categoriesBanner } from "@/data/categoryType/categoriesBanner";
 
 import CategoryHero from "@/components/categoryType/CategoryHero";
 import CategoryAbout from "@/components/categoryType/CategoryAbout";
@@ -12,7 +12,7 @@ import SubcategorySwiper from "@/components/categoryType/SubcategorySwiper";
 const CategoryLanding = () => {
   const { category } = useParams();
 
-  const categoryData = categories.find(
+  const categoryData = categoriesBanner.find(
     (item) => item.slug === category
   );
 

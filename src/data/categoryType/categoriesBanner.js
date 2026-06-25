@@ -1,6 +1,6 @@
 import towelHero from "@/assets/images/towel/towel-hero.png";
 
-export const categories = [
+export const categoriesBanner = [
     {
         id: 1,
         slug: "towels",

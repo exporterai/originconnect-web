@@ -6,13 +6,13 @@ import LetsConnect from "@/components/categories/LetsConnect";
 
 const Categories = () => {
   return(
-    <>
+    <div className="categories">
     <CategoriesHero/>
     <CategoriesSwiper/>
     <ExpansionRoadmap/>
     <HowCategoriesEnterEcosystem/>
     <LetsConnect/>
-    </>
+    </div>
   )
 };
 

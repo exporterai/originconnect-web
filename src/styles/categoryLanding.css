@@ -715,14 +715,6 @@
     height: 400px;
   }
 
-  /* .subCategoryCard-image {
-    height: 400px;
-  } */
-
-  /* .subCategoryCard-content {
-    bottom: 40px;
-  } */
-
   .subCategoryCard-title {
     font-size: 28px;
   }
@@ -731,11 +723,6 @@
     width: 100%;
     justify-content: center;
   }
-
-  /* .subcategorySwiper .swiper-button-prev,
-  .subcategorySwiper .swiper-button-next {
-    display: none;
-  } */
   .subcategorySwiper .swiper-horizontal>.swiper-pagination-bullets,
   .subcategorySwiper .swiper-pagination-bullets.swiper-pagination-horizontal {
     width: 100%;
