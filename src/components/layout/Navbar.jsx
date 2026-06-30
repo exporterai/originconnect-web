@@ -9,16 +9,30 @@ const navLinks = [
         path: "/aboutUs",
         type: "link",
     },
-
     {
         label: "Products",
         path: "/products",
         type: "link",
+        // type: "dropdown",
+        // children: [
+        //     {
+        //         label: "Cotton Fabric",
+        //         path: "/products/cotton-fabric",
+        //     },
+        //     {
+        //         label: "Polyester Fabric",
+        //         path: "/products/polyester-fabric",
+        //     },
+        // ],
     },
-
     {
         label: "Categories",
+        path: "/categories", // Parent page
         type: "dropdown",
+        children: categoriesBanner.map((category) => ({
+            label: category.menuTitle || category.slug,
+            path: `/categories/${category.slug}`,
+        })),
     },
     {
         label: "Services",
@@ -67,49 +81,41 @@ const Navbar = () => {
                                 </button>
                             ) :
                                 item.type === "dropdown" ? (
+                                    <div key={item.label} className="category-dropdown">
 
-                                    <div
-                                        key={item.label}
-                                        className="category-dropdown"
-                                    >
-
-                                        <button className="category-dropdown-btn">
+                                        <Link to={item.path} className="category-dropdown-btn">
                                             {item.label}
                                             <ChevronDown size={14} />
-                                        </button>
+                                        </Link>
 
                                         <div className="category-dropdown-menu">
-
-                                            {categoriesBanner.map((category) => (
-
+                                            {item.children?.map((child) => (
                                                 <Link
-                                                    key={category.id}
-                                                    to={`/categories/${category.slug}`}
+                                                    key={child.path}
+                                                    to={child.path}
                                                     className="category-dropdown-item"
                                                 >
-                                                    {category.menuTitle || category.slug}
+                                                    {child.label}
                                                 </Link>
-
                                             ))}
-
                                         </div>
 
                                     </div>
-
-                                ) : (
-                                    <NavLink
-                                        key={item.path}
-                                        to={item.path}
-                                        className={({ isActive }) =>
-                                            `text-[12px] uppercase tracking-[1px] transition-all duration-300 ${isActive
-                                                ? "text-black"
-                                                : "text-[#7A7268] hover:text-black"
-                                            }`
-                                        }
-                                    >
-                                        {item.label}
-                                    </NavLink>
                                 )
+                                    : (
+                                        <NavLink
+                                            key={item.path}
+                                            to={item.path}
+                                            className={({ isActive }) =>
+                                                `text-[12px] uppercase tracking-[1px] transition-all duration-300 ${isActive
+                                                    ? "text-black"
+                                                    : "text-[#7A7268] hover:text-black"
+                                                }`
+                                            }
+                                        >
+                                            {item.label}
+                                        </NavLink>
+                                    )
                         ))}
                     </div>
                     <div className="hidden lg:block">
@@ -151,37 +157,43 @@ const Navbar = () => {
                             )
                                 :
                                 item.type === "dropdown" ? (
-                                    <div
-                                        key={item.label}
-                                        className="mobile-category"
-                                    >
-                                        <p className="mobile-category-title">
+                                    <div key={item.label} className="mobile-category">
+
+                                        <Link
+                                            to={item.path}
+                                            onClick={() => setIsOpen(false)}
+                                            className="mobile-category-title"
+                                        >
                                             {item.label}
-                                        </p>
+                                        </Link>
+
                                         <div className="mobile-category-list">
-                                            {categoriesBanner.map((category) => (
+                                            {item.children?.map((child) => (
                                                 <Link
-                                                    key={category.id}
-                                                    to={`/categories/${category.slug}`}
+                                                    key={child.path}
+                                                    to={child.path}
                                                     onClick={() => setIsOpen(false)}
                                                     className="mobile-category-item"
                                                 >
-                                                    <MoveRight size={16} />  <span>{category.menuTitle || category.slug}</span>
+                                                    <MoveRight size={16} />
+                                                    <span>{child.label}</span>
                                                 </Link>
                                             ))}
                                         </div>
-                                    </div>
-                                ) : (
 
-                                    <NavLink
-                                        key={item.path}
-                                        to={item.path}
-                                        onClick={() => setIsOpen(false)}
-                                        className="text-[11px] uppercase tracking-[1px] text-[#7A7268]"
-                                    >
-                                        {item.label}
-                                    </NavLink>
+                                    </div>
                                 )
+                                    : (
+
+                                        <NavLink
+                                            key={item.path}
+                                            to={item.path}
+                                            onClick={() => setIsOpen(false)}
+                                            className="text-[11px] uppercase tracking-[1px] text-[#7A7268]"
+                                        >
+                                            {item.label}
+                                        </NavLink>
+                                    )
                         ))}
                     </div>
                 </div>

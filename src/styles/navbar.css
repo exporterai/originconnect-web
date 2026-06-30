@@ -29,7 +29,7 @@
 .category-dropdown-btn {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
 
   font-size: 12px;
   text-transform: uppercase;
@@ -108,12 +108,13 @@
   text-transform: uppercase;
   color: #2C2825;
   margin-bottom: 10px;
+  display: block;
 }
 
 .mobile-category-list {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 7px;
   margin-left: 10px;
   border-bottom: 1px solid rgba(44,40,37,.08);
   padding-bottom: 7px;
