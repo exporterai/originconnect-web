@@ -1,5 +1,5 @@
-import towel from "@/assets/images/towel/hotel-towel.png";
-import bedsheet from "@/assets/images/towel/pool-towel.png";
+import towel from "@/assets/images/towel/hotel-towel.webp";
+import bedsheet from "@/assets/images/towel/pool-towel.webp";
 
 
 export const categories = [

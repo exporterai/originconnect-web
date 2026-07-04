@@ -58,6 +58,7 @@ function CategoryPrivateLabel() {
                   <img
                     src={item.image}
                     alt={item.label}
+                    loading='lazy'
                   />
 
                   <div className="privateLabelOverlay">

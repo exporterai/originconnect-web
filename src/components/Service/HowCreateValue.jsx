@@ -1,8 +1,8 @@
 import React from 'react'
-import howCreateValue1 from '@/assets/images/service/howCreateValue1.png'
-import howCreateValue2 from '@/assets/images/service/howCreateValue2.png'
-import howCreateValue3 from '@/assets/images/service/howCreateValue3.png'
-import howCreateValue4 from '@/assets/images/service/howCreateValue4.png'
+import howCreateValue1 from '@/assets/images/service/howCreateValue1.webp'
+import howCreateValue2 from '@/assets/images/service/howCreateValue2.webp'
+import howCreateValue3 from '@/assets/images/service/howCreateValue3.webp'
+import howCreateValue4 from '@/assets/images/service/howCreateValue4.webp'
 import { ChartNoAxesCombined, Hospital, Tag, UsersRound } from 'lucide-react'
 
 const howCreateValueContent = [
@@ -93,6 +93,7 @@ function HowCreateValue() {
                     src={item.image}
                     alt={item.title}
                     className="howCreateValue-image"
+                    loading='lazy'
                   />
                 </div>
                 <div className="howCreateValue-pointer">

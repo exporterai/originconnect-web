@@ -1,10 +1,10 @@
 import React from 'react'
-import aboutUsOurStoryImg from '@/assets/images/about/AboutUs-ourstory.png'
+import aboutUsOurStoryImg from '@/assets/images/about/AboutUs-ourstory.webp'
 import { Globe, Package, TextSearch, UsersRound } from 'lucide-react'
 
 const ourStoryContent = [
     {
-        icon:TextSearch,
+        icon: TextSearch,
         para: "Finding the right manufacturing partner can be time-consuming and uncertain."
     },
     {
@@ -31,7 +31,7 @@ function OurStory() {
                         </span>
                         <div>
                             <h2 className="heading dark-heading mb-5">
-                               Bridging The Gap. Creating Global Opportunities.
+                                Bridging The Gap. Creating Global Opportunities.
                             </h2>
 
                             {/* <p className="description dark-description max-w-[650px] mx-auto">
@@ -41,7 +41,11 @@ function OurStory() {
                     </div>
                     <div className="ourStory-grid">
                         <div className="ourStory-image">
-                            <img src={aboutUsOurStoryImg} alt="aboutUsOurStoryImg" />
+                            <img
+                                src={aboutUsOurStoryImg}
+                                alt="aboutUsOurStoryImg"
+                                loading='lazy'
+                            />
                         </div>
                         {ourStoryContent.map((item, index) => (
                             <div className="ourStory-card" key={index}>

@@ -1,8 +1,8 @@
-import homeHero from "@/assets/images/home/home-hero.png";
-import homeHero1 from "@/assets/images/home/home-hero1.png";
-import homeHero2 from "@/assets/images/home/home-hero2.png";
-import homeHero3 from "@/assets/images/home/home-hero3.png";
-import homeHero4 from "@/assets/images/home/home-hero4.png";
+import homeHero from "@/assets/images/home/home-hero.webp";
+import homeHero1 from "@/assets/images/home/home-hero1.webp";
+import homeHero2 from "@/assets/images/home/home-hero2.webp";
+import homeHero3 from "@/assets/images/home/home-hero3.webp";
+import homeHero4 from "@/assets/images/home/home-hero4.webp";
 
 export const homeHeroSlides = [
   {

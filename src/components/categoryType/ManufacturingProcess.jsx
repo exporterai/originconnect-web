@@ -45,6 +45,7 @@ const ManufacturingProcess = ({ category }) => {
                   src={item.image}
                   alt={item.title}
                   className="process-image"
+                    loading='lazy'
                 />
 
                 <div className="process-overlay"></div>

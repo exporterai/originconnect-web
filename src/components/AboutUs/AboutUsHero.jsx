@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutUsHeroImg from '@/assets/images/about/AboutUs-hero.png'
+import aboutUsHeroImg from '@/assets/images/about/AboutUs-hero.webp'
 
 function AboutUsHero() {
   return (

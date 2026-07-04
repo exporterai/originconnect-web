@@ -1,11 +1,11 @@
-import aboutTowel1 from "@/assets/images/towel/about-towel1.png";
-import aboutTowel2 from "@/assets/images/towel/about-towel2.png";
-import aboutTowel3 from "@/assets/images/towel/about-towel3.png";
+import aboutTowel1 from "@/assets/images/towel/about-towel1.webp";
+import aboutTowel2 from "@/assets/images/towel/about-towel2.webp";
+import aboutTowel3 from "@/assets/images/towel/about-towel3.webp";
 
-import towelStep1 from "@/assets/images/towel/towel-step1.jpg";
-import towelStep2 from "@/assets/images/towel/towel-step2.jpg";
-import towelStep3 from "@/assets/images/towel/towel-step3.jpg";
-import towelStep4 from "@/assets/images/towel/towel-step4.jpg";
+import towelStep1 from "@/assets/images/towel/towel-step1.webp";
+import towelStep2 from "@/assets/images/towel/towel-step2.webp";
+import towelStep3 from "@/assets/images/towel/towel-step3.webp";
+import towelStep4 from "@/assets/images/towel/towel-step4.webp";
 
 export const categoryContent = {
   towels: {

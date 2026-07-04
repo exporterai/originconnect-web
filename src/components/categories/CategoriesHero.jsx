@@ -1,6 +1,6 @@
 import React from 'react'
-// import categoriesHero from "@/assets/images/categories/categories-hero1.png";
-import categoriesHero from "@/assets/images/categories/categories-hero.png";
+// import categoriesHero from "@/assets/images/categories/categories-hero1.webp";
+import categoriesHero from "@/assets/images/categories/categories-hero.webp";
 
 function CategoriesHero() {
   return (

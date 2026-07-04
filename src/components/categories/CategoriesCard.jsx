@@ -14,6 +14,7 @@ function CategoriesCard({
           src={item.image}
           alt={item.title}
           className="categoriesCard-image"
+          loading='lazy'
         />
 
         <div className="categoriesCard-overlay"></div>

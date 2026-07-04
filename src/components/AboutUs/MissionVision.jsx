@@ -1,6 +1,6 @@
 import React from 'react'
-// import missionVisionBg from "@/assets/images/about/missionVisionBg.png";
-import missionVisionBg from "@/assets/images/about/msisionVisionBg1.png";
+// import missionVisionBg from "@/assets/images/about/missionVisionBg.webp";
+import missionVisionBg from "@/assets/images/about/msisionVisionBg1.webp";
 
 const missionVisionContent = [
   {

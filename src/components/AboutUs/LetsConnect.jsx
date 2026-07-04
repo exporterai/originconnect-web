@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import letsConnectBg from "@/assets/images/about/letsConnectBg.png";
+import letsConnectBg from "@/assets/images/about/letsConnectBg.webp";
 
 function LetsConnect() {
     return (

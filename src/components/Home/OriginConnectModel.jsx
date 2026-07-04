@@ -20,7 +20,12 @@ function OriginConnectModel() {
                             </p> */}
                     </div>
                     <div className="text-center mt-5">
-                        <img src={originConnectModel} alt="originConnectModel" className='w-full' />
+                        <img
+                            src={originConnectModel}
+                            alt="originConnectModel"
+                            className='w-full'
+                            loading='lazy'
+                        />
                     </div>
                 </div>
             </section>

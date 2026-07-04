@@ -1,6 +1,6 @@
 import React from 'react'
-import homeBuyer from '@/assets/images/home/homeBuyer.png'
-import homeManufactorer from '@/assets/images/home/homeManufactorer.png'
+import homeBuyer from '@/assets/images/home/homeBuyer.webp'
+import homeManufactorer from '@/assets/images/home/homeManufactorer.webp'
 import { Link } from 'react-router-dom'
 
 const whoWeServeContent = [
@@ -32,11 +32,11 @@ function WhoWeServe() {
                         </span>
                         <div>
                             <h2 className="heading dark-heading mb-5">
-Built For Buyers & Manufacturers
+                                Built For Buyers & Manufacturers
                             </h2>
                             <p className="description dark-description max-w-[650px] mx-auto">
-                                Whether you're sourcing quality products or expanding your manufacturing reach, 
-    we help you connect, grow, and build long-term global partnerships.
+                                Whether you're sourcing quality products or expanding your manufacturing reach,
+                                we help you connect, grow, and build long-term global partnerships.
                             </p>
                         </div>
                     </div>
@@ -48,6 +48,7 @@ Built For Buyers & Manufacturers
                                         src={item.image}
                                         alt={item.title}
                                         className="whoWeServe-image"
+                                        loading='lazy'
                                     />
                                 </div>
 

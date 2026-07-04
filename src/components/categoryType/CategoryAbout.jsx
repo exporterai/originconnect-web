@@ -41,6 +41,7 @@ const CategoryAbout = ({ category }) => {
                                 src={step.image}
                                 alt={step.title}
                                 className="about-card-image"
+                                loading='lazy'
                             />
 
                             {/* Default Gradient */}

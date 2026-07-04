@@ -8,6 +8,7 @@ function ProductCard({ item }) {
                 <img
                     src={item.image}
                     alt={item.title}
+                    loading='lazy'
                 />
                 <span className="productCard-label">
                     {item.label}

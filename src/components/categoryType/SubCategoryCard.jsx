@@ -15,6 +15,7 @@ function SubCategoryCard({
           src={item.image}
           alt={item.title}
           className="subCategoryCard-image"
+          loading='lazy'
         />
 
         <div className="subCategoryCard-overlay"></div>

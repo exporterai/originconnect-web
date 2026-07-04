@@ -1,17 +1,17 @@
-import hotelTowel from "@/assets/images/product/hotel-towel.png";
-import spaTowel from "@/assets/images/product/spa-towel.png";
-import resortTowel from "@/assets/images/product/resort-towel.png";
-import poolTowel from "@/assets/images/product/pool-towel.png";
-import gymTowel from "@/assets/images/product/gym-towel.png";
-import bathrobes from "@/assets/images/product/bathrobes.png";
-import handTowel from "@/assets/images/product/hand-towel.png";
-import faceTowel from "@/assets/images/product/face-towel.png";
-import bathTowel from "@/assets/images/product/bath-towel.png";
-import beachTowel from "@/assets/images/product/beach-towel.png";
-import kitchenTowel from "@/assets/images/product/kitchen-towel.png";
-import teaTowel from "@/assets/images/product/tea-towel.png";
-import babyTowel from "@/assets/images/product/baby-towel.png";
-import microfiberTowel from "@/assets/images/product/microfiber-towel.png";
+import hotelTowel from "@/assets/images/product/hotel-towel.webp";
+import spaTowel from "@/assets/images/product/spa-towel.webp";
+import resortTowel from "@/assets/images/product/resort-towel.webp";
+import poolTowel from "@/assets/images/product/pool-towel.webp";
+import gymTowel from "@/assets/images/product/gym-towel.webp";
+import bathrobes from "@/assets/images/product/bathrobes.webp";
+import handTowel from "@/assets/images/product/hand-towel.webp";
+import faceTowel from "@/assets/images/product/face-towel.webp";
+import bathTowel from "@/assets/images/product/bath-towel.webp";
+import beachTowel from "@/assets/images/product/beach-towel.webp";
+import kitchenTowel from "@/assets/images/product/kitchen-towel.webp";
+import teaTowel from "@/assets/images/product/tea-towel.webp";
+import babyTowel from "@/assets/images/product/baby-towel.webp";
+import microfiberTowel from "@/assets/images/product/microfiber-towel.webp";
 
 export const products = [
     {

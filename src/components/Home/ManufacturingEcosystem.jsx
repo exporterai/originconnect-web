@@ -1,6 +1,6 @@
 import React from 'react'
-import ManufacturingEcosystem1 from '@/assets/images/home/ManufacturingEcosystem-1.png'
-import ManufacturingEcosystem2 from '@/assets/images/home/ManufacturingEcosystem-2.png'
+import ManufacturingEcosystem1 from '@/assets/images/home/ManufacturingEcosystem-1.webp'
+import ManufacturingEcosystem2 from '@/assets/images/home/ManufacturingEcosystem-2.webp'
 import { Link } from 'react-router-dom'
 
 const manufacturingEcosystem = [
@@ -51,6 +51,7 @@ function ManufacturingEcosystem() {
                                         src={item.image}
                                         alt={item.title}
                                         className="manufacturingEcosystem-image"
+                                        loading='lazy'
                                     />
 
                                     <div className="manufacturingEcosystem-overlay"></div>

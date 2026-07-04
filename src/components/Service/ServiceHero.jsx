@@ -1,5 +1,5 @@
 import React from 'react'
-import serviceHero from "@/assets/images/service/service-hero.png";
+import serviceHero from "@/assets/images/service/service-hero.webp";
 
 function ServiceHero() {
   return (

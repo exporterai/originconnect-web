@@ -1,4 +1,4 @@
-import towelHero from "@/assets/images/towel/towel-hero.png";
+import towelHero from "@/assets/images/towel/towel-hero.webp";
 
 export const categoriesBanner = [
     {
