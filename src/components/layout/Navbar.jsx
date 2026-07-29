@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, ChevronDown, MoveRight } from "lucide-react";
 import { categoriesBanner } from "@/data/categoryType/categoriesBanner";
+import logo from "@/assets/images/logoOC.svg";
 
 const navLinks = [
     {
@@ -60,16 +61,27 @@ const Navbar = () => {
     return (
         <header className="sticky top-0 left-0 right-0 z-50 bg-[#F5F1ECE0] backdrop-blur-md border-b border-black/5">
             <nav className="container relative">
-
                 <div className="flex lg:h-15 h-12 items-center justify-between">
-
-                    <Link to="/" id="logo">
+                    {/* <Link to="/" id="logo">
                         Origin Connect
+                    </Link> */}
+                    <Link
+                        to="/"
+                        className="navbar-logo"
+                    >
+                        <img
+                            src={logo}
+                            alt="Origin Connect"
+                            className="navbar-logo-image"
+                        />
+                        <div className="navbar-logo-content">
+                            <span className="navbar-logo-title"id="logo">
+                                Origin Connect
+                            </span>
+                        </div>
                     </Link>
-
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex items-center gap-5">
-
                         {navLinks.map((item) => (
                             item.type === "scroll" ? (
                                 <button
