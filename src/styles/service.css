@@ -1,0 +1,455 @@
+.service .category-tag {
+  font-weight: 700;
+  font-family: 'Jost', serif;
+  /* color: #FFFFFF; */
+  color: #e7e7e7;
+}
+
+.service .light-bg .category-tag {
+  color: #7a634e ;
+}
+
+
+/* ==========================
+  Service Hero  
+========================== */
+.serviceHero-wrapper {
+  position: relative;
+  min-height: 400px;
+  overflow: hidden;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.serviceHero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.serviceHero .overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(14, 12, 10, 0.98) 0%, rgba(14, 12, 10, 0.75232) 11.54%, rgba(14, 12, 10, 0.6) 29.81%, rgba(14, 12, 10, 0) 46.63%);
+}
+
+/* ==========================
+  Service HowCreateValue  
+========================== */
+.service .howCreateValue-grid {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* CARD */
+.service .howCreateValue-card {
+  border: 1px solid #BEAA97;
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all .3s ease;
+  height: 100%;
+}
+
+.service .howCreateValue-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .07);
+}
+
+/* ==========================
+TOP CONTENT
+========================== */
+.service .howCreateValue-content {
+  padding: 20px 16px;
+  text-align: center;
+  min-height: 230px;
+
+}
+
+.service .howCreateValue-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 1.14px solid #987C62;
+  background: #f8f5f5;
+  color: #987C62;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.service .howCreateValue-icon .icon-svg {
+  width: 26px;
+  height: 26px;
+}
+
+/* TITLE */
+.service .howCreateValue-content h3 {
+  font-size: 16px;
+  font-weight: 550;
+  line-height: 1.2;
+  color: #0B192D;
+  margin-bottom: 10px;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* PARA */
+.service .howCreateValue-content p {
+  color: #4B5563;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ==========================
+IMAGE
+========================== */
+.service .howCreateValue-image-wrapper {
+  width: 100%;
+  height: 185px;
+}
+
+.service .howCreateValue-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================
+BOTTOM POINTER
+========================== */
+.service .howCreateValue-pointer {
+  padding: 24px;
+}
+
+.service .howCreateValue-pointer h4 {
+  /* text-align: center; */
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service .howCreateValue-pointer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.service .howCreateValue-pointer li {
+  position: relative;
+  padding-left: 18px;
+  color: #3E4145;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* GOLDEN DOT */
+.service .howCreateValue-pointer li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #62503F;
+}
+
+/* ==========================
+  Service HOW WORK TOGETHER  
+========================== */
+.service .howWorkTogether-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+}
+
+/* EACH ITEM */
+.service .howWorkTogether-grid>div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD */
+.service .howWorkTogether-card {
+  max-width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* ICON */
+.service .howWorkTogether-card .icon {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #987C62;
+  margin-bottom: 10px;
+}
+
+.service .howWorkTogether-card .icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* STEP */
+.service .howWorkTogether-card .step {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  color: #efebe7;
+  margin-bottom: 10px;
+}
+
+/* TITLE */
+.service .howWorkTogether-card h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* PARA */
+.service .howWorkTogether-card p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: center;
+  color: #e7e7e7;
+}
+
+/* ==========================
+ARROW
+========================== */
+.service .howWorkTogether-grid .arrow-wrapper {
+  position: absolute;
+  top: 15px;
+  right: -18px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service .howWorkTogether-grid .arrow {
+  color: rgba(255, 255, 255, .9);
+  font-size: 40px;
+  line-height: 1;
+}
+
+/* ==========================
+  Service Lets Connect
+========================== */
+.service .letsConnect-wrapper {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  width: 100%;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.service .letsConnect-content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.service .letsConnect-heading-border {
+  width: 120px;
+  border: 1px solid #80664E;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.service .letsConnect-btn {
+  border: none;
+  background: #886f58 ;
+  color: #fcfcfc;
+  padding: 9px 15px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.service .letsConnect-btn span {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #F3F3F3;
+  color: #80664E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service .letsConnect-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, .15);
+}
+
+/* ==========================
+  RESPONSIVE
+========================== */
+@media (max-width:1200px) {
+  .service .howWorkTogether-grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+  }
+}
+
+@media (max-width:992px) {
+  .service .howCreateValue-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service .howCreateValue-content {
+    min-height: 200px;
+  }
+
+  .service .howCreateValue-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .service .howCreateValue-icon .icon-svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width:768px) {
+  .serviceHero .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(125deg, rgba(14, 12, 10, 0.98) 0%, rgba(14, 12, 10, 0.75232) 11.54%, rgba(14, 12, 10, 0.6) 39.81%, rgba(14, 12, 10, 0) 66.63%);
+  }
+
+  .serviceHero-content {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .service .letsConnect-content {
+    max-width: 400px;
+  }
+
+  .service .letsConnect-btn {
+    font-size: 11px;
+  }
+
+  .service .howWorkTogether-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+  }
+
+  .service .howWorkTogether-card {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .service .howWorkTogether-card .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .service .howWorkTogether-card .icon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .service .howWorkTogether-card h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .service .howCreateValue-content {
+        min-height: 210px;
+    }
+}
+
+@media (max-width:576px) {
+  .service .letsConnect-btn {
+    padding: 5px 12px;
+    font-size: 10px;
+  }
+
+  .service .howCreateValue-grid {
+    grid-template-columns: 1fr;
+  }
+.service .howCreateValue-content {
+        min-height: 160px;
+    }
+  .service .howWorkTogether-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service .howWorkTogether-card {
+    margin-bottom: 10px;
+    max-width: 300px;
+  }
+
+  .service .howWorkTogether-card .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .service .howWorkTogether-card .icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .service .howWorkTogether-card h3 {
+    font-size: 16px;
+  }
+
+  .service .howWorkTogether-grid>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service .howWorkTogether-grid .arrow-wrapper {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 25px;
+  }
+
+}
+
+@media (max-width:480px) {}
+
+@media (max-width:400px) {}

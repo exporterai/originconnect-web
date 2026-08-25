@@ -1,0 +1,1687 @@
+/* =========================
+   CONTACT HERO
+========================= */
+
+.contactHero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* Dark Overlay */
+.contactHero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg,
+            rgba(0, 0, 0, 0.92) 0%,
+            rgba(0, 0, 0, 0.82) 22%,
+            rgba(0, 0, 0, 0.25) 45%,
+            /* rgba(0, 0, 0, 0.25) 65%, */
+            rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+}
+
+.contactHero .container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.contactHero-content {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* =========================
+   TAG
+========================= */
+
+.contactHero-tag {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #d6a84c;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.contactHero-tag::before {
+    content: "";
+    width: 35px;
+    height: 2px;
+    background: #d6a84c;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.contactHero-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contactHero-title span {
+    display: block;
+    line-height: 1.05;
+    /* font-family: "Cormorant Garamond", serif; */
+}
+
+.contactHero-title span:first-child {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 500;
+}
+
+.contactHero-title span:last-child {
+    color: #d6a84c;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 500;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.contactHero-description {
+    max-width: 500px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin: 5px 0px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.contactHero-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contactHero-actions .btnPrimary,
+.contactHero-actions .btnSecondary {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 550;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    border-radius: 4px;
+}
+
+.contactHero-actions .btnPrimary {
+    border: none;
+    background: #d6a84c;
+    color: #111;
+}
+
+.contactHero-actions .btnPrimary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(214, 168, 76, 0.3);
+}
+
+.contactHero-actions .btnSecondary {
+    border: 1px solid #d6a84c;
+    background: transparent;
+    color: #ffffff;
+}
+
+.contactHero-actions .btnSecondary:hover {
+    background: #d6a84c;
+    color: #111;
+}
+
+/* =========================
+   OFFICE SECTION
+========================= */
+
+.officeSection {
+    position: relative;
+}
+
+/* ===================================
+   OFFICE SECTION HEADER
+=================================== */
+
+.officeSection-header {
+    max-width: 760px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.officeSection-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #896229;
+    margin-bottom: 6px;
+}
+
+.officeSection-tag::before,
+.officeSection-tag::after {
+    content: "";
+    width: 32px;
+    height: 2px;
+    background: #896229 ;
+}
+
+.officeSection-title {
+    margin: 0;
+    /* font-family: "Playfair Display", serif; */
+    font-size: 46px;
+    line-height: 1.15;
+    color: #1a1a1a;
+}
+
+.officeSection-description {
+    margin: 10px auto 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #5f5f5f;
+}
+
+.officeSection-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.officeCard {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    display: flex;
+    align-items: stretch;
+    background: #fdfcf9;
+    border: 1px solid #efe7db;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.18);
+    transition: all 0.35s ease;
+}
+
+.officeCard:hover {
+    border-color: #dfcfb7;
+    box-shadow:
+        0 8px 18px rgba(181, 130, 56, 0.18);
+    transform: translateY(-5px);
+}
+
+
+/* =========================================================
+   OFFICE / ADDRESS SECTION
+========================================================= */
+
+.officeCard-address {
+    flex: 0 0 346px;
+    width: 346px;
+    min-width: 346px;
+    max-width: 346px;
+    padding: 24px 28px;
+    border-right: 1px solid #eee5d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+/* =========================================================
+   OFFICE TITLE
+========================================================= */
+
+.officeCard-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 0;
+    margin-bottom: 2px;
+}
+
+.officeCard-flag {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.10);
+}
+
+.officeCard-title h3 {
+    margin: 0;
+    min-width: 0;
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1a1a1a;
+}
+
+/* =========================================================
+   ADDRESS / WEBSITE INFO
+========================================================= */
+
+.officeInfoBlock {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    min-width: 0;
+}
+
+.officeInfoBlock>div {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.officeInfoBlock svg {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    padding: 7px;
+    border-radius: 50%;
+    color: #b58238;
+    background: #faf4eb;
+    border: 1px solid #ebdcc9;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.officeInfoLabel {
+    display: block;
+    margin: 0 0 2px;
+    font-family:
+        "DM Sans",
+        sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #91682c ;
+}
+
+.officeInfoBlock p,
+.officeInfoBlock a {
+    margin: 0;
+    font-family:
+        "DM Sans",
+        sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+.officeInfoBlock a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.officeInfoBlock a:hover {
+    color: #b58238;
+    text-decoration: underline;
+}
+
+/* =========================================================
+   RIGHT CONTACT AREA
+========================================================= */
+
+.officeCard-right {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    align-items: flex-start;
+    padding:
+        24px 35px 24px 28px;
+    gap: 32px;
+}
+
+/* =========================================================
+   CONTACT GROUP
+========================================================= */
+
+.contactGroup {
+    flex: 1 1 auto;
+    min-width: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactGroup:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -16px;
+    /* top: 18px; */
+    top: 4px;
+    width: 1px;
+    /* height: calc(100% - 36px); */
+    height: 100%;
+    background: #eee5d8;
+}
+
+/* =========================================================
+   GROUP HEADING
+========================================================= */
+
+.groupHeading {
+    margin: 0 0 12px;
+    font-family:
+        "DM Sans",
+        sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #91682c ;
+    line-height: 40px;
+}
+
+/* =========================================================
+   CONTACT GRID
+========================================================= */
+
+.contactGrid {
+    width: 100%;
+    min-width: 0;
+    display: grid !important;
+    align-items: start;
+    gap: 18px;
+}
+
+/* =========================================================
+   CONTACT CARD
+========================================================= */
+
+.officeContactCard {
+    position: relative;
+    min-width: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* Vertical divider between multiple primary contacts */
+
+.contactGrid .officeContactCard:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -9px;
+    top: -2px;
+    width: 1px;
+    height: calc(100% + 8px);
+    background: #eee5d8;
+}
+
+
+/* =========================================================
+   CONTACT HEADER
+========================================================= */
+
+.officeContactHeader {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.officeContactHeader>div:last-child {
+    min-width: 0;
+}
+
+/* =========================================================
+   USER ICON
+========================================================= */
+
+.officeContactIcon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 50%;
+    background: #faf4eb;
+    border: 1px solid #ebdcc9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b58238;
+    flex-shrink: 0;
+}
+
+.officeContactIcon svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* =========================================================
+   CONTACT NAME
+========================================================= */
+
+.officeContactHeader h4 {
+    margin: 0;
+    min-width: 0;
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+    font-size: 15.5px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #1a1a1a;
+}
+
+.officeDesignation {
+    margin: 3px 0 0;
+    font-family:
+        "DM Sans",
+        sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #91682c ;
+}
+
+/* =========================================================
+   PHONE / EMAIL
+========================================================= */
+
+.officeContactInfo {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 0;
+}
+
+.officeContactInfo svg {
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    color: #b58238;
+    flex-shrink: 0;
+}
+
+.officeContactInfo span {
+    display: block;
+    min-width: 0;
+    max-width: 100%;
+    font-family:
+        "DM Sans",
+        sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #2b2b2b;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.officeContactLink {
+    display: block;
+    min-width: 0;
+    max-width: 100%;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+
+    color: #2b2b2b;
+    text-decoration: none;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    transition: color 0.25s ease;
+}
+
+.officeContactLink:hover {
+    color: #b58238;
+    text-decoration: underline;
+}
+
+.officeContactLink:focus-visible {
+    color: #b58238;
+}
+
+/* =========================================================
+   RIGHT GOLD ARROW
+========================================================= */
+
+.officeCardArrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 60px;
+    background:
+        linear-gradient(135deg,
+            #c7964b 0%,
+            #a47025 100%);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 5;
+    transition:
+        opacity 0.2s ease,
+        width 0.2s ease;
+}
+
+.officeCardArrow:hover {
+    opacity: 0.9;
+}
+
+.officeCardArrow svg {
+    width: 22px;
+    height: 22px;
+    color: #ffffff;
+}
+
+/* =========================
+   CONTACT FORM SECTION
+========================= */
+
+.contactFormSection {
+    background: #070707;
+}
+
+.contactFormGrid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.9fr;
+    gap: 25px;
+}
+
+/* =========================
+   COMMON CARD
+========================= */
+.contactFormCard,
+.contactHelpCard {
+    padding: 25px;
+    border-radius: 18px;
+    background:
+        linear-gradient(135deg,
+            rgba(15, 15, 15, 0.98),
+            rgba(22, 22, 22, 0.95));
+    border: 1px solid rgba(214, 168, 76, 0.15);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .04),
+        0 15px 40px rgba(0, 0, 0, .45);
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.contactFormCard h2,
+.contactHelpCard h2 {
+    position: relative;
+    color: #ffffff;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.contactFormCard h2::after,
+.contactHelpCard h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 46px;
+    height: 3px;
+    background: #d6a84c;
+}
+
+/* =========================
+   FORM
+========================= */
+.contactFormCard form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contactFormRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.contactFormCard input,
+.contactFormCard select,
+.contactFormCard textarea {
+    width: 100%;
+    padding: 12px 18px;
+    background: rgba(255, 255, 255, .02);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+
+.contactFormCard .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.contactFormCard input::placeholder,
+.contactFormCard textarea::placeholder {
+    color: rgba(255, 255, 255, .55);
+}
+
+.contactFormCard input:focus,
+.contactFormCard select:focus,
+.contactFormCard textarea:focus {
+    outline: none;
+    border-color: #d6a84c;
+    box-shadow:
+        0 0 0 3px rgba(214, 168, 76, .1);
+}
+
+.contactFormCard textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.originSelect__control {
+    min-height: 48px !important;
+    background: rgba(255, 255, 255, .02) !important;
+    border: 1px solid rgba(255, 255, 255, .1) !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+}
+
+.originSelect__control:hover {
+    border-color: #d6a84c !important;
+}
+
+.originSelect__control--is-focused {
+    border-color: #d6a84c !important;
+    box-shadow: 0 0 0 3px rgba(214, 168, 76, .1) !important;
+}
+
+.originSelect__single-value,
+.originSelect__input-container {
+    color: #fff !important;
+}
+
+.originSelect__placeholder {
+    color: rgba(255, 255, 255, .55) !important;
+}
+
+.originSelect__menu {
+    background: #111 !important;
+    border: 1px solid rgba(255, 255, 255, .08);
+    z-index: 9999 !important;
+}
+
+.originSelect__menu-list {
+    max-height: 220px !important;
+}
+
+.originSelect__option {
+    background: #111 !important;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.originSelect__option--is-focused {
+    background: rgba(214, 168, 76, .15) !important;
+}
+
+.originSelect__option--is-selected {
+    background: #d6a84c !important;
+    color: #111 !important;
+}
+
+.originSelect__indicator {
+    color: #d6a84c !important;
+}
+
+.originSelect__dropdown-indicator:hover {
+    color: #d6a84c !important;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.contactSubmitBtn {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 28px;
+    background: #d6a84c;
+    color: #111;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.contactSubmitBtn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 12px 30px rgba(214, 168, 76, .25);
+}
+
+/* =========================
+   HELP CARD
+========================= */
+
+.contactHelpList {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.contactHelpItem {
+    display: flex;
+    align-items: start;
+    gap: 18px;
+}
+
+.contactHelpIcon {
+    color: #d6a84c;
+    flex-shrink: 0;
+    padding-top: 5px;
+}
+
+.contactHelpItem h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.contactHelpItem p {
+    color: rgba(255, 255, 255, .75);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONSULTATION CTA
+========================= */
+
+.consultationCTA {
+    padding: 20px;
+}
+
+.consultationCTA-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px 30px;
+    background: linear-gradient(180deg,
+            #faf7f1 0%,
+            #f3e7d3 100%);
+    border: 1px solid rgba(214, 168, 76, 0.25);
+    border-radius: 14px;
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.consultationCTA-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.consultationCTA-icon {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d6a84c;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid rgba(214, 168, 76, 0.3);
+    box-shadow:
+        0 6px 20px rgba(214, 168, 76, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.consultationCTA-content h2 {
+    margin-bottom: 6px;
+    color: #1d1d1d;
+    font-size: clamp(1.1rem, 2vw, 2rem);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.consultationCTA-content p {
+    color: #555;
+    line-height: 1.7;
+    /* max-width: 650px; */
+    font-size: 18px;
+}
+
+.consultationCTA-divider {
+    width: 1px;
+    align-self: stretch;
+    background: rgba(214, 168, 76, 0.25);
+}
+
+.consultationCTA-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 260px;
+    padding: 14px 15px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #cf9c34 0%, #ce8c09 100%);
+    color: #fcfbfb;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.consultationCTA-btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 12px 30px rgba(214, 168, 76, 0.3);
+}
+
+/* =========================
+ DESKTOP
+========================= */
+
+@media (max-width: 1200px) {
+    .contactFormGrid {
+        gap: 24px;
+    }
+
+    .contactHelpItem h3 {
+        font-size: 1.2rem;
+    }
+
+    .consultationCTA-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .officeCard {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Address becomes full width */
+    .officeCard-address {
+        flex: 0 0 auto;
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        padding: 24px 28px;
+        border-right: none;
+        border-bottom: 1px solid #eee5d8;
+        display: grid;
+        grid-template-columns:
+            minmax(220px, 0.8fr) minmax(260px, 1fr) minmax(200px, 0.8fr);
+
+        align-items: center;
+        gap: 20px;
+    }
+
+    .officeCard-title {
+        margin: 0;
+    }
+
+    .officeInfoBlock {
+        min-width: 0;
+    }
+
+    /* Right contacts */
+    .officeCard-right {
+        width: 100%;
+        padding:
+            22px 35px 22px 28px;
+        gap: 28px;
+        flex-direction: row;
+    }
+
+    .contactGroup {
+        flex: 1 1 auto;
+        min-width: 0;
+        grid-template-columns:
+            repeat(2,
+                minmax(0, 1fr)) !important;
+    }
+
+
+    .contactGroup:not(:last-child)::after {
+        right: -14px;
+        top: 16px;
+        height: calc(100% - 20px);
+    }
+
+    .contactGrid:has(.officeContactCard:only-child) {
+        grid-template-columns:
+            minmax(0, 1fr) !important;
+    }
+
+    .officeContactCard {
+        min-width: 0;
+        gap: 7px;
+    }
+
+    .officeContactInfo span {
+        max-width: 100%;
+    }
+
+    .groupHeading {
+        line-height: 1.3;
+    }
+
+    .officeCardArrow {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .contactHero-description {
+        font-size: 1rem;
+    }
+
+    .officeSection-header {
+        margin-bottom: 40px;
+    }
+
+    .officeSection-title {
+        font-size: 38px;
+    }
+
+    .officeSection-description {
+        font-size: 15px;
+    }
+
+    .officeSection-wrapper {
+        gap: 16px;
+    }
+
+    .contactFormGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .contactHelpList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .contactFormCard,
+    .contactHelpCard {
+        padding: 28px;
+    }
+
+    .consultationCTA-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .consultationCTA-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .consultationCTA-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .officeCard-address {
+        grid-template-columns:
+            1fr 1fr;
+        gap: 18px 28px;
+        padding: 22px 24px;
+    }
+
+    .officeCard-title {
+        grid-column: 1 / -1;
+    }
+
+    .officeCard-right {
+        padding:
+            22px 48px 22px 24px;
+        gap: 22px;
+    }
+
+    .contactGrid {
+        gap: 14px !important;
+    }
+
+    .officeContactIcon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .officeContactHeader {
+        gap: 9px;
+    }
+
+    .officeContactHeader h4 {
+        font-size: 15px;
+    }
+
+    .officeDesignation {
+        font-size: 11.5px;
+    }
+
+    .officeContactInfo {
+        gap: 7px;
+    }
+
+    .officeContactInfo span {
+        font-size: 12px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .contactHero-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .contactHero-actions .btnPrimary,
+    .contactHero-actions .btnSecondary {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+
+    .officeSection-header {
+        margin-bottom: 34px;
+    }
+
+    .officeSection-tag {
+        font-size: 11px;
+        letter-spacing: 0.1em;
+    }
+
+    .officeSection-title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .officeSection-description {
+        font-size: 14px;
+        line-height: 1.7;
+        padding: 0 10px;
+    }
+
+    .officeSection-wrapper {
+        gap: 14px;
+    }
+
+    .contactFormCard,
+    .contactHelpCard {
+        padding: 24px;
+    }
+
+    .contactFormRow {
+        grid-template-columns: 1fr;
+    }
+
+    .contactFormCard h2,
+    .contactHelpCard h2 {
+        margin-bottom: 22px;
+    }
+
+    .contactFormCard input,
+    .contactFormCard select,
+    .contactFormCard textarea {
+        padding: 13px 16px;
+        font-size: 14px;
+    }
+
+    .contactSubmitBtn {
+        width: 100%;
+    }
+
+    .contactHelpItem h3 {
+        font-size: 1.1rem;
+    }
+
+    .contactHelpItem p {
+        font-size: 14px;
+    }
+
+    .consultationCTA-card {
+        padding: 22px;
+    }
+
+    .consultationCTA-content {
+        gap: 18px;
+    }
+
+    .consultationCTA-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .consultationCTA-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 668px) {
+    .officeCard {
+        display: block;
+        width: 100%;
+        border-radius: 14px;
+        overflow: hidden;
+    }
+
+    .officeCard-address {
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 14px;
+        border-right: none;
+        border-bottom: 1px solid #eee5d8;
+    }
+
+    .officeCard-title {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .officeCard-flag {
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px;
+    }
+
+    .officeCard-title h3 {
+        font-size: 19px;
+        line-height: 1.15;
+    }
+
+    .officeInfoBlock {
+        gap: 12px;
+    }
+
+    .officeInfoBlock svg {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        padding: 7px;
+    }
+
+    .officeInfoLabel {
+        font-size: 10px;
+    }
+
+    .officeInfoBlock p,
+    .officeInfoBlock a {
+        font-size: 12.5px;
+        line-height: 1.45;
+    }
+
+    .officeCard-right {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .contactGroup {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .contactGroup:not(:last-child)::after {
+        right: 0px;
+        top: 110%;
+        width: 100%;
+        height: 1px;
+    }
+
+    .groupHeading {
+        margin-bottom: 12px;
+        font-size: 10px;
+    }
+
+    .contactGrid {
+        width: 100%;
+        grid-template-columns:
+            repeat(2,
+                minmax(0, 1fr)) !important;
+        gap: 14px !important;
+    }
+
+    .officeContactCard {
+        width: 100%;
+        min-width: 0;
+        padding: 0;
+    }
+
+    .contactGrid .officeContactCard:not(:last-child)::after {
+        right: -7px;
+        top: 0;
+        height: 100%;
+    }
+
+    .contactGroup:nth-child(2) .groupHeading {
+        margin-top: 10px;
+    }
+
+    .officeContactHeader {
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .officeContactIcon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .officeContactIcon svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .officeContactHeader h4 {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .officeDesignation {
+        font-size: 10.5px;
+        line-height: 1.35;
+    }
+
+    .officeContactInfo {
+        gap: 7px;
+        margin-left: 20px;
+    }
+
+    .officeContactInfo svg {
+        min-width: 20px;
+    }
+
+    .officeContactInfo span {
+        font-size: 12px;
+        max-width: 100%;
+    }
+
+    .officeCardArrow {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .officeCard-address {
+        padding: 18px;
+    }
+
+    .officeCard-right {
+        padding: 18px;
+    }
+
+    .officeCard-title h3 {
+        font-size: 18px;
+    }
+
+    .officeCard-flag {
+        width: 38px !important;
+        height: 38px !important;
+        min-width: 38px;
+    }
+
+    .contactGrid {
+        gap: 12px !important;
+    }
+
+    .officeContactIcon {
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+    }
+
+    .officeContactIcon svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .officeContactHeader {
+        gap: 7px;
+    }
+
+    .officeContactHeader h4 {
+        font-size: 13px;
+    }
+
+    .officeDesignation {
+        font-size: 10px;
+    }
+
+    .officeContactInfo span {
+        font-size: 10.5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contactHelpList {
+        grid-template-columns: 1fr;
+    }
+
+    .contactFormCard,
+    .contactHelpCard {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .contactHelpItem {
+        gap: 14px;
+    }
+
+    .contactHelpItem h3 {
+        font-size: 1.1rem;
+    }
+
+    .contactHelpItem p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .consultationCTA-card {
+        padding: 15px;
+    }
+
+    .consultationCTA-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .consultationCTA-content p {
+        max-width: 100%;
+        line-height: 1.4;
+    }
+
+    .consultationCTA-btn {
+        font-size: 12px;
+        min-width: unset;
+        padding: 8px 20px;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+    .contactHero {
+        background-position: 85%;
+    }
+
+    .contactHero::before {
+        background:
+            linear-gradient(to bottom right, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.88) 42%, rgba(0, 0, 0, 0.45) 65%, rgba(0, 0, 0, 0.25) 80%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .contactHero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contactHero-actions .btnPrimary,
+    .contactHero-actions .btnSecondary {
+        width: 100%;
+    }
+
+    .officeSection-header {
+        margin-bottom: 28px;
+    }
+
+    .officeSection-title {
+        font-size: 28px;
+    }
+
+    .officeSection-description {
+        font-size: 13px;
+    }
+
+    .officeSection-tag::before,
+    .officeSection-tag::after {
+        width: 20px;
+    }
+
+    .officeCard {
+        border-radius: 12px;
+    }
+
+    /* Address */
+    .officeCard-address {
+        padding: 16px;
+        gap: 13px;
+    }
+
+    .officeCard-title {
+        gap: 10px;
+    }
+
+    .officeCard-flag {
+        width: 36px !important;
+        height: 36px !important;
+        min-width: 36px;
+    }
+
+    .officeCard-title h3 {
+        font-size: 17px;
+    }
+
+    .officeInfoBlock {
+        gap: 10px;
+    }
+
+    .officeInfoBlock svg {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        padding: 6px;
+    }
+
+    .officeInfoLabel {
+        font-size: 9px;
+    }
+
+    .officeInfoBlock p,
+    .officeInfoBlock a {
+        font-size: 11.5px;
+    }
+
+    /* Contacts */
+    .officeCard-right {
+        padding: 16px;
+        gap: 18px;
+    }
+
+    .groupHeading {
+        font-size: 9px;
+        letter-spacing: 0.07em;
+    }
+
+    .contactGrid {
+        grid-template-columns:
+            1fr !important;
+        gap: 16px !important;
+    }
+
+    .contactGrid .officeContactCard:not(:last-child)::after {
+        display: none;
+    }
+
+    .officeContactCard {
+        padding-bottom: 14px;
+        border-bottom: 1px solid #eee5d8;
+    }
+
+    .officeContactCard:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .officeContactHeader {
+        gap: 10px;
+    }
+
+    .officeContactIcon {
+        width: 38px;
+        height: 38px;
+
+        min-width: 38px;
+    }
+
+    .officeContactHeader h4 {
+        font-size: 14px;
+    }
+
+    .officeDesignation {
+        font-size: 10.5px;
+    }
+
+    .officeContactInfo span {
+        font-size: 11px;
+    }
+
+    .contactFormGrid {
+        gap: 20px;
+    }
+
+    .contactFormCard h2,
+    .contactHelpCard h2 {
+        font-size: 1.4rem;
+    }
+
+    .contactFormCard input,
+    .contactFormCard select,
+    .contactFormCard textarea {
+        padding: 12px 14px;
+    }
+
+    .contactSubmitBtn {
+        padding: 12px 18px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .officeCard-address {
+        padding: 14px;
+    }
+
+    .officeCard-right {
+        padding: 14px;
+    }
+
+    .officeCard-title h3 {
+        font-size: 16px;
+    }
+
+    .officeInfoBlock p,
+    .officeInfoBlock a {
+        font-size: 11px;
+    }
+
+    .officeContactHeader h4 {
+        font-size: 13px;
+    }
+
+    .officeDesignation {
+        font-size: 10px;
+    }
+
+    .officeContactInfo span {
+        font-size: 10.5px;
+    }
+}

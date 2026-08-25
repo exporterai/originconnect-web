@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+#logo,
+#footerLogo {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#logo {
+  color: #2C2825;
+}
+
+.oc {
+  letter-spacing: -1.5px;
+}
+
+.brandCollab-title {
+  margin-top: auto;
+  /* border: 2px solid #0d0e0d; */
+  background-color: #0d0e0d;
+  padding: 10px 20px;
+  /* border-radius: 6px; */
+  border-radius: 20px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #f8f8f8;
+  /* display: inline !important; */
+  display: inline-flex !important;
+  text-transform: uppercase;
+  /* font-family: "Playfair Display", serif; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#footerLogo {
+  color: #F5F1EC;
+}
+
+@media (max-width:1250px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width:768px) {
+
+  .brandCollab-title {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    word-break: break-word;
+  }
+
+}
+
+@media (max-width:480px) {
+
+  #logo,
+  #footerLogo {
+    font-size: 14px;
+  }
+
+  .brandCollab-title {
+    font-size: 12px;
+    line-height: 1.3;
+    height: auto;
+    padding: 7px 12px;
+  }
+}

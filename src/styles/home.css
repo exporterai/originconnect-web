@@ -1,0 +1,593 @@
+/* ==========================
+   HOME HERO
+========================== */
+.homeHero {
+    position: relative;
+}
+
+.homeHero .swiper {
+    overflow: hidden;
+}
+
+/* CARD */
+.homeHeroCard {
+    position: relative;
+    /* height: 70vh; */
+    height: 600px;
+    overflow: hidden;
+}
+
+/* IMAGE */
+.homeHeroCard-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* OVERLAY */
+.homeHeroCard-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(270deg,
+            rgba(14, 12, 10, 0) 33.65%,
+            rgba(14, 12, 10, 0.6) 60.58%,
+            rgba(14, 12, 10, 0.75232) 81.02%,
+            rgba(14, 12, 10, 0.98) 100%);
+}
+
+/* CONTAINER */
+.homeHeroCard .container {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center; /* vertical center */
+}
+
+/* CONTENT */
+
+.homeHeroCard-content {
+    max-width: 500px;
+    color: white;
+    margin-left: 6%;
+    transform: none;
+}
+
+.homeHeroCard-title {
+    font-size: 60px;
+    margin-bottom: 28px;
+    max-width: 550px;
+}
+
+.homeHeroCard-content p {
+    max-width: 520px;
+}
+
+/* PAGINATION */
+.homeHero .swiper-pagination {
+    bottom: 60px !important;
+    text-align: left;
+    left: max(calc((100% - 1200px)/2 + 5%), 5%) !important;
+    width: auto !important;
+}
+
+.homeHero .swiper-pagination-bullet {
+    width: 6px;
+    height: 2px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, .6);
+    opacity: 1;
+    transition: .3s;
+}
+
+.homeHero .swiper-pagination-bullet-active {
+    width: 28px;
+    background: #fff;
+}
+
+/* ==========================
+   HOME WhatWeDo
+========================== */
+.whatWeDo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.whatWeDo-card {
+    background: #fff;
+    border: 1px solid #D8D8D8;
+    border-radius: 18px;
+    padding: 18px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.whatWeDo-card .icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    color: #8B6F47;
+    margin-bottom: 28px;
+}
+
+.whatWeDo-card h3 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.whatWeDo-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6B7280;
+}
+
+.whatWeDo-card:hover {
+    background: #050505;
+    border-color: #050505;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+    color: white;
+}
+
+.whatWeDo-card:hover .icon {
+    border-color: rgb(253, 253, 253);
+    color: #B8915D;
+    /* color: inherit; */
+}
+
+.whatWeDo-card:hover h3 {
+    color: inherit;
+}
+
+.whatWeDo-card:hover p {
+    color: #C4CDD7;
+}
+
+/* ==========================
+   HOME ManufacturingEcosystem
+========================== */
+.manufacturingEcosystem .category-tag {
+    color: #e7e7e7;
+}
+
+.manufacturingEcosystem-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.manufacturingEcosystem-card {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    min-height: 370px;
+}
+
+.manufacturingEcosystem-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.manufacturingEcosystem-image {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+    transition: .5s ease;
+}
+
+.manufacturingEcosystem-card:hover .manufacturingEcosystem-image {
+    transform: scale(1.05);
+}
+
+/* Overlay */
+.manufacturingEcosystem-overlay {
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    background:
+        /* linear-gradient(0deg, #987C62, #987C62), */
+        linear-gradient(0deg, rgba(14, 12, 10, 0.98) 0%, rgba(14, 12, 10, 0.75232) 11.54%, rgba(14, 12, 10, 0.6) 31.25%, rgba(14, 12, 10, 0) 52.79%),
+        linear-gradient(0deg, rgba(14, 12, 10, 0.98) 0%, rgba(14, 12, 10, 0.75232) 11.54%, rgba(14, 12, 10, 0.6) 31.25%, rgba(14, 12, 10, 0) 52.79%);
+}
+
+.manufacturingEcosystem-content {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 25px;
+    z-index: 2;
+}
+
+
+.manufacturingEcosystem-content h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+
+.manufacturingEcosystem-content p {
+    color: rgba(255, 255, 255, .70);
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.manufacturingEcosystem-content a,
+.manufacturingEcosystem-content .comingSoon {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #C9A574;
+    text-decoration: none;
+}
+
+.manufacturingEcosystem-content a:hover {
+    color: #fff;
+
+    transition: .3s;
+}
+
+.manufacturingEcosystem-content .comingSoon {
+    cursor: default;
+    opacity: .9;
+}
+
+/* ==========================
+   HOME howWeWork
+========================== */
+.howWeWork-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    margin: 30px auto 0px auto;
+}
+
+.howWeWork-card:nth-child(1) {
+    grid-column: span 2;
+}
+
+.howWeWork-card:nth-child(2) {
+    grid-column: span 2;
+}
+
+.howWeWork-card:nth-child(3) {
+    grid-column: span 2;
+}
+
+.howWeWork-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.howWeWork-card:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+.howWeWork-card {
+    background: #fff;
+    border: 1px solid #BEB4B4;
+    padding: 20px;
+    transition: .3s ease;
+    margin-inline: auto;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px 0px #000000;
+    width: 100%;
+}
+
+.howWeWork-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .09);
+}
+
+.howWeWork-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.howWeWork-card p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #727272 ;
+}
+
+/* ==========================
+  Home whoWeServe 
+========================== */
+.whoWeServe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.whoWeServe-card {
+    position: relative;
+    min-height: 290px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.whoWeServe-image-wrapper {
+    position: absolute;
+    inset: 0;
+}
+
+.whoWeServe-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .6s ease;
+}
+
+.whoWeServe-card:hover .whoWeServe-image {
+    transform: scale(1.05);
+}
+
+.whoWeServe-content {
+    position: relative;
+    z-index: 3;
+    padding: 30px;
+    height: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.whoWeServe-content .category-tag {
+    width: fit-content;
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .2);
+    color: #e7e7e7;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    padding: 4px 8px;
+    margin-bottom: 10px;
+}
+
+.whoWeServe-content h3 {
+    font-size: 22px;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.whoWeServe-content p {
+    color: rgba(255, 255, 255, .78);
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.whoWeServe-content a {
+    font-family: "DM Sans", sans-serif;
+    width: fit-content;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.whoWeServe-content a:hover {
+    transform: translateY(-2px);
+    background: #f3f3f3;
+}
+
+/* ==========================
+  HOME originConnectModel
+========================== */
+.originConnectModel .category-tag {
+    color: #e7e7e7;
+}
+
+/* ==========================
+  Responsive
+========================== */
+@media(max-width:991px) {
+    .homeHeroCard {
+        height: 500px;
+    }
+
+    .homeHeroCard-content {
+        /* transform: translateY(50%); */
+        max-width: 480px;
+    }
+
+    .homeHeroCard-title {
+        font-size: 52px;
+    }
+
+    .whatWeDo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .howWeWork-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .howWeWork-card {
+        grid-column: auto !important;
+    }
+}
+
+@media(max-width:767px) {
+    .homeHeroCard {
+        height: 450px;
+    }
+
+    .homeHeroCard-overlay {
+        background: linear-gradient(180deg,
+                rgba(14, 12, 10, 0.15) 0%,
+                rgba(14, 12, 10, 0.65) 55%,
+                rgba(14, 12, 10, 0.95) 100%);
+    }
+
+    .homeHeroCard-content {
+        /* left: 5%;
+        right: 5%; */
+        /* transform: translateY(80%); */
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .homeHeroCard-title {
+        font-size: 45px;
+        margin-bottom: 16px;
+        max-width: 100%;
+    }
+
+    .homeHeroCard-content p {
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 100%;
+    }
+
+    .homeHero .swiper-pagination {
+        left: 0 !important;
+        width: 100% !important;
+        text-align: center;
+        bottom: 30px !important;
+    }
+
+    .manufacturingEcosystem-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-top: 25px;
+    }
+
+    .howWeWork-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .whoWeServe-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-top: 25px;
+    }
+}
+
+@media(max-width:567px) {
+    /* .homeHeroCard-content {
+        transform: translateY(70%);
+    } */
+
+    .whatWeDo-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .whatWeDo-card {
+        min-height: auto;
+        padding: 24px;
+    }
+
+    .whatWeDo-card h3 {
+        font-size: 16px;
+    }
+
+    .manufacturingEcosystem-card {
+        min-height: 300px;
+    }
+
+    .manufacturingEcosystem-image {
+        height: 300px;
+    }
+
+    .manufacturingEcosystem-content h3 {
+        font-size: 20px;
+    }
+
+    .manufacturingEcosystem-content a,
+    .manufacturingEcosystem-content .comingSoon {
+        font-size: 11px;
+    }
+
+    .whoWeServe-card {
+        min-height: 240px;
+    }
+
+    .whoWeServe-content {
+        padding: 20px;
+        max-width: 80%;
+    }
+
+    .whoWeServe-content .category-tag {
+        font-size: 8px;
+        letter-spacing: 1.2px;
+        padding: 3px 6px;
+    }
+
+    .whoWeServe-content h3 {
+        font-size: 18px;
+    }
+
+    .whoWeServe-content a {
+        padding: 6px 10px;
+        font-size: 10px;
+        font-weight: 550;
+    }
+}
+
+@media(max-width:480px) {
+    .homeHeroCard {
+        height: 400px;
+    }
+
+    /* .homeHeroCard-content {
+        transform: translateY(80%);
+    } */
+
+    .homeHeroCard-title {
+        font-size: 30px;
+    }
+
+    .homeHeroCard-content p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+
+@media(max-width:400px) {
+    /* .homeHeroCard-content {
+        transform: translateY(60%);
+    } */
+
+    .manufacturingEcosystem-content h3 {
+        font-size: 16px;
+    }
+
+    .whoWeServe-content h3 {
+        font-size: 16px;
+    }
+}

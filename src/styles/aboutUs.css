@@ -1,0 +1,655 @@
+.aboutUs .category-tag {
+  font-weight: 700;
+  font-family: 'Jost', serif;
+  color: #e7e7e7;
+}
+
+.aboutUs .light-bg .category-tag,
+.aboutUs .missionVision .category-tag {
+  color: #7a634e ;
+}
+
+/* ==========================
+  AboutUs aboutUsHero
+========================== */
+.aboutUsHero {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ==========================
+  AboutUs aboutUsHighlights
+========================== */
+.aboutUsHighlights {
+  width: 100%;
+  background: #FAF8F5;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cacac9;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.aboutUsHighlights.active {
+  /* background: #B88646; */
+  background-color: #886f58 ;
+}
+
+.aboutUsHighlights .marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.aboutUsHighlights .marquee-content {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+  gap: 20px;
+}
+
+.aboutUsHighlights .highlight-item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 18px 0;
+}
+
+.aboutUsHighlights .highlight-item span.text {
+  font-size: 18px;
+  color: #0B192DB2;
+  font-weight: 400;
+  transition: color 0.5s ease;
+}
+
+.aboutUsHighlights.active .highlight-item span.text {
+  color: #fff;
+}
+
+.aboutUsHighlights .dot {
+  margin: 0 10px 0px 0px;
+  /* background: #d28b42; */
+  background: rgba(152, 124, 98, 1);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
+}
+
+.aboutUsHighlights.active .dot {
+  background: #fff;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.aboutUsHighlights:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* ==========================
+  AboutUs ourStory
+========================== */
+.aboutUs .ourStory-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 50px;
+  align-items: center;
+}
+
+.aboutUs .ourStory-image {
+  grid-row: span 4;
+}
+
+.aboutUs .ourStory-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aboutUs .ourStory-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #D4D4D4;
+}
+
+.aboutUs .ourStory-card .icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background: #8a6a4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.aboutUs .ourStory-card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #5f6672 ;
+  font-weight: 400;
+}
+
+/* ==========================
+  AboutUs WHAT MAKES DIFFERENT 
+========================== */
+
+.aboutUs .whatMakesDifferent-grid {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+
+.aboutUs .whatMakesDifferent-card {
+  border: 1px solid rgba(255, 255, 255, .95);
+  border-radius: 12px;
+  padding: 15px;
+  transition: all .3s ease;
+}
+
+.aboutUs .whatMakesDifferent-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, .04);
+}
+
+/* ICON */
+.aboutUs .whatMakesDifferent-card .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  color: #A68B70;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+/* TITLE */
+.aboutUs .whatMakesDifferent-card h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.aboutUs .whatMakesDifferent-card p {
+  color: #e7e7e7;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* ==========================
+  AboutUs Lets Connect
+========================== */
+.letsConnect-wrapper {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+/* Dark overlay */
+.letsConnect-wrapper .overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(14, 12, 10, 0.98) 0%, rgba(14, 12, 10, 0.75232) 11.54%, rgba(14, 12, 10, 0.6) 29.81%, rgba(14, 12, 10, 0) 46.63%);
+}
+
+.letsConnect-content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+}
+
+.letsConnect-heading-border {
+  width: 120px;
+  border: 1px solid #80664E;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.letsConnect-btn {
+  border: none;
+  background: #fff;
+  color: #111;
+  padding: 9px 15px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.letsConnect-btn span {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #F3F3F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letsConnect-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, .15);
+}
+
+/* ==========================
+  AboutUs HowCreateValue  
+========================== */
+
+.aboutUs .howCreateValue-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.aboutUs .howCreateValue-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #E8E8E8;
+  transition: all .3s ease;
+  height: 100%;
+}
+
+.aboutUs .howCreateValue-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+}
+
+/* ==========================
+IMAGE
+========================== */
+.aboutUs .howCreateValue-image-wrapper {
+  position: relative;
+  height: 230px;
+}
+
+.aboutUs .howCreateValue-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================
+ICON
+========================== */
+.aboutUs .howCreateValue-icon {
+  position: absolute;
+  left: 50%;
+  bottom: -28px;
+  transform: translateX(-50%);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #9B7E63;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  z-index: 2;
+}
+
+.aboutUs .howCreateValue-icon .icon-svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* ==========================
+CONTENT
+========================== */
+.aboutUs .howCreateValue-content {
+  padding: 48px 20px 25px;
+  text-align: center;
+}
+
+.aboutUs .howCreateValue-content h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+/* Line */
+.aboutUs .howCreateValue-content .line {
+  width: 95px;
+  height: 1px;
+  background-color: #987C62;
+  /* border: 0.5px solid #987C62; */
+  margin: 10px auto 24px;
+}
+
+/* Paragraph */
+.aboutUs .howCreateValue-content p {
+  color: #3E4145;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* ==========================
+  AboutUs MissionVision 
+========================== */
+.aboutUs .missionVision-grid {
+  margin-top: 30px;
+  position: relative;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 7px;
+  padding: 40px 70px 170px;
+  gap: 28px;
+  border: 1px solid #E9C5AA;
+}
+
+/* Center Golden Line */
+.aboutUs .missionVision-grid::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 1px;
+  background: #E9C5AA;
+  z-index: 0;
+}
+
+/* CARD */
+.aboutUs .missionVision-card {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+}
+
+/* LEFT CARD */
+.aboutUs .missionVision-card:first-child {
+  justify-self: start;
+}
+
+/* RIGHT CARD */
+.aboutUs .missionVision-card:last-child {
+  justify-self: end;
+}
+
+/* SMALL TITLE */
+.aboutUs .missionVision-card .title {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2.39px;
+  text-transform: uppercase;
+  color: #987C62;
+  font-family: 'Jost', serif;
+}
+
+/* Title Line */
+.aboutUs .missionVision-card .title-line {
+  width: 45px;
+  /* height: 1px;
+  background: #C8A883; */
+  border: #C8A883 solid 1px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+.aboutUs .missionVision-card h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+/* Golden Line */
+.aboutUs .missionVision-card .line {
+  width: 30px;
+  height: 1px;
+  background: #987C62;
+  margin-bottom: 30px;
+}
+
+/* Paragraph */
+.aboutUs .missionVision-card p {
+  color: #3E4145;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ==========================
+  AboutUs Responsive
+========================== */
+@media (max-width: 992px) {
+  .aboutUs .whatMakesDifferent-grid {
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 20px;
+  }
+
+  .aboutUs .howCreateValue-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .aboutUs .missionVision-grid {
+    padding: 30px 40px 150px;
+  }
+
+}
+
+@media (max-width: 850px) {
+  .aboutUs .whatMakesDifferent-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutUsHighlights .highlight-item span.text {
+    font-size: 15px;
+  }
+
+  .aboutUsHighlights .highlight-item {
+    padding: 14px 0;
+  }
+
+  .aboutUs .ourStory-grid {
+    grid-template-columns: 1fr;
+    gap: 10 25px;
+    margin-top: 25px;
+  }
+
+  .aboutUs .ourStory-image {
+    grid-row: unset;
+    margin-bottom: 20px;
+  }
+
+  .aboutUs .ourStory-card p {
+    font-size: 14px;
+  }
+
+  .aboutUs .letsConnect-btn {
+    font-size: 11px;
+  }
+
+  .aboutUs .howCreateValue-grid {
+    margin-top: 25px;
+  }
+
+  .aboutUs .howCreateValue-image-wrapper {
+    height: 220px;
+  }
+
+  .aboutUs .howCreateValue-content {
+    padding: 40px 16px 20px;
+  }
+
+  .aboutUs .howCreateValue-content h3 {
+    font-size: 16px;
+  }
+
+  .aboutUs .howCreateValue-content p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .aboutUs .howCreateValue-icon {
+    width: 55px;
+    height: 55px;
+    bottom: -26px;
+  }
+
+  .aboutUs .howCreateValue-icon .icon-svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .aboutUs .missionVision-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 30px 40px 100px;
+  }
+
+  .aboutUs .missionVision-grid::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0px;
+    width: 100%;
+  }
+
+  .aboutUs .missionVision-card {
+    max-width: 100%;
+  }
+
+  .aboutUs .missionVision-card:last-child::after {
+    content: "";
+    position: absolute;
+    background: #E9C5AA;
+    z-index: 0;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1px;
+    width: 100%;
+  }
+
+  .aboutUs .missionVision-card:last-child {
+    justify-self: start;
+    margin-top: 30px;
+  }
+
+  .aboutUs .missionVision-card .title {
+    font-size: 14px;
+    letter-spacing: 1.39px;
+  }
+
+  .aboutUs .missionVision-card h3 {
+    font-size: 16px;
+  }
+
+  .aboutUs .missionVision-card p {
+    color: #3E4145;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutUs .ourStory-card .icon {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+  }
+
+  .aboutUs .ourStory-card {
+    gap: 10px;
+    padding-bottom: 6px;
+  }
+
+  .aboutUs .ourStory-card p {
+    font-size: 14px;
+    /* font-size: 12px; */
+  }
+
+  .aboutUs .whatMakesDifferent-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutUs .whatMakesDifferent-card h3 {
+    font-size: 16px;
+  }
+
+  .aboutUs .letsConnect-btn {
+    padding: 5px 12px;
+    font-size: 10px;
+  }
+
+  .aboutUs .howCreateValue-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutUs .howCreateValue-icon {
+    width: 45px;
+    height: 45px;
+    bottom: -20px;
+  }
+
+  .aboutUs .howCreateValue-icon .icon-svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .aboutUs .missionVision-grid {
+    padding: 20px;
+    padding-bottom: 80px;
+  }
+
+  .aboutUs .missionVision-card:last-child {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutUs .missionVision-grid {
+    padding-bottom: 60px;
+  }
+}

@@ -1,0 +1,448 @@
+/* ==========================================
+   Footer Base
+========================================== */
+
+footer {
+  background: #0f0f10;
+  color: #fff;
+  overflow: hidden;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-wrapper {
+  padding: 70px 0 35px;
+}
+
+/* ==========================================
+   Grid
+========================================== */
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1.2fr 1.2fr;
+  gap: 20px;
+}
+
+/* ==========================================
+   Card
+========================================== */
+
+.footer-card {
+  background: #181818;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 22px;
+  padding: 30px 20px;
+  transition: .35s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+}
+
+.footer-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201, 165, 74, .30);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, .25);
+}
+
+/* ==========================================
+   Logo Card
+========================================== */
+
+.footer-logo-card {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 78px;
+  margin-bottom: 18px;
+}
+
+.footer-logo h2 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* ==========================================
+   Divider
+========================================== */
+
+.footer-divider,
+.footer-title-line {
+  width: 58px;
+  height: 2px;
+  background: #c9a54a;
+}
+
+.footer-divider {
+  margin: 22px auto 24px;
+}
+
+.footer-title-line {
+  margin: 16px 0 24px;
+}
+
+/* ==========================================
+   Countries
+========================================== */
+
+.footer-countries {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.country-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.country-item {
+  font-size: 14px;
+  color: rgba(255, 255, 255, .72);
+  transition: .3s;
+}
+
+.country-item:hover {
+  color: #fff;
+}
+
+.footer-country-divider {
+  color: #c9a54a;
+}
+
+/* ==========================================
+   Titles
+========================================== */
+
+.footer-title {
+  font-size: 19px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* ==========================================
+   Links
+========================================== */
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 255, 255, .72);
+  font-size: 15px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  transition: all .35s ease;
+}
+
+.footer-link:last-child {
+  border-bottom: none;
+}
+
+.footer-link-arrow {
+  width: 18px;
+  height: 18px;
+  color: #8d8d8d;
+  /* opacity:0; */
+  transform: translateX(-8px);
+  transition: .35s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.footer-link:hover .footer-link-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+  color: #c9a54a;
+}
+
+/* ==========================================
+   Contact
+========================================== */
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.contact-list li:first-child {
+  padding-top: 0;
+}
+
+.contact-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.footer-contact-icon {
+  width: 18px;
+  height: 18px;
+  color: #c9a54a;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.contact-list span,
+.contact-list a {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, .72);
+  transition: .3s;
+  word-break: break-word;
+}
+
+.contact-list a:hover {
+  color: #fff;
+}
+
+/* ==========================================
+   Footer Bottom
+========================================== */
+
+.footer-bottom {
+  display: flex;
+  /* when visible footer-bottom social-media icon */
+  /* justify-content: space-between; */ 
+  justify-content: center;
+  align-items: center;
+  margin-top: 42px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, .55);
+  font-size: 14px;
+}
+
+/* ==========================================
+   Social Icons
+========================================== */
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .35s ease;
+}
+
+.footer-socials a svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-socials a:hover {
+  background: #c9a54a;
+  color: #101010;
+  border-color: #c9a54a;
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   Large Desktop
+========================================== */
+
+@media (max-width: 1200px) {
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .footer-card {
+    min-height: 320px;
+  }
+
+}
+
+/* ==========================================
+   Tablet
+========================================== */
+
+@media (max-width: 992px) {
+
+  .footer-wrapper {
+    padding: 60px 0 30px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer-card {
+    padding: 26px;
+    min-height: auto;
+  }
+
+  .footer-logo img {
+    width: 70px;
+  }
+
+  .footer-logo h2 {
+    font-size: 22px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+
+}
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 768px) {
+
+  .footer-wrapper {
+    padding: 50px 0 24px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .footer-card {
+    padding: 24px;
+  }
+
+  .footer-logo img {
+    width: 64px;
+  }
+
+  .footer-logo h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .footer-title {
+    font-size: 18px;
+  }
+
+  .country-row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+}
+
+/* ==========================================
+   Small Mobile
+========================================== */
+
+@media (max-width: 576px) {
+
+  .footer-card {
+    padding: 22px 18px;
+    border-radius: 18px;
+  }
+
+  .footer-logo img {
+    width: 56px;
+  }
+
+  .footer-logo h2 {
+    font-size: 18px;
+  }
+
+  .footer-title {
+    font-size: 17px;
+  }
+
+  .footer-link {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
+  .contact-list {
+    gap: 14px;
+  }
+
+  .contact-list span,
+  .contact-list a {
+    font-size: 13px;
+  }
+
+  .footer-socials a {
+    width: 38px;
+    height: 38px;
+  }
+
+}
+
+/* ==========================================
+   Extra Small
+========================================== */
+
+@media (max-width: 400px) {
+
+  .country-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .footer-country-divider {
+    display: none;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+
+}
