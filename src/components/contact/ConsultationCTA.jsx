@@ -19,7 +19,7 @@ export default function ConsultationCTA() {
           </div>
           <div className="consultationCTA-divider" />
           <a
-            href="https://wa.me/919327041987"
+            href="https://wa.me/919227041987"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Start WhatsApp consultation"

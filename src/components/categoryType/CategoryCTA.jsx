@@ -30,7 +30,7 @@ const CategoryCTA = () => {
                             {categoryCTA.enquireButton}
                         </Link>
                         <a
-                            href="https://wa.me/919327041987"
+                            href="https://wa.me/919227041987"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Contact us on WhatsApp"

@@ -17,6 +17,13 @@ footer a {
   padding: 70px 0 35px;
 }
 
+footer .fixed-whatsapp {
+  z-index: 1;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+}
+
 /* ==========================================
    Grid
 ========================================== */
@@ -234,7 +241,7 @@ footer a {
 .footer-bottom {
   display: flex;
   /* when visible footer-bottom social-media icon */
-  /* justify-content: space-between; */ 
+  /* justify-content: space-between; */
   justify-content: center;
   align-items: center;
   margin-top: 42px;

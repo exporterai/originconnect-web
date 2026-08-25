@@ -35,7 +35,7 @@ export default function ContactHero() {
             {hero.description}
           </p>
           <div className="contactHero-actions">
-            <a href="https://wa.me/919327041987"
+            <a href="https://wa.me/919227041987"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Open WhatsApp chat"

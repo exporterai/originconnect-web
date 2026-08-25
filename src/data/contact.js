@@ -73,7 +73,7 @@ export const officeContacts = [
       {
         name: "S Hussain Ansari",
         designation: "Country Manager",
-        phone: "+49 176 5360356",
+        phone: "+49 1521 2497679",
         email: "shussain.ansari@originconnect.de",
       },
     ],

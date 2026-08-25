@@ -8,6 +8,7 @@ import {
     ChevronRight,
 } from "lucide-react";
 import useLanguage from "@/hooks/useLanguage";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const OfficeCard = ({ office }) => {
     const { officeSectionContent } = useLanguage();
@@ -81,10 +82,14 @@ const OfficeCard = ({ office }) => {
                                         </div>
                                     </div>
                                     <div className="officeContactInfo">
-                                        <Phone size={16} />
+                                        {/* <Phone size={16} /> */}
+                                        <FaWhatsapp size={16} />
                                         <a
-                                            href={`tel:${contact.phone.replace(/\s+/g, "")}`}
+                                            href={`https://wa.me/${contact.phone.replace(/\s+/g, "")}`}
+                                            target="_blank"
                                             className="officeContactLink"
+                                            aria-label={`Whatsapp msg ${contact.name}`}
+                                            rel="noopener noreferrer"
                                         >
                                             {contact.phone}
                                         </a>
@@ -128,11 +133,14 @@ const OfficeCard = ({ office }) => {
                                         </div>
                                     </div>
                                     <div className="officeContactInfo">
-                                        <Phone size={16} />
+                                        {/* <Phone size={16} /> */}
+                                        <FaWhatsapp size={16} />
                                         <a
-                                            href={`tel:${contact.phone.replace(/\s+/g, "")}`}
+                                            href={`https://wa.me/${contact.phone.replace(/\s+/g, "")}`}
+                                            target="_blank"
                                             className="officeContactLink"
-                                            aria-label={`Call ${contact.name}`}
+                                            aria-label={`Whatsapp msg ${contact.name}`}
+                                            rel="noopener noreferrer"
                                         >
                                             {contact.phone}
                                         </a>

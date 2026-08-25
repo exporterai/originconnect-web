@@ -10,6 +10,7 @@ import {
     FaXTwitter,
 } from "react-icons/fa6";
 import { Fragment } from "react";
+import fixedWhatsapp from "@/assets/images/fixed-whatsapp.svg";
 
 const socialIcons = {
     linkedin: FaLinkedinIn,
@@ -170,6 +171,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <a href="https://wa.me/919227041987" class="fixed-whatsapp" target="_blank">
+                <img src={fixedWhatsapp} alt="fixed-Whatsapp"/>
+            </a>
         </footer>
     );
 };
