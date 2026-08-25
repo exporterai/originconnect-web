@@ -12,7 +12,7 @@ if (typeof window !== "undefined") {
   } else if (host.endsWith(".uk")) {
     language = "en";
   } else {
-    language = "tr";
+    language = "en";
   }
 }
 

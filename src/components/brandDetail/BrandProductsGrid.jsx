@@ -133,9 +133,9 @@ function BrandProductsGrid() {
                                     <h3 className="brandProductCard-title">
                                         {product.title}
                                     </h3>
-                                    <p className="brandProductsGrid-description">
+                                    {/* <p className="brandProductsGrid-description">
                                         {product.description}
-                                    </p>
+                                    </p> */}
                                     <div className="brandProductCard-footer">
                                         <span className="brandProductCard-details">
                                             {pageContent.productsSection?.viewDetails ||
