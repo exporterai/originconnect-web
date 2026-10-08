@@ -454,7 +454,396 @@ export const brandCategoriesContent = {
         brands: {}
     },
     brazil: {
-        brands: {}
+        brands: {
+            "acai-super-fruta": {
+                acaiproducts: {
+                    title: "Produtos e Soluções de Açaí",
+                    description:
+                        "Produtos premium de açaí elaborados com frutos cuidadosamente selecionados da Amazônia para varejo, food service e aplicações industriais.",
+                    features: [
+                        {
+                            title: "Origem Amazônica",
+                            description: "Direto das frutas amazônicas.",
+                        },
+                        {
+                            title: "Qualidade Internacional",
+                            description: "Segurança alimentar certificada.",
+                        },
+                        {
+                            title: "Distribuição Global",
+                            description: "Atendendo mercados mundiais.",
+                        },
+                    ],
+                    productsSection: {
+                        title: "Nossa Linha de Produtos de Açaí",
+                        description:
+                            "Conheça nosso portfólio completo de produtos premium de açaí, soluções para food service e ingredientes industriais.",
+                        sortLabel: "ORDENAR POR:",
+                        viewDetails: "VER DETALHES",
+                        products: {
+                            "acai-pulp-400g": {
+                                title: "Polpa de Açaí 400g",
+                                description:
+                                    "Polpa congelada de açaí com sabor autêntico da Amazônia.",
+                            },
+                            "acai-pulp-1kg": {
+                                title: "Polpa de Açaí 1kg",
+                                description:
+                                    "Polpa premium para varejo e food service.",
+                            },
+                            "acai-guarana-sorbet-1kg": {
+                                title: "Sorbet de Açaí com Guaraná 1kg",
+                                description:
+                                    "Sorbet cremoso de açaí com guaraná.",
+                            },
+                            "acai-guarana-sorbet-5kg-10kg": {
+                                title: "Sorbet de Açaí com Guaraná 5kg / 10kg",
+                                description:
+                                    "Embalagens para restaurantes e distribuidores.",
+                            },
+                            "industrial-acai-pulp": {
+                                title: "Polpa Industrial de Açaí",
+                                description:
+                                    "Solução de açaí em grande escala para fabricantes.",
+                            },
+                            "freeze-dried-acai": {
+                                title: "Açaí Liofilizado",
+                                description:
+                                    "Pó de açaí preservando nutrientes e sabor.",
+                            },
+                            "acai-sorbet-mix-uht": {
+                                title: "Mistura UHT para Sorbet de Açaí",
+                                description:
+                                    "Solução prática para preparo de sorbets.",
+                            },
+                            "tropical-acai-juice": {
+                                title: "Suco Tropical de Açaí",
+                                description:
+                                    "Bebida refrescante com açaí e frutas.",
+                            },
+                            "protein-acai": {
+                                title: "Açaí Proteico",
+                                description:
+                                    "Produto enriquecido com proteínas.",
+                            },
+                        },
+                    },
+                },
+            },
+            "agua-attiva": {
+                mineralwaterbeverages: {
+                    title: "Soluções em Água Mineral e Bebidas",
+                    description:
+                        "Um portfólio completo de água mineral premium, água engarrafada em vidro, bebidas e soluções de marca própria, produzido com altos padrões de qualidade, tecnologia moderna de envase e capacidade de produção escalável para os mercados nacionais e internacionais.",
+                    features: [
+                        {
+                            title: "Água Mineral Natural",
+                            description: "Engarrafada sob rigorosos controles de qualidade.",
+                        },
+                        {
+                            title: "Embalagens Premium",
+                            description: "Opções em PET, vidro e personalizadas.",
+                        },
+                        {
+                            title: "Fabricação de Marca Própria",
+                            description: "Produção personalizada para parceiros globais.",
+                        },
+                    ],
+                    subCategoriesSection: {
+                        title: "Nossas Categorias de Produtos",
+                        description:
+                            "Explore nosso portfólio completo de água mineral, água premium em garrafas de vidro, bebidas e soluções de marca própria para atender aos canais de varejo, hotelaria, alimentação e distribuição internacional.",
+                        subCategories: {
+                            "pet-water": {
+                                title: "Água em PET",
+                                description:
+                                    "Uma linha completa de água mineral natural em embalagens PET, desenvolvida para o varejo, lojas de conveniência, hotelaria e hidratação diária.",
+                                features: [
+                                    {
+                                        title: "Pronta para o Varejo",
+                                        description: "Projetada para distribuição em larga escala.",
+                                    },
+                                    {
+                                        title: "Vários Tamanhos",
+                                        description: "Disponível em formatos práticos de embalagem.",
+                                    },
+                                    {
+                                        title: "Qualidade Garantida",
+                                        description: "Produzida sob rigorosos controles de qualidade.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "Conheça Nossa Linha de Água em PET",
+                                    description:
+                                        "Descubra nossa linha de água mineral em garrafas PET, desenvolvida para oferecer pureza, praticidade e hidratação confiável aos mercados comerciais e varejistas.",
+                                    sortLabel: "ORDENAR POR:",
+                                    viewDetails: "VER PRODUTOS",
+                                    products: {
+                                        "attiva510cg": {
+                                            title: "Attiva 510 CG",
+                                            description:
+                                                "Água mineral com gás em garrafa PET, prática para consumo individual.",
+                                        },
+                                        "attiva510sg": {
+                                            title: "Attiva 510 SG",
+                                            description:
+                                                "Água mineral sem gás, leve e versátil em garrafa PET.",
+                                        },
+                                        "attiva510sg-sport": {
+                                            title: "Attiva 510 SG Sport",
+                                            description:
+                                                "Garrafa esportiva ideal para atividades físicas, academia e rotina ativa.",
+                                        },
+                                        "attiva-1500cg": {
+                                            title: "Attiva 1500 CG",
+                                            description:
+                                                "Água mineral com gás em formato familiar, ideal para compartilhar nas refeições.",
+                                        },
+                                        "attiva-1500sg": {
+                                            title: "Attiva 1500 SG",
+                                            description:
+                                                "Água mineral sem gás em formato familiar para residências, empresas e eventos.",
+                                        },
+                                        "glass": {
+                                            title: "Glass",
+                                            description:
+                                                "Uma opção prática para eventos, empresas e ambientes de grande circulação.",
+                                        },
+                                    },
+                                },
+                            },
+                            "attiva-water-glass": {
+                                title: "Água Attiva em Garrafa de Vidro",
+                                description:
+                                    "Água mineral premium Attiva em elegantes garrafas de vidro, ideal para restaurantes, hotéis, refeições sofisticadas e estabelecimentos de hospitalidade.",
+                                features: [
+                                    {
+                                        title: "Apresentação Premium",
+                                        description: "Elegantes garrafas de vidro premium.",
+                                    },
+                                    {
+                                        title: "Ideal para Hospitalidade",
+                                        description: "Ideal para restaurantes e hotéis.",
+                                    },
+                                    {
+                                        title: "Água Mineral Natural",
+                                        description: "Hidratação pura e refrescante.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "Conheça Nossa Linha Attiva em Vidro",
+                                    description:
+                                        "Explore nossa linha premium de água Attiva em garrafas de vidro, criada para valorizar experiências de hospitalidade com pureza, qualidade e apresentação sofisticada.",
+                                    sortLabel: "ORDENAR POR:",
+                                    viewDetails: "VER PRODUTOS",
+                                    products: {
+                                        "attiva-glass-300ml": {
+                                            title: "Attiva Glass 300 SG",
+                                            description:
+                                                "Água mineral premium sem gás em garrafa de vidro de 300 ml.",
+                                        },
+                                        "attiva-glass-750ml": {
+                                            title: "Attiva Glass 750 SG",
+                                            description:
+                                                "Água mineral sem gás em garrafa de vidro de 750 ml para restaurantes e eventos.",
+                                        },
+                                        "attiva-sparkling-glass-300ml": {
+                                            title: "Attiva Glass 300 CG",
+                                            description:
+                                                "Água mineral premium com gás em garrafa de vidro de 300 ml.",
+                                        },
+                                        "attiva-sparkling-glass-750ml": {
+                                            title: "Attiva Glass 750 CG",
+                                            description:
+                                                "Água mineral com gás em garrafa de vidro de 750 ml, ideal para refeições compartilhadas.",
+                                        },
+                                        "attiva-premium": {
+                                            title: "Attiva Premium",
+                                            description:
+                                                "Linha premium Attiva para serviço de mesa, eventos e hospitalidade.",
+                                        },
+                                    },
+                                },
+                            },
+                            "mineralle-water-glass": {
+                                title: "Água Mineralle em Garrafa de Vidro",
+                                description:
+                                    "Uma linha premium de água mineral em garrafas de vidro, desenvolvida para hotéis de luxo, restaurantes sofisticados e serviços de bebidas de alto padrão.",
+                                features: [
+                                    {
+                                        title: "Posicionamento de Luxo",
+                                        description: "Desenvolvida para ambientes sofisticados.",
+                                    },
+                                    {
+                                        title: "Embalagem Elegante",
+                                        description: "Apresentação premium em garrafas de vidro.",
+                                    },
+                                    {
+                                        title: "Água Mineral Pura",
+                                        description: "Água pura de origem natural.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "Conheça Nossa Linha Mineralle",
+                                    description:
+                                        "Descubra a água mineral premium Mineralle em garrafas de vidro, desenvolvida para experiências sofisticadas de hospitalidade e serviços de bebidas de alto padrão.",
+                                    sortLabel: "ORDENAR POR:",
+                                    viewDetails: "VER PRODUTOS",
+                                    products: {
+                                        "mineralle-premium": {
+                                            title: "Mineralle Premium",
+                                            description:
+                                                "Linha premium Mineralle para hotéis, restaurantes e eventos.",
+                                        },
+                                        "mineralle-750ml": {
+                                            title: "Mineralle Glass 750 SG",
+                                            description:
+                                                "Água mineral premium sem gás em garrafa de vidro de 750 ml.",
+                                        },
+                                        "mineralle-sparkling-750ml": {
+                                            title: "Mineralle Glass 750 CG",
+                                            description:
+                                                "Água mineral premium com gás em garrafa de vidro de 750 ml.",
+                                        },
+                                    },
+                                },
+                            },
+                            drinks: {
+                                title: "Bebidas",
+                                description:
+                                    "Um portfólio diversificado de bebidas que inclui energéticos, bebidas saborizadas e opções especiais de refrescos para os mercados consumidores modernos.",
+                                features: [
+                                    {
+                                        title: "Portfólio Diversificado",
+                                        description: "Diversas categorias de bebidas para mercados variados.",
+                                    },
+                                    {
+                                        title: "Produção Moderna",
+                                        description: "Fabricadas com processos modernos de produção.",
+                                    },
+                                    {
+                                        title: "Distribuição no Varejo",
+                                        description: "Adequadas para mercados de grande escala.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "Conheça Nossa Linha de Bebidas",
+                                    description:
+                                        "Explore nossa linha de bebidas desenvolvida para atender às preferências dos consumidores nos mercados varejistas e de distribuição internacional.",
+                                    sortLabel: "ORDENAR POR:",
+                                    viewDetails: "VER PRODUTOS",
+                                    products: {
+                                        "brun-gin": {
+                                            title: "Brun Gin",
+                                            description:
+                                                "Gin premium destinado a distribuidores de bebidas, estabelecimentos de hospitalidade e mercados varejistas.",
+                                        },
+                                        "brun-vodka": {
+                                            title: "Brun Vodka",
+                                            description:
+                                                "Vodca premium de sabor suave, desenvolvida para os mercados de bebidas e hospitalidade.",
+                                        },
+                                        "dusk-gin": {
+                                            title: "Dusk Gin",
+                                            description:
+                                                "Gin da linha Dusk, adequado aos mercados modernos de varejo e distribuição de bebidas.",
+                                        },
+                                        "dusk-vodka": {
+                                            title: "Dusk Vodka",
+                                            description:
+                                                "Vodca da linha Dusk, uma opção versátil para distribuição de bebidas.",
+                                        },
+                                        "storm-gin2l": {
+                                            title: "Storm Gin 2L",
+                                            description:
+                                                "Gin em garrafa de 2 litros para o varejo e a distribuição comercial de bebidas.",
+                                        },
+                                        "storm-vodka2l": {
+                                            title: "Storm Vodka 2L",
+                                            description:
+                                                "Vodca em garrafa de 2 litros para varejo, hospitalidade e distribuição de bebidas.",
+                                        },
+                                        "storm-energy-drink-2l": {
+                                            title: "Storm Energy Drink 2L",
+                                            description:
+                                                "Energético Storm em formato de 2 litros para o varejo e o abastecimento comercial.",
+                                        },
+                                        "storm-barrigood": {
+                                            title: "Storm Barrigood",
+                                            description:
+                                                "Produto da linha Storm Barrigood destinado ao varejo e à distribuição de bebidas.",
+                                        },
+                                        "attack-gin2l": {
+                                            title: "Attack Gin 2L",
+                                            description:
+                                                "Gin em garrafa de 2 litros da linha Attack para mercados varejistas e comerciais.",
+                                        },
+                                        "attack-vodka2l": {
+                                            title: "Attack Vodka 2L",
+                                            description:
+                                                "Vodca em garrafa de 2 litros da linha Attack para varejo e distribuição de bebidas.",
+                                        },
+                                        "attack-energy-drink-2l": {
+                                            title: "Attack Energy Drink 2L",
+                                            description:
+                                                "Energético Attack em formato de 2 litros para pontos de venda e abastecimento comercial.",
+                                        },
+                                        "attack-barrigood": {
+                                            title: "Attack Barrigood",
+                                            description:
+                                                "Produto da linha Attack Barrigood destinado ao varejo e à distribuição de bebidas.",
+                                        },
+                                    },
+                                },
+                            },
+                            "private-label": {
+                                title: "Marca Própria",
+                                description:
+                                    "Soluções personalizadas de fabricação e marca própria que permitem aos parceiros lançar e expandir suas próprias marcas de água e bebidas.",
+                                features: [
+                                    {
+                                        title: "Marca Personalizada",
+                                        description: "Rótulos personalizados para sua marca.",
+                                    },
+                                    {
+                                        title: "Produção Flexível",
+                                        description: "Produção escalável conforme suas necessidades.",
+                                    },
+                                    {
+                                        title: "Pronto para Exportação",
+                                        description: "Soluções para mercados internacionais.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "Conheça Nossas Soluções de Marca Própria",
+                                    description:
+                                        "Descubra soluções personalizadas de fabricação de água e bebidas de marca própria para apoiar o varejo, a hospitalidade e o desenvolvimento de marcas internacionais.",
+                                    sortLabel: "ORDENAR POR:",
+                                    viewDetails: "VER PRODUTOS",
+                                    products: {
+                                        "personalized-pet-water": {
+                                            title: "Água em PET Personalizada",
+                                            description:
+                                                "Desenvolvimento de rótulos e apresentação personalizada para sua marca.",
+                                        },
+                                        "personalized-glass-water": {
+                                            title: "Água em Vidro Personalizada",
+                                            description:
+                                                "Uma opção premium para eventos, hospitalidade e fortalecimento de relacionamentos comerciais.",
+                                        },
+                                        "on-demand-projects": {
+                                            title: "Projetos Sob Demanda",
+                                            description:
+                                                "Suporte comercial para avaliar formatos, volumes e viabilidade de produção.",
+                                        },
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
+        },
     },
     germany: {
         brands: {}

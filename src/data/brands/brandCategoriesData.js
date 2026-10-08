@@ -4,6 +4,9 @@ import premiumcottonyarnBanner from "@/assets/images/brands/india/girnar/premium
 import printedfabricsBanner from "@/assets/images/brands/india/kfprints/printedfabrics/banner.webp";
 import readymadegarmentsBanner from "@/assets/images/brands/india/ioly/readymadegarments/banner.webp";
 
+import acaiproductsBanner from "@/assets/images/brands/brazil/acaisuperfruta/banner.webp";
+import aguaAttivaBanner from '@/assets/images/brands/brazil/aguaattiva/banner.webp'
+
 export const brandCategoriesData = {
     india: {
         brands: {
@@ -48,7 +51,22 @@ export const brandCategoriesData = {
         brands: {}
     },
     brazil: {
-        brands: {}
+        brands: {
+            "acai-super-fruta": {
+                acaiproducts: {
+                    image: acaiproductsBanner,
+                    type: "products",
+                    productCount: 9,
+                },
+            },
+            "agua-attiva": {
+                mineralwaterbeverages: {
+                    type: "subcategories",
+                    image: aguaAttivaBanner,
+                    subcategoryCount: 5,
+                },
+            },
+        }
     },
     germany: {
         brands: {}

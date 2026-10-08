@@ -102,7 +102,34 @@ export const brandsContent = {
       title: "Brezilyalı Üretim Ortakları",
       description: "Güvenilir Brezilyalı üretim ortaklarımızı keşfedin.",
     },
-    brands: {},
+    brands: {
+      "acai-super-fruta": {
+        name: "Açaí Super Fruta",
+        subtitle: "Brezilyalı Açaí Üreticisi",
+        category: {
+          acaiproducts: {
+            slug: "acaiproducts",
+            type: "products",
+            title: "Açaí Ürünleri ve Çözümleri",
+            description:
+              "Amazon'un kalbinden gelen doğal içerikler, gelişmiş üretim süreçleri ve uluslararası kalite standartlarıyla sunulan premium Açaí ürünleri ve çözümleri.",
+          },
+        },
+      },
+      "agua-attiva": {
+        name: "Água Attiva",
+        subtitle: "Brezilyalı İçecek Üreticisi",
+        category: {
+          mineralwaterbeverages: {
+            slug: "mineralwaterbeverages",
+            type: "subcategories",
+            title: "Maden Suyu ve İçecek Çözümleri",
+            description:
+              "Perakende, konaklama ve küresel dağıtım pazarları için yüksek kalite standartlarında üretilen premium maden suyu, içecek ve özel markalı üretim çözümleri.",
+          },
+        },
+      },
+    },
   },
   germany: {
     hero: {

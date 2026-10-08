@@ -102,7 +102,34 @@ export const brandsContent = {
       title: "Parceiros de Fabricação Brasileiros",
       description: "Conheça nossos parceiros de fabricação de confiança no Brasil.",
     },
-    brands: {},
+    brands: {
+      "acai-super-fruta": {
+        name: "Açaí Super Fruta",
+        subtitle: "Fabricante Brasileiro de Açaí",
+        category: {
+          acaiproducts: {
+            slug: "acaiproducts",
+            type: "products",
+            title: "Produtos e Soluções de Açaí",
+            description:
+              "Produtos e soluções premium de açaí provenientes do coração da Amazônia, combinando ingredientes naturais, tecnologia avançada de processamento e padrões internacionais de qualidade.",
+          },
+        },
+      },
+      "agua-attiva": {
+        name: "Água Attiva",
+        subtitle: "Fabricante Brasileira de Bebidas",
+        category: {
+          mineralwaterbeverages: {
+            slug: "mineralwaterbeverages",
+            type: "subcategories",
+            title: "Soluções em Água Mineral e Bebidas",
+            description:
+              "Água mineral premium, bebidas e soluções de marca própria, produzidas com elevados padrões de qualidade para o varejo, a hotelaria e os mercados internacionais.",
+          },
+        },
+      },
+    },
   },
   germany: {
     hero: {

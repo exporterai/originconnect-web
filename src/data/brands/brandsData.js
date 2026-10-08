@@ -9,6 +9,11 @@ import iolyReadymadegarmentsBg from '@/assets/images/brands/india/ioly/readymade
 import kfprintsLogo from '@/assets/images/brands/india/kfprints/kfprints-logo.webp'
 import kfprintsprintedfabricsBg from '@/assets/images/brands/india/kfprints/printedfabrics.webp'
 
+import acaisuperfrutaLogo from '@/assets/images/brands/brazil/acaisuperfruta/acaisuperfruta-logo.webp'
+import acaiProductsBg from '@/assets/images/brands/brazil/acaisuperfruta/acai-products.webp'
+import attivaLogo from '@/assets/images/brands/brazil/aguaattiva/aguaattiva-logo.webp'
+import aguaAttivaBg from '@/assets/images/brands/brazil/aguaattiva/aguaattivaBG.webp'
+
 export const brandsData = {
   india: {
     brands: {
@@ -65,15 +70,36 @@ export const brandsData = {
     },
   },
   uk: {
-     brands: {}
+    brands: {}
   },
   brazil: {
-     brands: {}
+    brands: {
+      "acai-super-fruta": {
+        logo: acaisuperfrutaLogo,
+        category: {
+          acaiproducts: {
+            type: "products",
+            image: acaiProductsBg,
+            slug: "acaiproducts",
+          },
+        },
+      },
+      "agua-attiva": {
+        logo: attivaLogo,
+        category: {
+          mineralwaterbeverages: {
+            type: "subcategories",
+            image: aguaAttivaBg,
+            slug: "mineralwaterbeverages",
+          },
+        },
+      },
+    },
   },
   germany: {
-     brands: {}
+    brands: {}
   },
   turkey: {
-     brands: {}
+    brands: {}
   },
 };

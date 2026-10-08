@@ -18,9 +18,9 @@ export const brandsContent = {
     brandsLabel: "Brands",
   },
   india: {
-    hero:{
-      title:"Indian Manufacturing Partners",
-      description:"Explore our trusted Indian manufacturing partners.",
+    hero: {
+      title: "Indian Manufacturing Partners",
+      description: "Explore our trusted Indian manufacturing partners.",
     },
     brands: {
       "malu-advance-textile": {
@@ -91,30 +91,57 @@ export const brandsContent = {
     },
   },
   uk: {
-    hero:{
-      title:"British Manufacturing Partners",
-      description:"Explore our trusted British manufacturing partners.",
+    hero: {
+      title: "British Manufacturing Partners",
+      description: "Explore our trusted British manufacturing partners.",
     },
     brands: {}
   },
   brazil: {
-    hero:{
-      title:"Brazilian Manufacturing Partners",
-      description:"Explore our trusted Brazilian manufacturing partners.",
+    hero: {
+      title: "Brazilian Manufacturing Partners",
+      description: "Explore our trusted Brazilian manufacturing partners.",
     },
-    brands: {}
+    brands: {
+      "acai-super-fruta": {
+        name: "Açaí Super Fruta",
+        subtitle: "Brazilian Açaí Manufacturing Entity",
+        category: {
+          acaiproducts: {
+            slug: "acaiproducts",
+            type: "products",
+            title: "Açaí Products & Solutions",
+            description:
+              "Premium açaí products and solutions from the heart of the Amazon, combining natural ingredients, advanced processing, industrial scale, and international quality standards.",
+          },
+        },
+      },
+      "agua-attiva": {
+        name: "Água Attiva",
+        subtitle: "Brazilian Beverage Manufacturing Entity",
+        category: {
+          mineralwaterbeverages: {
+            slug: "mineralwaterbeverages",
+            type: "subcategories",
+            title: "Mineral Water & Beverage Solutions",
+            description:
+              "Premium mineral water, beverages, and private label solutions manufactured with advanced quality standards for retail, hospitality, and global distribution markets.",
+          },
+        },
+      },
+    },
   },
   germany: {
-    hero:{
-      title:"German Manufacturing Partners",
-      description:"Explore our trusted German manufacturing partners.",
+    hero: {
+      title: "German Manufacturing Partners",
+      description: "Explore our trusted German manufacturing partners.",
     },
     brands: {}
   },
   turkey: {
-    hero:{
-      title:"Turkish Manufacturing Partners",
-      description:"Explore our trusted Turkish manufacturing partners.",
+    hero: {
+      title: "Turkish Manufacturing Partners",
+      description: "Explore our trusted Turkish manufacturing partners.",
     },
     brands: {}
   },

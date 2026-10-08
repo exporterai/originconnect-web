@@ -462,7 +462,396 @@ export const brandCategoriesContent = {
         brands: {}
     },
     brazil: {
-        brands: {}
+        brands: {
+            "acai-super-fruta": {
+                acaiproducts: {
+                    title: "Açaí Products & Solutions",
+                    description:
+                        "Premium Amazonian açaí products crafted from carefully selected berries, offering exceptional taste, nutritional value, and scalable solutions for retail, food service, and industrial markets worldwide.",
+                    features: [
+                        {
+                            title: "Amazon Sourced",
+                            description: "Directly sourced from Amazon berries.",
+                        },
+                        {
+                            title: "International Quality",
+                            description: "Certified food safety standards.",
+                        },
+                        {
+                            title: "Global Distribution",
+                            description: "Supplying markets worldwide.",
+                        },
+                    ],
+                    productsSection: {
+                        title: "Our Açaí Product Range",
+                        description:
+                            "Explore our complete portfolio of premium açaí products, food-service solutions, industrial ingredients, and healthy beverage options.",
+                        sortLabel: "SORT BY:",
+                        viewDetails: "VIEW DETAILS",
+                        products: {
+                            "acai-pulp-400g": {
+                                title: "Açaí Pulp 400g",
+                                description:
+                                    "Ready-to-use frozen açaí pulp with authentic Amazonian flavor and nutritional value.",
+                            },
+                            "acai-pulp-1kg": {
+                                title: "Açaí Pulp 1kg",
+                                description:
+                                    "Premium frozen açaí pulp available for retail and food service applications.",
+                            },
+                            "acai-guarana-sorbet-1kg": {
+                                title: "Açaí + Guaraná Sorbet 1kg",
+                                description:
+                                    "Creamy açaí sorbet blended with guaraná for enhanced taste and energy.",
+                            },
+                            "acai-guarana-sorbet-5kg-10kg": {
+                                title: "Açaí + Guaraná Sorbet 5kg / 10kg",
+                                description:
+                                    "Food-service packaging designed for restaurants, cafés, and distributors.",
+                            },
+                            "industrial-acai-pulp": {
+                                title: "Industrial Açaí Pulp",
+                                description:
+                                    "Bulk açaí pulp solution for manufacturers and private-label production.",
+                            },
+                            "freeze-dried-acai": {
+                                title: "Freeze-Dried Açaí",
+                                description:
+                                    "High-quality freeze-dried açaí powder retaining nutrients and flavor.",
+                            },
+                            "acai-sorbet-mix-uht": {
+                                title: "Açaí Sorbet Mix UHT",
+                                description:
+                                    "Convenient UHT solution for preparing premium açaí sorbets.",
+                            },
+                            "tropical-acai-juice": {
+                                title: "Tropical Açaí Juice",
+                                description:
+                                    "Refreshing tropical beverage combining açaí and natural fruit flavors.",
+                            },
+                            "protein-acai": {
+                                title: "Protein Açaí",
+                                description:
+                                    "Protein-enriched açaí product designed for active and health-conscious consumers.",
+                            },
+                        },
+                    },
+                },
+            },
+            "agua-attiva": {
+                mineralwaterbeverages: {
+                    title: "Mineral Water & Beverage Solutions",
+                    description:
+                        "A comprehensive portfolio of premium mineral water, glass bottled water, beverages and private label solutions manufactured with advanced quality standards, modern bottling technology and scalable production capabilities for domestic and international markets.",
+                    features: [
+                        {
+                            title: "Natural Mineral Water",
+                            description: "Pure water with strict quality control.",
+                        },
+                        {
+                            title: "Premium Packaging",
+                            description: "PET, glass, and custom packaging options.",
+                        },
+                        {
+                            title: "Private Label Manufacturing",
+                            description: "Custom branding for global business partners.",
+                        },
+                    ],
+                    subCategoriesSection: {
+                        title: "Our Product Categories",
+                        description:
+                            "Explore our complete portfolio of mineral water, premium glass bottled water, beverages and private label solutions developed to serve retail, hospitality, food service and international distribution channels.",
+                        subCategories: {
+                            "pet-water": {
+                                title: "PET Water",
+                                description:
+                                    "A complete range of natural mineral water packaged in PET formats designed for retail distribution, convenience stores, hospitality and everyday hydration.",
+                                features: [
+                                    {
+                                        title: "Retail Ready",
+                                        description: "Designed for large-scale retail distribution.",
+                                    },
+                                    {
+                                        title: "Multiple Sizes",
+                                        description: "Available in convenient packaging formats.",
+                                    },
+                                    {
+                                        title: "Quality Assured",
+                                        description: "Manufactured under strict quality controls.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "Explore Our PET Water Collection",
+                                    description:
+                                        "Discover our PET bottled mineral water range developed to deliver purity, convenience and reliable hydration across retail and commercial markets.",
+                                    sortLabel: "SORT BY:",
+                                    viewDetails: "VIEW PRODUCTS",
+                                    products: {
+                                        "attiva510cg": {
+                                            title: "Attiva 510 CG",
+                                            description:
+                                                "Sparkling mineral water in PET bottles, convenient for individual consumption.",
+                                        },
+                                        "attiva510sg": {
+                                            title: "Attiva 510 SG",
+                                            description:
+                                                "Still, light, and versatile PET mineral water.",
+                                        },
+                                        "attiva510sg-sport": {
+                                            title: "Attiva 510 SG Sport",
+                                            description:
+                                                "Sports bottle for active routines, gym, and movement.",
+                                        },
+                                        "attiva-1500cg": {
+                                            title: "Attiva 1500 CG",
+                                            description:
+                                                "Family-sized, gas-powered stovetop for tabletop use and sharing.",
+                                        },
+                                        "attiva-1500sg": {
+                                            title: "Attiva 1500 SG",
+                                            description:
+                                                "Family-friendly gas-free format for home, business and events.",
+                                        },
+                                        "glass": {
+                                            title: "Glass",
+                                            description:
+                                                "A practical option for events, businesses, and high-traffic areas.",
+                                        },
+                                    },
+                                },
+                            },
+                            "attiva-water-glass": {
+                                title: "Attiva Water Glass",
+                                description:
+                                    "Premium Attiva mineral water presented in elegant glass packaging, ideal for restaurants, hotels, premium dining and hospitality environments.",
+                                features: [
+                                    {
+                                        title: "Premium Presentation",
+                                        description: "Elegant glass bottles for premium presentation.",
+                                    },
+                                    {
+                                        title: "Hospitality Focused",
+                                        description: "Ideal for restaurants, hotels, and hospitality.",
+                                    },
+                                    {
+                                        title: "Natural Mineral Water",
+                                        description: "Pure water for refreshing hydration.",
+                                    },
+                                ],
+
+                                productsSection: {
+                                    title: "Explore Our Attiva Glass Collection",
+                                    description:
+                                        "Browse our premium Attiva glass bottled water collection designed to enhance hospitality experiences with purity, quality and sophisticated presentation.",
+                                    sortLabel: "SORT BY:",
+                                    viewDetails: "VIEW PRODUCTS",
+                                    products: {
+                                        "attiva-glass-300ml": {
+                                            title: "Attiva Glass 300 SG",
+                                            description:
+                                                "Premium still water in a 300ml glass bottle.",
+                                        },
+                                        "attiva-glass-750ml": {
+                                            title: "Attiva Glass 750 SG",
+                                            description:
+                                                "750 ml still bottle for restaurants and events.",
+                                        },
+                                        "attiva-sparkling-glass-300ml": {
+                                            title: "Attiva Glass 300 CG",
+                                            description:
+                                                "Premium sparkling water in a 300ml glass bottle.",
+                                        },
+                                        "attiva-sparkling-glass-750ml": {
+                                            title: "Attiva Glass 750 CG",
+                                            description:
+                                                "750 ml bottle of sparkling water for shared tables.",
+                                        },
+                                        "attiva-premium": {
+                                            title: "Attiva Premium",
+                                            description:
+                                                "Attiva premium line for table settings, events and hospitality.",
+                                        },
+                                    },
+                                },
+                            },
+                            "mineralle-water-glass": {
+                                title: "Mineralle Water Glass",
+                                description:
+                                    "A premium glass bottled mineral water collection developed for luxury hospitality, fine dining establishments and premium beverage service.",
+
+                                features: [
+                                    {
+                                        title: "Luxury Positioning",
+                                        description: "Designed for premium hospitality environments.",
+                                    },
+                                    {
+                                        title: "Elegant Packaging",
+                                        description: "Premium presentation in quality glass bottles.",
+                                    },
+                                    {
+                                        title: "Pure Mineral Water",
+                                        description: "Naturally sourced water for pure hydration.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "Explore Our Mineralle Collection",
+                                    description:
+                                        "Discover premium Mineralle glass bottled water crafted for luxury hospitality experiences and sophisticated beverage service.",
+                                    sortLabel: "SORT BY:",
+                                    viewDetails: "VIEW PRODUCTS",
+                                    products: {
+                                        "mineralle-premium": {
+                                            title: "Mineralle Premium",
+                                            description:
+                                                "Mineralle premium line for hotels, restaurants and events.",
+                                        },
+                                        "mineralle-750ml": {
+                                            title: "Mineralle Glass 750 SG",
+                                            description: "Premium still water in a 750ml glass bottle.",
+                                        },
+                                        "mineralle-sparkling-750ml": {
+                                            title: "Mineralle Glass 750 CG",
+                                            description: "Premium sparkling water in a 750ml glass bottle.",
+                                        },
+                                    },
+                                },
+                            },
+                            drinks: {
+                                title: "Drinks",
+                                description:
+                                    "A diverse beverage portfolio including energy drinks, flavored beverages and specialty refreshment products manufactured for modern consumer markets.",
+                                features: [
+                                    {
+                                        title: "Diverse Portfolio",
+                                        description: "Multiple beverage categories for diverse markets.",
+                                    },
+                                    {
+                                        title: "Modern Production",
+                                        description: "Manufactured using advanced production processes.",
+                                    },
+                                    {
+                                        title: "Retail Distribution",
+                                        description: "Suitable for large-scale retail markets.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "Explore Our Beverage Collection",
+                                    description:
+                                        "Browse our range of beverages developed to meet evolving consumer preferences across retail and international distribution markets.",
+                                    sortLabel: "SORT BY:",
+                                    viewDetails: "VIEW PRODUCTS",
+                                    products: {
+                                        "brun-gin": {
+                                            title: "Brun Gin",
+                                            description:
+                                                "Premium gin presented for beverage distributors, hospitality businesses and retail markets.",
+                                        },
+                                        "brun-vodka": {
+                                            title: "Brun Vodka",
+                                            description:
+                                                "Premium vodka with a smooth character, designed for beverage retail and hospitality markets.",
+                                        },
+                                        "dusk-gin": {
+                                            title: "Dusk Gin",
+                                            description:
+                                                "Gin from the Dusk beverage range, suited to contemporary beverage retail and distribution.",
+                                        },
+                                        "dusk-vodka": {
+                                            title: "Dusk Vodka",
+                                            description:
+                                                "Vodka from the Dusk range, offering a versatile spirit option for beverage distribution.",
+                                        },
+                                        "storm-gin2l": {
+                                            title: "Storm Gin 2L",
+                                            description:
+                                                "Large-format 2L gin bottle designed for beverage retail and commercial distribution.",
+                                        },
+                                        "storm-vodka2l": {
+                                            title: "Storm Vodka 2L",
+                                            description:
+                                                "Large-format 2L vodka bottle suited to retail, hospitality and beverage distribution.",
+                                        },
+                                        "storm-energy-drink-2l": {
+                                            title: "Storm Energy Drink 2L",
+                                            description:
+                                                "Large-format Storm energy drink designed for retail distribution and commercial beverage supply.",
+                                        },
+                                        "storm-barrigood": {
+                                            title: "Storm Barrigood",
+                                            description:
+                                                "Storm-branded Barrigood beverage product for retail and beverage distribution.",
+                                        },
+                                        "attack-gin2l": {
+                                            title: "Attack Gin 2L",
+                                            description:
+                                                "Large-format 2L gin bottle from the Attack range for retail and commercial beverage markets.",
+                                        },
+                                        "attack-vodka2l": {
+                                            title: "Attack Vodka 2L",
+                                            description:
+                                                "Large-format 2L vodka bottle from the Attack range for beverage retail and distribution.",
+                                        },
+                                        "attack-energy-drink-2l": {
+                                            title: "Attack Energy Drink 2L",
+                                            description:
+                                                "Large-format Attack energy drink designed for retail outlets and commercial beverage supply.",
+                                        },
+                                        "attack-barrigood": {
+                                            title: "Attack Barrigood",
+                                            description:
+                                                "Attack-branded Barrigood beverage product for retail and beverage distribution.",
+                                        },
+                                    },
+                                },
+                            },
+                            "private-label": {
+                                title: "Private Label",
+                                description:
+                                    "Custom manufacturing and private label solutions allowing partners to launch and scale their own branded water and beverage products.",
+                                features: [
+                                    {
+                                        title: "Custom Branding",
+                                        description: "Personalized labels for your brand identity.",
+                                    },
+                                    {
+                                        title: "Flexible Production",
+                                        description: "Scalable production for changing business needs.",
+                                    },
+                                    {
+                                        title: "Export Ready",
+                                        description: "Prepared for international market distribution.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "Explore Our Private Label Solutions",
+                                    description:
+                                        "Discover customized private label water and beverage manufacturing services designed to support retail, hospitality and international brand development.",
+                                    sortLabel: "SORT BY:",
+                                    viewDetails: "VIEW PRODUCTS",
+                                    products: {
+                                        "personalized-pet-water": {
+                                            title: "Personalized PET water",
+                                            description:
+                                                "Label development and presentation for your brand.",
+                                        },
+                                        "personalized-glass-water": {
+                                            title: "Personalized glass water dispenser",
+                                            description:
+                                                "Premium option for events, hospitality, and relationship building.",
+                                        },
+                                        "on-demand-projects": {
+                                            title: "On-demand projects",
+                                            description:
+                                                "Commercial support to assess formats, volumes, and feasibility.",
+                                        },
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
+        },
     },
     germany: {
         brands: {}

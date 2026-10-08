@@ -229,6 +229,11 @@
     font-size: 15px;
     line-height: 1.8;
     color: #5f5a55;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .brandProductsGrid-sort {

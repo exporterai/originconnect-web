@@ -102,7 +102,34 @@ export const brandsContent = {
       title: "ब्राज़ीलियन मैन्युफैक्चरिंग पार्टनर्स",
       description: "हमारे विश्वसनीय ब्राज़ीलियन मैन्युफैक्चरिंग पार्टनर्स को देखें।",
     },
-    brands: {},
+    brands: {
+      "acai-super-fruta": {
+        name: "Açaí Super Fruta",
+        subtitle: "ब्राज़ीलियन अकै निर्माता",
+        category: {
+          acaiproducts: {
+            slug: "acaiproducts",
+            type: "products",
+            title: "अकै उत्पाद एवं समाधान",
+            description:
+              "अमेज़न के हृदय से प्राप्त प्रीमियम अकै उत्पाद और समाधान, जो प्राकृतिक सामग्री, उन्नत प्रसंस्करण तकनीक और अंतरराष्ट्रीय गुणवत्ता मानकों के साथ निर्मित हैं।",
+          },
+        },
+      },
+      "agua-attiva": {
+        name: "Água Attiva",
+        subtitle: "ब्राज़ीलियाई पेय निर्माता",
+        category: {
+          mineralwaterbeverages: {
+            slug: "mineralwaterbeverages",
+            type: "subcategories",
+            title: "मिनरल वाटर एवं पेय समाधान",
+            description:
+              "रिटेल, हॉस्पिटैलिटी और वैश्विक वितरण बाजारों के लिए उच्च गुणवत्ता मानकों के साथ निर्मित प्रीमियम मिनरल वाटर, पेय पदार्थ और प्राइवेट लेबल समाधान।",
+          },
+        },
+      },
+    },
   },
   germany: {
     hero: {

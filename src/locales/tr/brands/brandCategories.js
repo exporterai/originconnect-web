@@ -462,7 +462,396 @@ export const brandCategoriesContent = {
         brands: {}
     },
     brazil: {
-        brands: {}
+        brands: {
+            "acai-super-fruta": {
+                acaiproducts: {
+                    title: "Açaí Ürünleri ve Çözümleri",
+                    description:
+                        "Özenle seçilmiş Amazon meyvelerinden üretilen premium Açaí ürünleri; perakende, gıda hizmetleri ve endüstriyel uygulamalar için geliştirilmiştir.",
+                    features: [
+                        {
+                            title: "Amazon Kaynaklı",
+                            description: "Doğrudan Amazon meyvelerinden.",
+                        },
+                        {
+                            title: "Uluslararası Kalite",
+                            description: "Sertifikalı gıda güvenliği.",
+                        },
+                        {
+                            title: "Küresel Dağıtım",
+                            description: "Dünya çapında tedarik.",
+                        },
+                    ],
+                    productsSection: {
+                        title: "Açaí Ürün Yelpazemiz",
+                        description:
+                            "Premium Açaí ürünleri, gıda hizmetleri çözümleri ve endüstriyel içeriklerden oluşan portföyümüzü keşfedin.",
+                        sortLabel: "SIRALA:",
+                        viewDetails: "DETAYLARI GÖR",
+                        products: {
+                            "acai-pulp-400g": {
+                                title: "Açaí Püresi 400g",
+                                description:
+                                    "Otantik Amazon lezzetine sahip dondurulmuş Açaí püresi.",
+                            },
+                            "acai-pulp-1kg": {
+                                title: "Açaí Püresi 1kg",
+                                description:
+                                    "Perakende ve gıda hizmetleri için premium Açaí püresi.",
+                            },
+                            "acai-guarana-sorbet-1kg": {
+                                title: "Açaí + Guaraná Sorbe 1kg",
+                                description:
+                                    "Guaraná ile zenginleştirilmiş kremamsı sorbe.",
+                            },
+                            "acai-guarana-sorbet-5kg-10kg": {
+                                title: "Açaí + Guaraná Sorbe 5kg / 10kg",
+                                description:
+                                    "Restoran ve distribütörler için büyük paketler.",
+                            },
+                            "industrial-acai-pulp": {
+                                title: "Endüstriyel Açaí Püresi",
+                                description:
+                                    "Üreticiler için toplu Açaí çözümü.",
+                            },
+                            "freeze-dried-acai": {
+                                title: "Dondurularak Kurutulmuş Açaí",
+                                description:
+                                    "Besin değerlerini koruyan Açaí tozu.",
+                            },
+                            "acai-sorbet-mix-uht": {
+                                title: "Açaí Sorbe Karışımı UHT",
+                                description:
+                                    "Premium sorbeler için UHT çözümü.",
+                            },
+                            "tropical-acai-juice": {
+                                title: "Tropikal Açaí İçeceği",
+                                description:
+                                    "Açaí ve meyve aromalı ferahlatıcı içecek.",
+                            },
+                            "protein-acai": {
+                                title: "Proteinli Açaí",
+                                description:
+                                    "Aktif yaşam tarzı için protein destekli ürün.",
+                            },
+                        },
+                    },
+                },
+            },
+            "agua-attiva": {
+                mineralwaterbeverages: {
+                    title: "Maden Suyu ve İçecek Çözümleri",
+                    description:
+                        "Yüksek kalite standartları, modern şişeleme teknolojisi ve ölçeklenebilir üretim kapasitesiyle yurt içi ve uluslararası pazarlar için üretilen premium maden suyu, cam şişe su, içecek ve özel markalı ürünlerden oluşan kapsamlı bir portföy.",
+                    features: [
+                        {
+                            title: "Doğal Maden Suyu",
+                            description: "Sıkı kalite kontrolüyle elde edilir.",
+                        },
+                        {
+                            title: "Premium Ambalaj",
+                            description: "PET, cam ve özel ambalaj seçenekleri.",
+                        },
+                        {
+                            title: "Özel Markalı Üretim",
+                            description: "Global iş ortaklarına özel üretim çözümleri.",
+                        },
+                    ],
+                    subCategoriesSection: {
+                        title: "Ürün Kategorilerimiz",
+                        description:
+                            "Perakende, konaklama, yiyecek-içecek hizmetleri ve uluslararası dağıtım kanalları için geliştirilen maden suyu, premium cam şişe su, içecek ve özel markalı ürün çözümlerimizin tamamını keşfedin.",
+                        subCategories: {
+                            "pet-water": {
+                                title: "PET Şişe Su",
+                                description:
+                                    "Perakende satış, marketler, konaklama işletmeleri ve günlük tüketim için tasarlanmış PET ambalajlı doğal maden suyu çeşitleri.",
+                                features: [
+                                    {
+                                        title: "Perakendeye Hazır",
+                                        description: "Geniş ölçekli dağıtım için tasarlanmıştır.",
+                                    },
+                                    {
+                                        title: "Farklı Boyutlar",
+                                        description: "Kullanışlı ambalaj seçenekleriyle sunulur.",
+                                    },
+                                    {
+                                        title: "Güvence Altında Kalite",
+                                        description: "Sıkı kalite kontrol süreçleriyle üretilir.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "PET Şişe Su Koleksiyonumuzu Keşfedin",
+                                    description:
+                                        "Perakende ve ticari pazarlar için saflık, kullanım kolaylığı ve güvenilir hidrasyon sunan PET şişe maden suyu ürünlerimizi keşfedin.",
+                                    sortLabel: "SIRALAMA:",
+                                    viewDetails: "ÜRÜNLERİ GÖRÜNTÜLE",
+                                    products: {
+                                        "attiva510cg": {
+                                            title: "Attiva 510 CG",
+                                            description:
+                                                "Bireysel tüketim için kullanışlı PET şişelerde gazlı maden suyu.",
+                                        },
+                                        "attiva510sg": {
+                                            title: "Attiva 510 SG",
+                                            description:
+                                                "Hafif ve çok yönlü, gazsız PET şişe maden suyu.",
+                                        },
+                                        "attiva510sg-sport": {
+                                            title: "Attiva 510 SG Sport",
+                                            description:
+                                                "Spor, fitness ve hareketli yaşam tarzları için tasarlanmış spor şişesi.",
+                                        },
+                                        "attiva-1500cg": {
+                                            title: "Attiva 1500 CG",
+                                            description:
+                                                "Paylaşım ve sofrada tüketim için aile boyu gazlı maden suyu.",
+                                        },
+                                        "attiva-1500sg": {
+                                            title: "Attiva 1500 SG",
+                                            description:
+                                                "Ev, iş yeri ve etkinlikler için aile boyu gazsız maden suyu.",
+                                        },
+                                        "glass": {
+                                            title: "Bardak",
+                                            description:
+                                                "Etkinlikler, işletmeler ve yoğun kullanım alanları için pratik bir seçenek.",
+                                        },
+                                    },
+                                },
+                            },
+                            "attiva-water-glass": {
+                                title: "Attiva Cam Şişe Su",
+                                description:
+                                    "Restoranlar, oteller, seçkin yemek mekânları ve konaklama işletmeleri için ideal, şık cam ambalajlarda sunulan premium Attiva maden suyu.",
+                                features: [
+                                    {
+                                        title: "Premium Sunum",
+                                        description: "Şık cam şişe seçenekleri sunar.",
+                                    },
+                                    {
+                                        title: "Konaklama Sektörüne Uygun",
+                                        description: "Restoranlar ve oteller için idealdir.",
+                                    },
+                                    {
+                                        title: "Doğal Maden Suyu",
+                                        description: "Saf ve ferahlatıcı su deneyimi.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "Attiva Cam Şişe Koleksiyonumuzu Keşfedin",
+                                    description:
+                                        "Konaklama ve yeme-içme deneyimlerini saflık, kalite ve zarif sunumla zenginleştirmek için tasarlanmış premium Attiva cam şişe su koleksiyonumuzu keşfedin.",
+                                    sortLabel: "SIRALAMA:",
+                                    viewDetails: "ÜRÜNLERİ GÖRÜNTÜLE",
+                                    products: {
+                                        "attiva-glass-300ml": {
+                                            title: "Attiva Glass 300 SG",
+                                            description:
+                                                "300 ml cam şişede premium gazsız maden suyu.",
+                                        },
+                                        "attiva-glass-750ml": {
+                                            title: "Attiva Glass 750 SG",
+                                            description:
+                                                "Restoranlar ve etkinlikler için 750 ml gazsız maden suyu.",
+                                        },
+                                        "attiva-sparkling-glass-300ml": {
+                                            title: "Attiva Glass 300 CG",
+                                            description:
+                                                "300 ml cam şişede premium gazlı maden suyu.",
+                                        },
+                                        "attiva-sparkling-glass-750ml": {
+                                            title: "Attiva Glass 750 CG",
+                                            description:
+                                                "Paylaşımlı sofralar için 750 ml gazlı maden suyu.",
+                                        },
+                                        "attiva-premium": {
+                                            title: "Attiva Premium",
+                                            description:
+                                                "Sofralar, etkinlikler ve konaklama işletmeleri için Attiva premium ürün serisi.",
+                                        },
+                                    },
+                                },
+                            },
+                            "mineralle-water-glass": {
+                                title: "Mineralle Cam Şişe Su",
+                                description:
+                                    "Lüks konaklama işletmeleri, seçkin restoranlar ve premium içecek sunumları için geliştirilen cam şişeli premium maden suyu koleksiyonu.",
+                                features: [
+                                    {
+                                        title: "Lüks Konumlandırma",
+                                        description: "Premium mekânlar için özel tasarlanmıştır.",
+                                    },
+                                    {
+                                        title: "Zarif Ambalaj",
+                                        description: "Kaliteli cam şişelerde zarif sunum.",
+                                    },
+                                    {
+                                        title: "Saf Maden Suyu",
+                                        description: "Doğal kaynaklardan gelen saf su.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "Mineralle Koleksiyonumuzu Keşfedin",
+                                    description:
+                                        "Lüks konaklama deneyimleri ve seçkin içecek sunumları için hazırlanan premium Mineralle cam şişe su koleksiyonunu keşfedin.",
+                                    sortLabel: "SIRALAMA:",
+                                    viewDetails: "ÜRÜNLERİ GÖRÜNTÜLE",
+                                    products: {
+                                        "mineralle-premium": {
+                                            title: "Mineralle Premium",
+                                            description:
+                                                "Oteller, restoranlar ve etkinlikler için Mineralle premium ürün serisi.",
+                                        },
+                                        "mineralle-750ml": {
+                                            title: "Mineralle Glass 750 SG",
+                                            description:
+                                                "750 ml cam şişede premium gazsız maden suyu.",
+                                        },
+                                        "mineralle-sparkling-750ml": {
+                                            title: "Mineralle Glass 750 CG",
+                                            description:
+                                                "750 ml cam şişede premium gazlı maden suyu.",
+                                        },
+                                    },
+                                },
+                            },
+                            drinks: {
+                                title: "İçecekler",
+                                description:
+                                    "Modern tüketici pazarları için üretilen enerji içecekleri, aromalı içecekler ve özel ferahlatıcı ürünlerden oluşan geniş bir içecek portföyü.",
+                                features: [
+                                    {
+                                        title: "Geniş Ürün Yelpazesi",
+                                        description: "Farklı içecek kategorileri sunar.",
+                                    },
+                                    {
+                                        title: "Modern Üretim",
+                                        description: "Gelişmiş üretim süreçleriyle hazırlanır.",
+                                    },
+                                    {
+                                        title: "Perakende Dağıtımı",
+                                        description: "Büyük ölçekli pazarlar için uygundur.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "İçecek Koleksiyonumuzu Keşfedin",
+                                    description:
+                                        "Perakende ve uluslararası dağıtım pazarlarındaki değişen tüketici beklentilerine yönelik içecek çeşitlerimizi keşfedin.",
+                                    sortLabel: "SIRALAMA:",
+                                    viewDetails: "ÜRÜNLERİ GÖRÜNTÜLE",
+                                    products: {
+                                        "brun-gin": {
+                                            title: "Brun Gin",
+                                            description:
+                                                "İçecek distribütörleri, konaklama işletmeleri ve perakende pazarları için premium cin.",
+                                        },
+                                        "brun-vodka": {
+                                            title: "Brun Vodka",
+                                            description:
+                                                "Perakende ve konaklama sektörleri için yumuşak içim karakterine sahip premium votka.",
+                                        },
+                                        "dusk-gin": {
+                                            title: "Dusk Gin",
+                                            description:
+                                                "Modern perakende ve dağıtım pazarlarına yönelik Dusk serisi cin.",
+                                        },
+                                        "dusk-vodka": {
+                                            title: "Dusk Vodka",
+                                            description:
+                                                "İçecek dağıtımı için çok yönlü bir seçenek sunan Dusk serisi votka.",
+                                        },
+                                        "storm-gin2l": {
+                                            title: "Storm Gin 2L",
+                                            description:
+                                                "Perakende ve ticari dağıtım için tasarlanmış 2 litrelik cin şişesi.",
+                                        },
+                                        "storm-vodka2l": {
+                                            title: "Storm Vodka 2L",
+                                            description:
+                                                "Perakende, konaklama ve içecek dağıtımı için 2 litrelik votka şişesi.",
+                                        },
+                                        "storm-energy-drink-2l": {
+                                            title: "Storm Energy Drink 2L",
+                                            description:
+                                                "Perakende ve ticari içecek tedariki için 2 litrelik Storm enerji içeceği.",
+                                        },
+                                        "storm-barrigood": {
+                                            title: "Storm Barrigood",
+                                            description:
+                                                "Perakende ve içecek dağıtımına yönelik Storm markalı Barrigood içeceği.",
+                                        },
+                                        "attack-gin2l": {
+                                            title: "Attack Gin 2L",
+                                            description:
+                                                "Perakende ve ticari içecek pazarları için Attack serisine ait 2 litrelik cin şişesi.",
+                                        },
+                                        "attack-vodka2l": {
+                                            title: "Attack Vodka 2L",
+                                            description:
+                                                "İçecek perakendesi ve dağıtımı için Attack serisine ait 2 litrelik votka şişesi.",
+                                        },
+                                        "attack-energy-drink-2l": {
+                                            title: "Attack Energy Drink 2L",
+                                            description:
+                                                "Perakende satış noktaları ve ticari içecek tedariki için 2 litrelik Attack enerji içeceği.",
+                                        },
+                                        "attack-barrigood": {
+                                            title: "Attack Barrigood",
+                                            description:
+                                                "Perakende ve içecek dağıtımına yönelik Attack markalı Barrigood içeceği.",
+                                        },
+                                    },
+                                },
+                            },
+                            "private-label": {
+                                title: "Özel Markalı Üretim",
+                                description:
+                                    "İş ortaklarının kendi markalı su ve içecek ürünlerini piyasaya sunmalarını ve büyütmelerini sağlayan özel üretim ve markalama çözümleri.",
+                                features: [
+                                    {
+                                        title: "Özel Markalama",
+                                        description: "Markanıza özel etiket tasarımı sunar.",
+                                    },
+                                    {
+                                        title: "Esnek Üretim",
+                                        description: "İhtiyaca göre ölçeklenebilir üretim kapasitesi.",
+                                    },
+                                    {
+                                        title: "İhracata Hazır",
+                                        description: "Uluslararası pazarlar için uygun çözümler.",
+                                    },
+                                ],
+                                productsSection: {
+                                    title: "Özel Markalı Üretim Çözümlerimizi Keşfedin",
+                                    description:
+                                        "Perakende, konaklama ve uluslararası marka geliştirme süreçlerini desteklemek üzere tasarlanmış kişiye özel su ve içecek üretim çözümlerimizi keşfedin.",
+                                    sortLabel: "SIRALAMA:",
+                                    viewDetails: "ÜRÜNLERİ GÖRÜNTÜLE",
+                                    products: {
+                                        "personalized-pet-water": {
+                                            title: "Kişiselleştirilmiş PET Su",
+                                            description:
+                                                "Markanıza özel etiket geliştirme ve ambalaj sunumu.",
+                                        },
+                                        "personalized-glass-water": {
+                                            title: "Kişiselleştirilmiş Cam Su Sebili",
+                                            description:
+                                                "Etkinlikler, konaklama işletmeleri ve iş ilişkilerini geliştirmek için premium bir seçenek.",
+                                        },
+                                        "on-demand-projects": {
+                                            title: "Talebe Özel Projeler",
+                                            description:
+                                                "Ambalaj formatlarını, miktarları ve uygulanabilirliği değerlendirmek için ticari destek.",
+                                        },
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
+        },
     },
     germany: {
         brands: {}

@@ -193,6 +193,50 @@ import kaftaanProduct1g from "@/assets/images/brands/india/ioly/readymadegarment
 
 import cordsetBanner from "@/assets/images/brands/india/ioly/readymadegarments/cordset/banner.webp";
 
+import acaiPulp400g from "@/assets/images/brands/brazil/acaisuperfruta/acai-pulp-400g.webp";
+import acaiPulp1kg from "@/assets/images/brands/brazil/acaisuperfruta/acai-pulp-1kg.webp";
+import acaiGuaranaSorbet1kg from "@/assets/images/brands/brazil/acaisuperfruta/acai-guarana-sorbet-1kg.webp";
+import acaiGuaranaSorbet5kg from "@/assets/images/brands/brazil/acaisuperfruta/acai-guarana-sorbet-5kg-10kg.webp";
+import industrialAcaiPulp from "@/assets/images/brands/brazil/acaisuperfruta/industrial-acai-pulp.webp";
+import freezeDriedAcai from "@/assets/images/brands/brazil/acaisuperfruta/freeze-dried-acai.webp";
+import acaiSorbetMixUht from "@/assets/images/brands/brazil/acaisuperfruta/acai-sorbet-mix-uht.webp";
+import tropicalAcaiJuice from "@/assets/images/brands/brazil/acaisuperfruta/tropical-acai-juice.webp";
+import proteinAcai from "@/assets/images/brands/brazil/acaisuperfruta/protein-acai.webp";
+
+import attiva510cg from '@/assets/images/brands/brazil/aguaattiva/pet-water/attiva510cg.webp'
+import attiva510sg from '@/assets/images/brands/brazil/aguaattiva/pet-water/attiva510sg.webp'
+import attiva510sgSport from '@/assets/images/brands/brazil/aguaattiva/pet-water/attiva510sg-sport.webp'
+import attiva1500cg from '@/assets/images/brands/brazil/aguaattiva/pet-water/attiva1500cg.webp'
+import attiva1500sg from '@/assets/images/brands/brazil/aguaattiva/pet-water/attiva1500sg.webp'
+import glass from '@/assets/images/brands/brazil/aguaattiva/pet-water/glass.webp'
+
+import attivaGlass300ml from '@/assets/images/brands/brazil/aguaattiva/attiva-glass-water/attiva-glass-300ml.webp'
+import attivaGlass750ml from '@/assets/images/brands/brazil/aguaattiva/attiva-glass-water/attiva-glass-750ml.webp'
+import attivaSparklingGlass300ml from '@/assets/images/brands/brazil/aguaattiva/attiva-glass-water/attiva-sparkling-glass-300ml.webp'
+import attivaSparklingGlass750ml from '@/assets/images/brands/brazil/aguaattiva/attiva-glass-water/attiva-sparkling-glass-750ml.webp'
+import attivaPremium from '@/assets/images/brands/brazil/aguaattiva/attiva-glass-water/attiva-premium.webp'
+
+import minerallePremium from '@/assets/images/brands/brazil/aguaattiva/mineral-water-glass/mineralle-premium.webp'
+import mineralle750ml from '@/assets/images/brands/brazil/aguaattiva/mineral-water-glass/mineralle-750ml.webp'
+import mineralleSparkling750ml from '@/assets/images/brands/brazil/aguaattiva/mineral-water-glass/mineralle-sparkling-750ml.webp'
+
+import brunGin from '@/assets/images/brands/brazil/aguaattiva/drinks/brun-gin.webp'
+import brunVodka from '@/assets/images/brands/brazil/aguaattiva/drinks/brun-vodka.webp'
+import duskGin from '@/assets/images/brands/brazil/aguaattiva/drinks/dusk-gin.webp'
+import duskVodka from '@/assets/images/brands/brazil/aguaattiva/drinks/dusk-vodka.webp'
+import stormGin2l from '@/assets/images/brands/brazil/aguaattiva/drinks/storm-gin2l.webp'
+import stormVodka2l from '@/assets/images/brands/brazil/aguaattiva/drinks/storm-vodka2l.webp'
+import stormEnergyDrink2l from '@/assets/images/brands/brazil/aguaattiva/drinks/storm-energy-drink-2l.webp'
+import stormBarrigood from '@/assets/images/brands/brazil/aguaattiva/drinks/storm-barrigood.webp'
+import attackGin2l from '@/assets/images/brands/brazil/aguaattiva/drinks/attack-gin2l.webp'
+import attackVodka2l from '@/assets/images/brands/brazil/aguaattiva/drinks/attack-vodka2l.webp'
+import attackEnergyDrink2l from '@/assets/images/brands/brazil/aguaattiva/drinks/attack-energy-drink-2l.webp'
+import attackBarrigood from '@/assets/images/brands/brazil/aguaattiva/drinks/attack-barrigood.webp'
+
+import personalizedPetWater from '@/assets/images/brands/brazil/aguaattiva/private-label/personalized-pet-water.webp'
+import personalizedGlassWater from '@/assets/images/brands/brazil/aguaattiva/private-label/personalized-glass-water.webp'
+import onDemandProjects from '@/assets/images/brands/brazil/aguaattiva/private-label/on-demand-projects.webp'
+
 export const brandProductsData = {
     india: {
         brands: {
@@ -1771,7 +1815,216 @@ export const brandProductsData = {
         brands: {}
     },
     brazil: {
-        brands: {}
+        brands: {
+            "acai-super-fruta": {
+                acaiproducts: {
+                    "acai-pulp-400g": {
+                        gallery: [
+                            acaiPulp400g,
+                        ],
+                    },
+                    "acai-pulp-1kg": {
+                        gallery: [
+                            acaiPulp1kg,
+                        ],
+                    },
+                    "acai-guarana-sorbet-1kg": {
+                        gallery: [
+                            acaiGuaranaSorbet1kg,
+                        ],
+                    },
+                    "acai-guarana-sorbet-5kg-10kg": {
+                        gallery: [
+                            acaiGuaranaSorbet5kg,
+                        ],
+                    },
+                    "industrial-acai-pulp": {
+                        gallery: [
+                            industrialAcaiPulp,
+                        ],
+                    },
+                    "freeze-dried-acai": {
+                        gallery: [
+                            freezeDriedAcai,
+                        ],
+                    },
+                    "acai-sorbet-mix-uht": {
+                        gallery: [
+                            acaiSorbetMixUht,
+                        ],
+                    },
+                    "tropical-acai-juice": {
+                        gallery: [
+                            tropicalAcaiJuice,
+                        ],
+                    },
+                    "protein-acai": {
+                        gallery: [
+                            proteinAcai,
+                        ],
+                    },
+                }
+            },
+            "agua-attiva": {
+                mineralwaterbeverages: {
+                    "pet-water": {
+                        "attiva510cg": {
+                            gallery: [
+                                attiva510cg,
+                            ],
+                        },
+                        "attiva510sg": {
+                            gallery: [
+                                attiva510sg,
+                            ],
+                        },
+                        "attiva510sg-sport": {
+                            gallery: [
+                                attiva510sgSport,
+                            ],
+                        },
+                        "attiva-1500cg": {
+                            gallery: [
+                                attiva1500cg,
+                            ],
+                        },
+                        "attiva-1500sg": {
+                            gallery: [
+                                attiva1500sg,
+                            ],
+                        },
+                        "glass": {
+                            gallery: [
+                                glass,
+                            ],
+                        },
+                    },
+                    "attiva-water-glass": {
+                        "attiva-glass-300ml": {
+                            gallery: [
+                                attivaGlass300ml,
+                            ],
+                        },
+                        "attiva-glass-750ml": {
+                            gallery: [
+                                attivaGlass750ml,
+                            ],
+                        },
+                        "attiva-sparkling-glass-300ml": {
+                            gallery: [
+                                attivaSparklingGlass300ml,
+                            ],
+                        },
+                        "attiva-sparkling-glass-750ml": {
+                            gallery: [
+                                attivaSparklingGlass750ml,
+                            ],
+                        },
+                        "attiva-premium": {
+                            gallery: [
+                                attivaPremium,
+                            ],
+                        },
+                    },
+                    "mineralle-water-glass": {
+                        "mineralle-premium": {
+                            gallery: [
+                                minerallePremium,
+                            ],
+                        },
+                        "mineralle-750ml": {
+                            gallery: [
+                                mineralle750ml,
+                            ],
+                        },
+                        "mineralle-sparkling-750ml": {
+                            gallery: [
+                                mineralleSparkling750ml,
+                            ],
+                        },
+                    },
+                    drinks: {
+                        "brun-gin": {
+                            gallery: [
+                                brunGin,
+                            ],
+                        },
+                        "brun-vodka": {
+                            gallery: [
+                                brunVodka,
+                            ],
+                        },
+                        "dusk-gin": {
+                            gallery: [
+                                duskGin,
+                            ],
+                        },
+                        "dusk-vodka": {
+                            gallery: [
+                                duskVodka,
+                            ],
+                        },
+                        "storm-gin2l": {
+                            gallery: [
+                                stormGin2l,
+                            ],
+                        },
+                        "storm-vodka2l": {
+                            gallery: [
+                                stormVodka2l,
+                            ],
+                        },
+                        "storm-energy-drink-2l": {
+                            gallery: [
+                                stormEnergyDrink2l,
+                            ],
+                        },
+                        "storm-barrigood": {
+                            gallery: [
+                                stormBarrigood,
+                            ],
+                        },
+                        "attack-gin2l": {
+                            gallery: [
+                                attackGin2l,
+                            ],
+                        },
+                        "attack-vodka2l": {
+                            gallery: [
+                                attackVodka2l,
+                            ],
+                        },
+                        "attack-energy-drink-2l": {
+                            gallery: [
+                                attackEnergyDrink2l,
+                            ],
+                        },
+                        "attack-barrigood": {
+                            gallery: [
+                                attackBarrigood,
+                            ],
+                        },
+                    },
+                    "private-label": {
+                        "personalized-pet-water": {
+                            gallery: [
+                                personalizedPetWater,
+                            ],
+                        },
+                        "personalized-glass-water": {
+                            gallery: [
+                                personalizedGlassWater,
+                            ],
+                        },
+                        "on-demand-projects": {
+                            gallery: [
+                                onDemandProjects,
+                            ],
+                        },
+                    },
+                },
+            },
+        }
     },
     germany: {
         brands: {}

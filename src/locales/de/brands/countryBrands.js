@@ -102,7 +102,34 @@ export const brandsContent = {
       title: "Brasilianische Herstellungspartner",
       description: "Entdecken Sie unsere vertrauenswürdigen brasilianischen Herstellungspartner.",
     },
-    brands: {},
+    brands: {
+      "acai-super-fruta": {
+        name: "Açaí Super Fruta",
+        subtitle: "Brasilianischer Açaí-Hersteller",
+        category: {
+          acaiproducts: {
+            slug: "acaiproducts",
+            type: "products",
+            title: "Açaí-Produkte & Lösungen",
+            description:
+              "Premium-Açaí-Produkte und Lösungen aus dem Herzen des Amazonas, hergestellt mit natürlichen Zutaten, moderner Verarbeitungstechnologie und internationalen Qualitätsstandards.",
+          },
+        },
+      },
+      "agua-attiva": {
+        name: "Água Attiva",
+        subtitle: "Brasilianischer Getränkehersteller",
+        category: {
+          mineralwaterbeverages: {
+            slug: "mineralwaterbeverages",
+            type: "subcategories",
+            title: "Mineralwasser- und Getränkelösungen",
+            description:
+              "Premium-Mineralwasser, Getränke und Private-Label-Lösungen, hergestellt nach hohen Qualitätsstandards für Einzelhandel, Gastronomie und internationale Märkte.",
+          },
+        },
+      },
+    },
   },
   germany: {
     hero: {

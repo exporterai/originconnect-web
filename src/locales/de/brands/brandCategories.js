@@ -461,7 +461,396 @@ export const brandCategoriesContent = {
     brands: {}
   },
   brazil: {
-    brands: {}
+    brands: {
+      "acai-super-fruta": {
+        acaiproducts: {
+          title: "Açaí-Produkte & Lösungen",
+          description:
+            "Premium-Açaí-Produkte aus dem Amazonas, hergestellt aus sorgfältig ausgewählten Beeren und entwickelt für Einzelhandel, Gastronomie und industrielle Anwendungen weltweit.",
+          features: [
+            {
+              title: "Aus dem Amazonas",
+              description: "Direkt aus Amazonas-Beeren.",
+            },
+            {
+              title: "Internationale Qualität",
+              description: "Zertifizierte Lebensmittelsicherheit.",
+            },
+            {
+              title: "Weltweiter Vertrieb",
+              description: "Belieferung globaler Märkte.",
+            },
+          ],
+          productsSection: {
+            title: "Unser Açaí-Produktsortiment",
+            description:
+              "Entdecken Sie unser komplettes Sortiment an Premium-Açaí-Produkten, Gastronomielösungen und industriellen Zutaten.",
+            sortLabel: "SORTIEREN NACH:",
+            viewDetails: "DETAILS ANSEHEN",
+            products: {
+              "acai-pulp-400g": {
+                title: "Açaí-Pulpe 400g",
+                description:
+                  "Tiefgekühlte Açaí-Pulpe mit authentischem Amazonas-Geschmack.",
+              },
+              "acai-pulp-1kg": {
+                title: "Açaí-Pulpe 1kg",
+                description:
+                  "Premium-Açaí-Pulpe für Einzelhandel und Gastronomie.",
+              },
+              "acai-guarana-sorbet-1kg": {
+                title: "Açaí + Guaraná Sorbet 1kg",
+                description:
+                  "Cremiges Açaí-Sorbet mit Guaraná.",
+              },
+              "acai-guarana-sorbet-5kg-10kg": {
+                title: "Açaí + Guaraná Sorbet 5kg / 10kg",
+                description:
+                  "Großpackungen für Gastronomie und Vertrieb.",
+              },
+              "industrial-acai-pulp": {
+                title: "Industrielle Açaí-Pulpe",
+                description:
+                  "Açaí-Pulpe für industrielle Anwendungen.",
+              },
+              "freeze-dried-acai": {
+                title: "Gefriergetrocknetes Açaí",
+                description:
+                  "Açaí-Pulver mit erhaltenen Nährstoffen.",
+              },
+              "acai-sorbet-mix-uht": {
+                title: "Açaí Sorbet Mix UHT",
+                description:
+                  "UHT-Mischung für Premium-Açaí-Sorbets.",
+              },
+              "tropical-acai-juice": {
+                title: "Tropischer Açaí-Saft",
+                description:
+                  "Erfrischendes Getränk mit Açaí und Früchten.",
+              },
+              "protein-acai": {
+                title: "Protein-Açaí",
+                description:
+                  "Proteinreiches Açaí für aktive Verbraucher.",
+              },
+            },
+          },
+        },
+      },
+      "agua-attiva": {
+        mineralwaterbeverages: {
+          title: "Mineralwasser- und Getränkelösungen",
+          description:
+            "Ein umfassendes Sortiment an Premium-Mineralwasser, Mineralwasser in Glasflaschen, Getränken und Private-Label-Lösungen. Hergestellt nach hohen Qualitätsstandards mit moderner Abfülltechnologie und skalierbaren Produktionskapazitäten für nationale und internationale Märkte.",
+          features: [
+            {
+              title: "Natürliches Mineralwasser",
+              description: "Unter strengen Qualitätskontrollen abgefüllt.",
+            },
+            {
+              title: "Premium-Verpackungen",
+              description: "PET-, Glas- und individuelle Verpackungsoptionen.",
+            },
+            {
+              title: "Private-Label-Herstellung",
+              description: "Individuelle Produktion für globale Geschäftspartner.",
+            },
+          ],
+          subCategoriesSection: {
+            title: "Unsere Produktkategorien",
+            description:
+              "Entdecken Sie unser gesamtes Sortiment an Mineralwasser, Premium-Mineralwasser in Glasflaschen, Getränken und Private-Label-Lösungen für Einzelhandel, Hotellerie, Gastronomie und internationale Vertriebskanäle.",
+            subCategories: {
+              "pet-water": {
+                title: "PET-Flaschenwasser",
+                description:
+                  "Ein umfassendes Sortiment an natürlichem Mineralwasser in PET-Verpackungen für den Einzelhandel, Convenience-Stores, die Gastronomie und den täglichen Flüssigkeitsbedarf.",
+                features: [
+                  {
+                    title: "Für den Einzelhandel geeignet",
+                    description: "Für großflächigen Vertrieb konzipiert.",
+                  },
+                  {
+                    title: "Verschiedene Größen",
+                    description: "In praktischen Verpackungsformaten erhältlich.",
+                  },
+                  {
+                    title: "Geprüfte Qualität",
+                    description: "Unter strengen Qualitätskontrollen hergestellt.",
+                  },
+                ],
+                productsSection: {
+                  title: "Entdecken Sie unsere PET-Wasserkollektion",
+                  description:
+                    "Entdecken Sie unser PET-Mineralwassersortiment, das Reinheit, Komfort und zuverlässige Erfrischung für Einzelhandel und gewerbliche Märkte bietet.",
+                  sortLabel: "SORTIEREN NACH:",
+                  viewDetails: "PRODUKTE ANSEHEN",
+                  products: {
+                    "attiva510cg": {
+                      title: "Attiva 510 CG",
+                      description:
+                        "Kohlensäurehaltiges Mineralwasser in PET-Flaschen, ideal für den individuellen Verbrauch.",
+                    },
+                    "attiva510sg": {
+                      title: "Attiva 510 SG",
+                      description:
+                        "Natürliches, stilles und vielseitiges Mineralwasser in einer PET-Flasche.",
+                    },
+                    "attiva510sg-sport": {
+                      title: "Attiva 510 SG Sport",
+                      description:
+                        "Sportflasche für einen aktiven Alltag, Fitness und unterwegs.",
+                    },
+                    "attiva-1500cg": {
+                      title: "Attiva 1500 CG",
+                      description:
+                        "Mineralwasser mit Kohlensäure im Familienformat, ideal zum Teilen und für gemeinsame Mahlzeiten.",
+                    },
+                    "attiva-1500sg": {
+                      title: "Attiva 1500 SG",
+                      description:
+                        "Stilles Mineralwasser im Familienformat für Haushalt, Unternehmen und Veranstaltungen.",
+                    },
+                    "glass": {
+                      title: "Glas",
+                      description:
+                        "Eine praktische Option für Veranstaltungen, Unternehmen und stark frequentierte Bereiche.",
+                    },
+                  },
+                },
+              },
+              "attiva-water-glass": {
+                title: "Attiva-Mineralwasser in Glasflaschen",
+                description:
+                  "Premium-Mineralwasser von Attiva in eleganten Glasflaschen, ideal für Restaurants, Hotels, gehobene Gastronomie und das Gastgewerbe.",
+                features: [
+                  {
+                    title: "Premium-Präsentation",
+                    description: "Elegante Glasflaschen für hochwertige Präsentationen.",
+                  },
+                  {
+                    title: "Ideal für das Gastgewerbe",
+                    description: "Ideal für Restaurants, Hotels und Gastronomie.",
+                  },
+                  {
+                    title: "Natürliches Mineralwasser",
+                    description: "Reines Wasser für erfrischenden Genuss.",
+                  },
+                ],
+                productsSection: {
+                  title: "Entdecken Sie unsere Attiva-Glaskollektion",
+                  description:
+                    "Entdecken Sie unsere Premium-Kollektion von Attiva-Mineralwasser in Glasflaschen, die Gastronomie und Hotellerie durch Reinheit, Qualität und eine elegante Präsentation bereichert.",
+                  sortLabel: "SORTIEREN NACH:",
+                  viewDetails: "PRODUKTE ANSEHEN",
+                  products: {
+                    "attiva-glass-300ml": {
+                      title: "Attiva Glass 300 SG",
+                      description:
+                        "Premium-Mineralwasser ohne Kohlensäure in einer 300-ml-Glasflasche.",
+                    },
+                    "attiva-glass-750ml": {
+                      title: "Attiva Glass 750 SG",
+                      description:
+                        "750 ml stilles Mineralwasser in einer Glasflasche für Restaurants und Veranstaltungen.",
+                    },
+                    "attiva-sparkling-glass-300ml": {
+                      title: "Attiva Glass 300 CG",
+                      description:
+                        "Premium-Mineralwasser mit Kohlensäure in einer 300-ml-Glasflasche.",
+                    },
+                    "attiva-sparkling-glass-750ml": {
+                      title: "Attiva Glass 750 CG",
+                      description:
+                        "750 ml Mineralwasser mit Kohlensäure in einer Glasflasche, ideal für gemeinsame Mahlzeiten.",
+                    },
+                    "attiva-premium": {
+                      title: "Attiva Premium",
+                      description:
+                        "Die Premium-Produktlinie von Attiva für Tischservice, Veranstaltungen und das Gastgewerbe.",
+                    },
+                  },
+                },
+              },
+              "mineralle-water-glass": {
+                title: "Mineralle-Mineralwasser in Glasflaschen",
+                description:
+                  "Eine Premium-Kollektion von Mineralwasser in Glasflaschen, entwickelt für Luxushotels, gehobene Restaurants und anspruchsvolle Getränkeservices.",
+                features: [
+                  {
+                    title: "Exklusive Positionierung",
+                    description: "Für anspruchsvolle Premiumumgebungen entwickelt.",
+                  },
+                  {
+                    title: "Elegante Verpackung",
+                    description: "Hochwertige Präsentation in eleganten Glasflaschen.",
+                  },
+                  {
+                    title: "Reines Mineralwasser",
+                    description: "Natürliches Wasser aus ausgewählten Quellen.",
+                  },
+                ],
+                productsSection: {
+                  title: "Entdecken Sie unsere Mineralle-Kollektion",
+                  description:
+                    "Entdecken Sie Premium-Mineralwasser von Mineralle in Glasflaschen, entwickelt für luxuriöse Gastlichkeit und einen anspruchsvollen Getränkeservice.",
+                  sortLabel: "SORTIEREN NACH:",
+                  viewDetails: "PRODUKTE ANSEHEN",
+                  products: {
+                    "mineralle-premium": {
+                      title: "Mineralle Premium",
+                      description:
+                        "Die Premium-Produktlinie von Mineralle für Hotels, Restaurants und Veranstaltungen.",
+                    },
+                    "mineralle-750ml": {
+                      title: "Mineralle Glass 750 SG",
+                      description:
+                        "Premium-Mineralwasser ohne Kohlensäure in einer 750-ml-Glasflasche.",
+                    },
+                    "mineralle-sparkling-750ml": {
+                      title: "Mineralle Glass 750 CG",
+                      description:
+                        "Premium-Mineralwasser mit Kohlensäure in einer 750-ml-Glasflasche.",
+                    },
+                  },
+                },
+              },
+              drinks: {
+                title: "Getränke",
+                description:
+                  "Ein vielseitiges Getränkesortiment mit Energy-Drinks, aromatisierten Getränken und speziellen Erfrischungsgetränken für moderne Verbrauchermärkte.",
+                features: [
+                  {
+                    title: "Vielfältiges Sortiment",
+                    description: "Verschiedene Getränkekategorien für unterschiedliche Märkte.",
+                  },
+                  {
+                    title: "Moderne Produktion",
+                    description: "Mit modernen Produktionsverfahren hergestellt.",
+                  },
+                  {
+                    title: "Einzelhandelsvertrieb",
+                    description: "Für große Absatzmärkte bestens geeignet.",
+                  },
+                ],
+                productsSection: {
+                  title: "Entdecken Sie unsere Getränkekollektion",
+                  description:
+                    "Entdecken Sie unser Getränkesortiment, das auf die sich wandelnden Verbraucherbedürfnisse im Einzelhandel und im internationalen Vertrieb ausgerichtet ist.",
+                  sortLabel: "SORTIEREN NACH:",
+                  viewDetails: "PRODUKTE ANSEHEN",
+                  products: {
+                    "brun-gin": {
+                      title: "Brun Gin",
+                      description:
+                        "Premium-Gin für Getränkehändler, Gastronomiebetriebe und den Einzelhandel.",
+                    },
+                    "brun-vodka": {
+                      title: "Brun Vodka",
+                      description:
+                        "Premium-Wodka mit mildem Charakter für den Getränkeeinzelhandel und das Gastgewerbe.",
+                    },
+                    "dusk-gin": {
+                      title: "Dusk Gin",
+                      description:
+                        "Gin aus der Dusk-Getränkeserie für den modernen Einzelhandel und Getränkegroßhandel.",
+                    },
+                    "dusk-vodka": {
+                      title: "Dusk Vodka",
+                      description:
+                        "Wodka aus der Dusk-Serie als vielseitige Spirituose für den Getränkevertrieb.",
+                    },
+                    "storm-gin2l": {
+                      title: "Storm Gin 2L",
+                      description:
+                        "Gin in einer 2-Liter-Flasche für den Einzelhandel und den gewerblichen Vertrieb.",
+                    },
+                    "storm-vodka2l": {
+                      title: "Storm Vodka 2L",
+                      description:
+                        "Wodka in einer 2-Liter-Flasche für Einzelhandel, Gastronomie und Getränkevertrieb.",
+                    },
+                    "storm-energy-drink-2l": {
+                      title: "Storm Energy Drink 2L",
+                      description:
+                        "Storm-Energy-Drink im 2-Liter-Format für den Einzelhandel und die gewerbliche Getränkelieferung.",
+                    },
+                    "storm-barrigood": {
+                      title: "Storm Barrigood",
+                      description:
+                        "Getränkeprodukt der Marke Storm Barrigood für Einzelhandel und Getränkevertrieb.",
+                    },
+                    "attack-gin2l": {
+                      title: "Attack Gin 2L",
+                      description:
+                        "Gin in einer 2-Liter-Flasche aus der Attack-Serie für den Einzelhandel und gewerbliche Getränkemärkte.",
+                    },
+                    "attack-vodka2l": {
+                      title: "Attack Vodka 2L",
+                      description:
+                        "Wodka in einer 2-Liter-Flasche aus der Attack-Serie für Einzelhandel und Getränkevertrieb.",
+                    },
+                    "attack-energy-drink-2l": {
+                      title: "Attack Energy Drink 2L",
+                      description:
+                        "Attack-Energy-Drink im 2-Liter-Format für Verkaufsstellen und die gewerbliche Getränkelieferung.",
+                    },
+                    "attack-barrigood": {
+                      title: "Attack Barrigood",
+                      description:
+                        "Getränkeprodukt der Marke Attack Barrigood für Einzelhandel und Getränkevertrieb.",
+                    },
+                  },
+                },
+              },
+              "private-label": {
+                title: "Eigenmarken und Lohnherstellung",
+                description:
+                  "Individuelle Produktions- und Private-Label-Lösungen, mit denen Partner ihre eigenen Wasser- und Getränkemarken auf den Markt bringen und ausbauen können.",
+                features: [
+                  {
+                    title: "Individuelle Markenkennzeichnung",
+                    description: "Personalisierte Etiketten für Ihre Marke.",
+                  },
+                  {
+                    title: "Flexible Produktion",
+                    description: "Skalierbare Produktionskapazitäten nach individuellem Bedarf.",
+                  },
+                  {
+                    title: "Exportbereit",
+                    description: "Für internationale Märkte bestens geeignet.",
+                  },
+                ],
+                productsSection: {
+                  title: "Entdecken Sie unsere Private-Label-Lösungen",
+                  description:
+                    "Entdecken Sie maßgeschneiderte Lösungen für die Herstellung von Wasser und Getränken, die Einzelhandel, Gastgewerbe und den Aufbau internationaler Marken unterstützen.",
+                  sortLabel: "SORTIEREN NACH:",
+                  viewDetails: "PRODUKTE ANSEHEN",
+                  products: {
+                    "personalized-pet-water": {
+                      title: "Individuell gestaltetes PET-Wasser",
+                      description:
+                        "Entwicklung und Gestaltung von Etiketten und Verpackungen für Ihre Marke.",
+                    },
+                    "personalized-glass-water": {
+                      title: "Individueller Wasserspender aus Glas",
+                      description:
+                        "Eine Premium-Lösung für Veranstaltungen, Gastgewerbe und den Aufbau langfristiger Geschäftsbeziehungen.",
+                    },
+                    "on-demand-projects": {
+                      title: "Projekte nach Bedarf",
+                      description:
+                        "Kommerzielle Unterstützung bei der Bewertung von Formaten, Mengen und Machbarkeit.",
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
   },
   germany: {
     brands: {}
