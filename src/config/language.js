@@ -3,12 +3,16 @@ let language = "en";
 if (typeof window !== "undefined") {
   const host = window.location.hostname.toLowerCase();
 
-  if (host.endsWith(".de")) {
+  if (host.includes("brazil")) {
+    language = "pt";
+  } else if (host.endsWith(".de")) {
     language = "de";
-  } else if (host.endsWith(".in")) {
-    language = "hi";
   } else if (host.endsWith(".tr")) {
     language = "tr";
+  } else if (host.endsWith(".br")) {
+    language = "pt";
+  } else if (host.endsWith(".in")) {
+    language = "hi";
   } else if (host.endsWith(".uk")) {
     language = "en";
   } else {

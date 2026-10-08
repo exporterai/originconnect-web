@@ -22,9 +22,9 @@ function OurStory() {
                             {ourStoryContent.section.tag}
                         </span>
                         <div>
-                            <h2 className="heading dark-heading mb-5">
+                            <h1 className="heading dark-heading mb-5">
                                 {ourStoryContent.section.title}
-                            </h2>
+                            </h1>
                             {/* <p className="description dark-description max-w-[650px] mx-auto">
                                 We bridge the gap between international buyers and trusted Indian manufacturers through sourcing, market development, production coordination, and export execution.
                             </p> */}

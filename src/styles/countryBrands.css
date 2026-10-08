@@ -1,0 +1,658 @@
+/* ==========================
+   COUNTRY HERO
+========================== */
+
+.countryHero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 200px;
+}
+
+.countryHero-overlay {
+    position: absolute;
+    backdrop-filter: blur(0.2px);
+    background: rgba(248, 243, 235, 0.3);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.countryHero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+/* breadcrumb */
+
+.countryHero-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.countryHero-breadcrumb a {
+    color: #555;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.countryHero-breadcrumb a:hover {
+    color: #5a4118;
+    font-weight: 550;
+}
+
+.countryHero-breadcrumb span {
+    font-weight: 600;
+    color: #111;
+}
+
+/* content */
+.countryHeroContent {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.countryHeroFlag-icon {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.countryHeroContent-text h1 {
+    font-size: 35px;
+    line-height: 1;
+    margin-bottom: 10px;
+    color: #151515;
+    font-weight: 550;
+}
+
+.countryHeroContent-text p {
+    font-size: 16px;
+    color: #4b4b4b;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 992px) {
+
+    .countryHeroContent-text h1 {
+        font-size: 30px;
+    }
+
+    .countryHeroContent-text p {
+        font-size: 18px;
+    }
+
+    .countryHeroFlag-icon {
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+    .countryHeroContent {
+        width: 100%;
+        /* flex-direction: column; */
+        gap: 15px;
+    }
+
+    .countryHero-breadcrumb {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .countryHeroContent-text h1 {
+        font-size: 25px;
+    }
+
+    .countryHeroContent-text p {
+        font-size: 13px;
+    }
+
+    .countryHeroFlag-icon {
+        width: 50px !important;
+        height: 50px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .countryHero .container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .countryHeroContent-text h1 {
+        font-size: 22px;
+    }
+
+    .countryHeroFlag-icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .countryHeroContent {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+}
+
+/* =========================
+   brand detail
+========================= */
+
+.countryBrands {
+    padding: 40px 0;
+    background: #f7f4ef;
+}
+
+.countryBrands-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.brandsGrid-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.brandsGrid-sort {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brandsGrid-sort label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.brandsGrid-sort select {
+    height: 40px;
+    min-width: 120px;
+    padding: 0 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    cursor: pointer;
+    background: white;
+    outline: none;
+}
+
+.brandsGrid-sort select:active {
+    border: 1px solid #d9d9d9;
+}
+
+/* .brandsGrid-sort select:active{
+  border: 1px solid #d9d9d9;
+} */
+.brandShowcase-wrapper {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.brandCollabCardMain {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgb(209, 209, 209);
+}
+
+.brandCollabCard {
+    display: grid;
+    /* grid-template-columns: 1.05fr 1fr 1.05fr; */
+    grid-template-columns: 2fr 2fr 1fr;
+    border-radius: 36px;
+    overflow: hidden;
+    background: #eef0f3;
+    border: 1px solid rgb(207, 207, 207);
+    /* min-height: 720px; */
+}
+
+/* ==========================
+   LEFT CARD
+========================== */
+
+.brandCollabCard-left {
+    position: relative;
+    padding: 20px 30px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* .brandCollabCard-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0c2550;
+  letter-spacing: 1px;
+} */
+
+.brandCollabCard-divider {
+    width: 60px;
+    height: 4px;
+    background: #27ae60;
+    border-radius: 50px;
+    /* margin: 10px 0; */
+}
+
+.brandCollabCard-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.brandCollabCard-logos img:first-child {
+    width: 70px;
+    /* height: 70px; */
+}
+
+.brandCollabCard-logos img:last-child {
+    max-width: 120px;
+    height: 70px;
+}
+
+.brandCollabCard-logos .plus {
+    font-size: 40px;
+    color: #21b45a;
+    font-weight: 300;
+}
+
+.brandCollabCard-left .brandName {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.brandCollabCard-left h2 {
+    font-size: 25px;
+    line-height: 1.1;
+    color: #072b68;
+    text-align: center;
+    font-weight: 700;
+}
+
+.brandCollabCard-left .collaborationContent {
+    /* margin: 5px 0px; */
+    font-size: 18px;
+    color: #21b45a;
+    font-weight: 600;
+}
+
+.brandCollabCard-left h3 {
+    font-size: 22px;
+    color: #072b68;
+    line-height: 1.15;
+    text-align: center;
+    /* margin-top: 5px; */
+    font-weight: 700;
+}
+
+
+/* ==========================
+   CENTER CARD
+========================== */
+.brandCollabCard-center {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.brandCollabCard-center::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.55) 40%,
+            rgba(0, 0, 0, 0.1) 100%);
+    z-index: 1;
+}
+
+.brandCollabCard-overlay {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brandCollabCard-overlay .line {
+    width: 50px;
+    height: 4px;
+    background: #27ae60;
+    margin-bottom: 15px;
+}
+
+.brandCollabCard-center h2 {
+    font-size: 25px;
+    line-height: 0.95;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.brandCollabCard-center p {
+    margin-top: 15px;
+    max-width: 350px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.brandCollabCard-center h2,
+.brandCollabCard-center p {
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.brandCollabCard-products {
+    margin-top: auto;
+    height: 40px;
+    border-radius: 10px;
+    background: #dff0df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #21b45a;
+    transition: all 0.3s;
+}
+
+.brandCollabCard-products:hover {
+    gap: 20px;
+}
+
+/* ==========================
+   RIGHT CARD
+========================== */
+
+.brandCollabCard-right {
+    background: #f4f7fb;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blueLine {
+    width: 50px;
+    height: 3px;
+    background: #1d64ff;
+    margin-top: 5px;
+}
+
+.brandCollabCard-right h2 {
+    font-size: 25px;
+    line-height: 1.05;
+    font-weight: 700;
+    color: #082b69;
+}
+
+.brandCollabCard-right h2 span {
+    color: #1d64ff;
+}
+
+.brandCollabCard-right p {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #21304a;
+    text-align: justify;
+}
+
+.brandCollabCard-right img {
+    width: 95%;
+    margin: 5px auto;
+    display: block;
+}
+
+.brandCollabCard-right button {
+    margin-top: auto;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: #1d64ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.brandCollabCard-right button:hover {
+    gap: 20px;
+}
+
+@media (max-width: 992px) {
+
+    .brandsGrid-header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .brandCollabCard {
+        grid-template-columns: 1fr;
+    }
+
+    .brandCollabCard-left,
+    .brandCollabCard-center,
+    .brandCollabCard-right {
+        min-height: auto;
+    }
+
+    .brandCollabCard-left {
+        padding: 30px 20px;
+    }
+
+    .brandCollabCard-center {
+        min-height: 280px;
+        text-align: center;
+    }
+
+    .brandCollabCard-center p {
+        margin-inline: auto;
+    }
+
+    .brandCollabCard-overlay .line {
+        margin-inline: auto;
+    }
+
+    .brandCollabCard-right {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .blueLine {
+        margin-inline: auto;
+    }
+
+    .brandCollabCard-right p {
+        max-width: 350px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .brandCollabCard-right img {
+        max-width: 260px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .brandCollabCard {
+        border-radius: 20px;
+    }
+
+    .brandCollabCard-left {
+        padding: 20px 15px;
+    }
+
+    .brandCollabCard-logos {
+        gap: 15px;
+    }
+
+    .brandCollabCard-logos img:first-child {
+        width: 55px;
+        /* height: 55px; */
+    }
+
+    .brandCollabCard-logos img:last-child {
+        max-width: 80px;
+        height: 55px;
+    }
+
+    .brandCollabCard-logos .plus {
+        font-size: 28px;
+    }
+
+    .brandCollabCard-left h2,
+    .brandCollabCard-left h3 {
+        font-size: 20px;
+    }
+
+    .brandCollabCard-left .description,
+    .brandCollabCard-left .collaborationContent {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .brandCollabCard-overlay {
+        padding: 20px;
+    }
+
+    .brandCollabCard-center h2 {
+        font-size: 22px;
+    }
+
+    .brandCollabCard-center p {
+        font-size: 14px;
+        /* max-width: 100%; */
+    }
+
+    .brandCollabCard-products {
+        height: 35px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .brandCollabCard-right {
+        padding: 20px 15px;
+    }
+
+    .brandCollabCard-right h2 {
+        font-size: 22px;
+    }
+
+    .blueLine {
+        margin: 10px auto;
+    }
+
+    .brandCollabCard-right img {
+        max-width: 180px;
+    }
+
+    .brandCollabCard-right button {
+        width: 100%;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .brandsGrid-sort select {
+        height: 30px;
+        padding: 0 10px;
+        font-size: 14px;
+        min-width: auto;
+    }
+
+    .brandCollabCardMain {
+        padding: 10px;
+    }
+
+    .brandCollabCard-left .description,
+    .brandCollabCard-left .collaborationContent {
+        font-size: 12px;
+    }
+
+    .brandCollabCard-center p {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .brandCollabCard-right p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .brandCollabCard-logos img:first-child {
+        width: 45px;
+        /* height: 45px; */
+    }
+
+    .brandCollabCard-logos img:last-child {
+        max-width: 70px;
+        height: 45px;
+    }
+
+    .brandCollabCard-left h2,
+    .brandCollabCard-left h3 {
+        font-size: 18px;
+    }
+
+    .brandCollabCard-center h2 {
+        font-size: 18px;
+    }
+
+    .brandCollabCard-right h2 {
+        font-size: 18px;
+    }
+
+    .brandCollabCard-products {
+        font-size: 13px;
+        gap: 6px;
+    }
+
+    .brandCollabCard-right button {
+        font-size: 13px;
+    }
+}

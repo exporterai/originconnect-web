@@ -5,14 +5,16 @@ import useLanguage from "@/hooks/useLanguage";
 import { brandSubcategoriesData } from "@/data/brands/brandSubcategoriesData";
 
 function BrandSubCategoryGrid() {
-  const { brandSlug, categorySlug } = useParams();
+  const { country, brandSlug, categorySlug } = useParams();
   const { brandCategoriesContent } = useLanguage();
   const categoryContent =
-    brandCategoriesContent?.[brandSlug]?.[categorySlug];
+    brandCategoriesContent?.[country]
+      ?.brands?.[brandSlug]
+    ?.[categorySlug];
   const subCategories =
     categoryContent?.subCategoriesSection?.subCategories || {};
   const subCategoryData =
-    brandSubcategoriesData?.[brandSlug]?.[categorySlug] || {};
+    brandSubcategoriesData?.[country]?.brands?.[brandSlug]?.[categorySlug] || {};
   return (
     <section className="brandProductsGrid section">
       <div className="container">
@@ -34,7 +36,7 @@ function BrandSubCategoryGrid() {
             return (
               <Link
                 key={slug}
-                to={`/brands/${brandSlug}/${categorySlug}/subcategory/${slug}`}
+                to={`/brands/${country}/${brandSlug}/${categorySlug}/subcategory/${slug}`}
               >
                 <article className="brandProductCard">
                   <div className="brandProductCard-image">

@@ -6,6 +6,7 @@ import { brandProductsData } from "@/data/brands/brandProductsData";
 
 const BrandProductDetailsTable = () => {
   const {
+    country,
     brandSlug,
     categorySlug,
     productSlug,
@@ -13,18 +14,23 @@ const BrandProductDetailsTable = () => {
   } = useParams();
   const { brandProductsText } = useLanguage();
   const pageContent = brandProductsText;
-  const productData =
+  const productData = subcategorySlug
+    ? brandProductsData?.[country]?.brands?.[
+    brandSlug
+    ]?.[
+    categorySlug
+    ]?.[
     subcategorySlug
-      ? brandProductsData?.[brandSlug]?.[
-      categorySlug
-      ]?.[subcategorySlug]?.[
-      productSlug
-      ]
-      : brandProductsData?.[brandSlug]?.[
-      categorySlug
-      ]?.[
-      productSlug
-      ];
+    ]?.[
+    productSlug
+    ]
+    : brandProductsData?.[country]?.brands?.[
+    brandSlug
+    ]?.[
+    categorySlug
+    ]?.[
+    productSlug
+    ];
   const specifications =
     productData?.specifications || [];
   if (

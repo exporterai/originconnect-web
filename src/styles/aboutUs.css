@@ -1,4 +1,4 @@
-.aboutUs .category-tag {
+.aboutUsHero.aboutUs .category-tag {
   font-weight: 700;
   font-family: 'Jost', serif;
   color: #e7e7e7;
@@ -6,14 +6,15 @@
 
 .aboutUs .light-bg .category-tag,
 .aboutUs .missionVision .category-tag {
-  color: #7a634e ;
+  color: #7a634e;
 }
 
 /* ==========================
   AboutUs aboutUsHero
 ========================== */
 .aboutUsHero {
-  height: 80vh;
+  /* height: 80vh; */
+  height: 550px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +34,7 @@
 
 .aboutUsHighlights.active {
   /* background: #B88646; */
-  background-color: #886f58 ;
+  background-color: #886f58;
 }
 
 .aboutUsHighlights .marquee {
@@ -142,7 +143,7 @@
   margin: 0;
   font-size: 16px;
   line-height: 1.2;
-  color: #5f6672 ;
+  color: #5f6672;
   font-weight: 400;
 }
 
@@ -457,7 +458,17 @@ CONTENT
 /* ==========================
   AboutUs Responsive
 ========================== */
+@media (min-width: 1500px) {
+  .aboutUsHero {
+    height: 650px;
+  }
+}
+
 @media (max-width: 992px) {
+  .aboutUsHero {
+    height: 400px;
+  }
+
   .aboutUs .whatMakesDifferent-grid {
     /* grid-template-columns: repeat(2, 1fr); */
     gap: 20px;
@@ -491,7 +502,7 @@ CONTENT
 
   .aboutUs .ourStory-grid {
     grid-template-columns: 1fr;
-    gap: 10 25px;
+    gap: 10px 25px;
     margin-top: 25px;
   }
 
@@ -626,6 +637,12 @@ CONTENT
   }
 }
 
+@media (max-width: 500px) {
+  .aboutUsHero {
+    height: 350px;
+  }
+}
+
 @media (max-width: 480px) {
   .aboutUs .howCreateValue-icon {
     width: 45px;
@@ -651,5 +668,8 @@ CONTENT
 @media (max-width: 400px) {
   .aboutUs .missionVision-grid {
     padding-bottom: 60px;
+  }
+  .aboutUsHero {
+    height: 300px;
   }
 }

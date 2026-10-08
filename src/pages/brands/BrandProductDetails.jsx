@@ -9,13 +9,22 @@ import useLanguage from "@/hooks/useLanguage";
 
 function BrandProductDetails() {
   const {
+    country,
     brandSlug,
     categorySlug,
+    subcategorySlug,
     productSlug,
   } = useParams();
   const { brandProductsContent } = useLanguage();
-  const productContent =
-    brandProductsContent?.[brandSlug]
+
+  const productContent = subcategorySlug
+    ? brandProductsContent?.[country]
+      ?.brands?.[brandSlug]
+    ?.[categorySlug]
+    ?.[subcategorySlug]
+    ?.[productSlug]
+    : brandProductsContent?.[country]
+      ?.brands?.[brandSlug]
     ?.[categorySlug]
     ?.[productSlug];
   return (
@@ -57,8 +66,7 @@ function BrandProductDetails() {
         />
         <link
           rel="canonical"
-          href={`https://originconnect.uk/brands/${brandSlug}/${categorySlug}/${productSlug}`}
-        />
+          href={`https://originconnect.uk/brands/${country}/${brandSlug}/${categorySlug}/${productSlug}`} />
       </Helmet>
       <main>
         <BrandProductImageSwiper />

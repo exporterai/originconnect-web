@@ -80,6 +80,7 @@ export const officeSectionContent = {
   secondaryContact: "Secondary Contact",
   offices: {
     india: "India Office",
+    brazil: "Brazil Office",
     uk: "United Kingdom Office",
     germany: "Germany Office",
     turkiye: "Türkiye Office",
@@ -87,6 +88,7 @@ export const officeSectionContent = {
 };
 
 export const countries = [
+  "Brazil",
   "India",
   "United Kingdom",
   "Germany",

@@ -8,6 +8,7 @@ export const footerData = {
       { label: "Vereinigtes Königreich", url: "https://originconnect.uk" },
       { label: "Deutschland", url: "https://originconnect.de" },
       { label: "Türkei", url: "https://originconnect.tr" },
+      { label: "Brasilien", url: "https://originconnect.brazil.in" },
     ],
   },
   sections: [
@@ -15,20 +16,17 @@ export const footerData = {
       id: "links",
       type: "links",
       title: "Schnellzugriff",
-
       items: [
         { label: "Über Uns", path: "/aboutUs" },
-        { label: "Produkte", path: "/products" },
         { label: "Marken", path: "/brands" },
         { label: "Dienstleistungen", path: "/services" },
+        { label: "Kontakt", path: "/contact" },
       ],
     },
-
     {
       id: "secondary-contact",
       type: "contact",
       title: "Zweitbüro",
-
       items: [
         {
           type: "address",
@@ -50,12 +48,10 @@ export const footerData = {
         },
       ],
     },
-
     {
       id: "primary-contact",
       type: "contact",
       title: "Hauptbüro",
-
       items: [
         {
           type: "address",

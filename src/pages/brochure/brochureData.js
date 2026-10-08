@@ -3,12 +3,12 @@ export const mockBrochureData = {
   partnerA: {
     name: "ExporterAI",
     role: "Global Trade Intelligence",
-    logo: "/src/assets/Logo (1).png",
+    logo: "/src/assets/images/logoOC.png",
   },
   partnerB: {
     name: "Verified Trade Partner",
     role: "Verified Manufacturing Entity",
-    logo: "/src/assets/Logo (1).png",
+    logo: "/src/assets/images/logoOC.png",
   },
   title: "HS Code Trade & Product Catalog",
   subtitle:

@@ -1,15 +1,21 @@
 export const countryBarData = [
   {
-    id: "india",
-    code: "IN",
-    domain: "originconnect.in",
-    url: "https://originconnect.in",
-  },
-  {
     id: "uk",
     code: "GB",
     domain: "originconnect.uk",
     url: "https://originconnect.uk",
+  },
+  {
+    id: "brazil",
+    code: "BR",
+    domain: "originconnect.brazil.in",
+    url: "https://originconnect.brazil.in",
+  },
+  {
+    id: "turkey",
+    code: "TR",
+    domain: "originconnect.tr",
+    url: "https://originconnect.tr",
   },
   {
     id: "germany",
@@ -18,9 +24,9 @@ export const countryBarData = [
     url: "https://originconnect.de",
   },
   {
-    id: "turkey",
-    code: "TR",
-    domain: "originconnect.tr",
-    url: "https://originconnect.tr",
+    id: "india",
+    code: "IN",
+    domain: "originconnect.in",
+    url: "https://originconnect.in",
   },
 ];

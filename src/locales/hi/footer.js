@@ -20,23 +20,21 @@ export const footerData = {
         label: "तुर्की",
         url: "https://originconnect.tr",
       },
+      {
+        label: "ब्राज़ील",
+        url: "https://originconnect.brazil.in",
+      },
     ],
   },
-
   sections: [
     {
       id: "links",
       type: "links",
       title: "लिंक",
-
       items: [
         {
           label: "हमारे बारे में",
           path: "/aboutUs",
-        },
-        {
-          label: "उत्पाद",
-          path: "/products",
         },
         {
           label: "ब्रांड्स",
@@ -46,14 +44,16 @@ export const footerData = {
           label: "सेवाएँ",
           path: "/services",
         },
+        {
+          label: "संपर्क करें",
+          path: "/contact",
+        },
       ],
     },
-
     {
       id: "secondary-contact",
       type: "contact",
       title: "द्वितीय संपर्क",
-
       items: [
         {
           type: "address",
@@ -75,12 +75,10 @@ export const footerData = {
         },
       ],
     },
-
     {
       id: "primary-contact",
       type: "contact",
       title: "मुख्य संपर्क",
-
       items: [
         {
           type: "address",
@@ -103,7 +101,6 @@ export const footerData = {
       ],
     },
   ],
-
   socials: [
     {
       id: "linkedin",
@@ -126,7 +123,6 @@ export const footerData = {
       url: "#",
     },
   ],
-
   copyright:
     "© {year} Origin Connect. सर्वाधिकार सुरक्षित।",
 };

@@ -1,12 +1,12 @@
-import HowCreateValue from '@/components/service/HowCreateValue'
-import HowWorkTogether from '@/components/service/HowWorkTogether'
-import LetsConnect from '@/components/service/LetsConnect'
-import ServiceHero from '@/components/service/ServiceHero'
+import HowCreateValue from '@/components/services/HowCreateValue'
+import HowWorkTogether from '@/components/services/HowWorkTogether'
+import LetsConnect from '@/components/services/LetsConnect'
+import ServicesHero from '@/components/services/ServicesHero'
 import useLanguage from '@/hooks/useLanguage'
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
 
-function Service() {
+function Services() {
   const { seo } = useLanguage();
   return (
     <>
@@ -37,8 +37,8 @@ function Service() {
           content="Origin Connect"
         />
       </Helmet>
-      <main className='service'>
-        <ServiceHero />
+      <main className='services'>
+        <ServicesHero />
         <HowCreateValue />
         <HowWorkTogether />
         <LetsConnect />
@@ -47,4 +47,4 @@ function Service() {
   )
 }
 
-export default Service
+export default Services

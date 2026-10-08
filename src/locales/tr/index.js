@@ -8,6 +8,7 @@ export * from "@/locales/tr/services";
 export * from "@/locales/tr/categoryType";
 export * from "@/locales/tr/common";
 export * from "@/locales/tr/brands/brands";
+export * from "@/locales/tr/brands/countryBrands";
 export * from "@/locales/tr/brands/brandCategories";
 export * from "@/locales/tr/brands/brandProducts";
 export * from "@/locales/tr/contact";

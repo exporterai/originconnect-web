@@ -13,24 +13,27 @@ import { brandCategoriesData } from "@/data/brands/brandCategoriesData";
 import { brandSubcategoriesData } from "@/data/brands/brandSubcategoriesData";
 
 function BrandCategoryHero() {
-    const { brandSlug, categorySlug, subcategorySlug } = useParams();
+    const { country, brandSlug, categorySlug, subcategorySlug } = useParams();
     const {
         brandCategoriesContent,
         brandsContent,
         brandCollaborationContent,
     } = useLanguage();
     const categoryData =
-        brandCategoriesData?.[brandSlug]?.[categorySlug];
+        brandCategoriesData?.[country]?.brands?.[brandSlug]?.[categorySlug];
     const categoryContent = subcategorySlug
-        ? brandCategoriesContent?.[brandSlug]
+        ? brandCategoriesContent?.[country]
+            ?.brands?.[brandSlug]
             ?.[categorySlug]
             ?.subCategoriesSection
-            ?.subCategories
-        ?.[subcategorySlug]
-        : brandCategoriesContent?.[brandSlug]
+            ?.subCategories?.[subcategorySlug]
+        : brandCategoriesContent?.[country]
+            ?.brands?.[brandSlug]
         ?.[categorySlug];
-    const heroContent = brandsContent?.hero;
-    const brandContent = brandsContent?.[brandSlug];
+    const heroLabels =
+        brandsContent?.label;
+    const brandContent = brandsContent?.[country]
+        ?.brands?.[brandSlug];
     if (
         !categoryData ||
         !categoryContent ||
@@ -47,11 +50,12 @@ function BrandCategoryHero() {
         categoryContent?.features || [];
 
     const heroImage = subcategorySlug
-        ? brandSubcategoriesData?.[brandSlug]
+        ? brandSubcategoriesData?.[country]
+            ?.brands?.[brandSlug]
             ?.[categorySlug]
             ?.[subcategorySlug]
             ?.image
-        : categoryData.image;
+        : categoryData?.image;
     return (
         <section className="brandCategoryHero section">
             {/* Hero Background Image */}
@@ -85,7 +89,7 @@ function BrandCategoryHero() {
                                 strokeWidth={1.6}
                             />
                             <span>
-                                {heroContent?.homeLabel}
+                                {heroLabels.homeLabel}
                             </span>
                         </Link>
                         <ChevronRight
@@ -99,7 +103,7 @@ function BrandCategoryHero() {
                             className="brandCategoryHero-breadcrumb-link"
                             aria-label="Go to Brands page"
                         >
-                            {heroContent?.brandsLabel}
+                            {heroLabels.brandsLabel}
                         </Link>
                         <ChevronRight
                             aria-hidden="true"
@@ -126,11 +130,14 @@ function BrandCategoryHero() {
                                     size={13}
                                 />
                                 <Link
-                                    to={`/brands/${brandSlug}/${categorySlug}`}
+                                    to={`/brands/${country}/${brandSlug}/${categorySlug}`}
                                     className="brandCategoryHero-breadcrumb-link"
                                     aria-label="Go to Category page"
                                 >
-                                    {brandCategoriesContent?.[brandSlug]?.[categorySlug]?.title}
+                                    {brandCategoriesContent?.[country]
+                                        ?.brands?.[brandSlug]
+                                        ?.[categorySlug]
+                                        ?.title}
                                 </Link>
                             </>
                         )}
@@ -156,7 +163,6 @@ function BrandCategoryHero() {
                     <div className="brandCategoryHero-features">
                         {features.map((feature, index) => {
                             const Icon = featureIcons[index];
-
                             return (
                                 <div
                                     className="brandCategoryHero-feature"
@@ -168,10 +174,8 @@ function BrandCategoryHero() {
                                             strokeWidth={1.6}
                                         />
                                     </div>
-
                                     <div className="brandCategoryHero-feature-content">
-                                        <h3>{feature.title}</h3>
-
+                                        <h2>{feature.title}</h2>
                                         <p>{feature.description}</p>
                                     </div>
                                 </div>

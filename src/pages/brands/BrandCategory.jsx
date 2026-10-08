@@ -8,12 +8,15 @@ import { Helmet } from "react-helmet-async";
 import useLanguage from "@/hooks/useLanguage";
 
 function BrandCategory() {
-  const { brandSlug, categorySlug } = useParams();
+  const { country, brandSlug, categorySlug } = useParams();
   const { brandCategoriesContent } = useLanguage()
   const categoryData =
-    brandCategoriesData?.[brandSlug]?.[categorySlug];
+    brandCategoriesData?.[country]?.brands?.[brandSlug]?.[categorySlug];
   const categoryContent =
-    brandCategoriesContent?.[brandSlug]?.[categorySlug];
+    brandCategoriesContent?.[country]
+      ?.brands?.[brandSlug]
+    ?.[categorySlug];
+
   if (!categoryData) return null;
   return (
     <>
@@ -30,6 +33,7 @@ function BrandCategory() {
           content={`
             ${categoryContent?.title},
             ${brandSlug},
+            ${country},
             Indian manufacturer,
             textile supplier
           `}
@@ -44,7 +48,7 @@ function BrandCategory() {
         />
         <link
           rel="canonical"
-          href={`https://originconnect.uk/brands/${brandSlug}/${categorySlug}`}
+          href={`https://originconnect.uk/brands/${country}/${brandSlug}/${categorySlug}`}
         />
       </Helmet>
       <main>

@@ -2,7 +2,6 @@ export const footerData = {
   logo: {
     imageAlt: "Origin Connect",
     title: "ORIGIN CONNECT",
-
     countries: [
       {
         label: "Hindistan",
@@ -20,40 +19,40 @@ export const footerData = {
         label: "Türkiye",
         url: "https://originconnect.tr",
       },
+      {
+        label: "Brezilya",
+        url: "https://originconnect.brazil.in",
+      },
     ],
   },
-
   sections: [
     {
       id: "links",
       type: "links",
       title: "Bağlantılar",
-
       items: [
         {
           label: "Hakkımızda",
           path: "/aboutUs",
         },
         {
-          label: "Ürünler",
-          path: "/products",
-        },
-        {
           label: "Markalar",
-           path: "/brands" 
+          path: "/brands"
         },
         {
           label: "Hizmetler",
           path: "/services",
         },
+        {
+          label: "İletişim",
+          path: "/contact",
+        },
       ],
     },
-
     {
       id: "secondary-contact",
       type: "contact",
       title: "İkincil İletişim",
-
       items: [
         {
           type: "address",
@@ -75,12 +74,10 @@ export const footerData = {
         },
       ],
     },
-
     {
       id: "primary-contact",
       type: "contact",
       title: "Birincil İletişim",
-
       items: [
         {
           type: "address",
@@ -103,7 +100,6 @@ export const footerData = {
       ],
     },
   ],
-
   socials: [
     {
       id: "linkedin",
@@ -126,7 +122,6 @@ export const footerData = {
       url: "#",
     },
   ],
-
   copyright:
     "© {year} Origin Connect. Tüm hakları saklıdır.",
 };

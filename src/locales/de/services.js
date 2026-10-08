@@ -1,10 +1,10 @@
-export const serviceHero = {
+export const servicesHero = {
     title: "Flexible Partnerschaftsmodelle für internationales Wachstum",
     description:
         "Ob Sie Produkte aus Indien beziehen, eine Private-Label-Marke aufbauen oder in neue Märkte expandieren möchten – Origin Connect bietet Ihnen die Expertise und den Zugang zu zuverlässigen Fertigungspartnern für nachhaltiges Wachstum.",
 };
 
-export const serviceLetsConnect = {
+export const servicesLetsConnect = {
     title: "Gemeinsam erfolgreich wachsen",
     description:
         "Ob Sie Produkte aus Indien beziehen, eine Private-Label-Kollektion entwickeln oder neue internationale Märkte erschließen möchten – Origin Connect bietet Ihnen das Netzwerk, die Expertise und die richtigen Partnerschaften für nachhaltiges Wachstum.",

@@ -31,6 +31,31 @@ export const officeContacts = [
     ],
   },
   {
+    id: "brazil",
+    countryCode: "BR",
+    website: "https://www.originconnect.brazil.in",
+    address: {
+      line1: "The Discovery, Borivali East",
+      line2: "Mumbai, India - 400066",
+    },
+    primaryContacts: [
+      {
+        name: "Sanika Marak",
+        designation: "Sales Manager",
+        phone: "+91 92270 41987",
+        email: "sanika.marak@originconnect.in",
+      },
+    ],
+    secondaryContacts: [
+      {
+        name: "Ravish Kumar",
+        designation: "Founder & CEO",
+        phone: "+91 93270 41987",
+        email: "ravish.kumar@originconnect.in",
+      },
+    ],
+  },
+  {
     id: "uk",
     countryCode: "GB",
     website: "https://www.originconnect.uk",

@@ -6,24 +6,31 @@ import { brandCategoriesData } from "@/data/brands/brandCategoriesData";
 import { brandProductsData } from "@/data/brands/brandProductsData";
 
 function BrandProductsGrid() {
-    const { brandSlug, categorySlug, subcategorySlug } = useParams();
+    const { country, brandSlug, categorySlug, subcategorySlug } = useParams();
     const { brandCategoriesContent } = useLanguage();
     const categoryData =
-        brandCategoriesData?.[brandSlug]?.[categorySlug];
+        brandCategoriesData?.[country]?.brands?.[brandSlug]?.[categorySlug];
     const pageContent = subcategorySlug
-        ? brandCategoriesContent?.[brandSlug]
+        ? brandCategoriesContent?.[country]
+            ?.brands?.[brandSlug]
             ?.[categorySlug]
             ?.subCategoriesSection
-            ?.subCategories
-        ?.[subcategorySlug]
-        : brandCategoriesContent?.[brandSlug]
+            ?.subCategories?.[subcategorySlug]
+        : brandCategoriesContent?.[country]
+            ?.brands?.[brandSlug]
         ?.[categorySlug];
     const brandProducts =
         subcategorySlug
-            ? brandProductsData?.[brandSlug]?.[
+            ? brandProductsData?.[country]?.brands?.[
+            brandSlug
+            ]?.[
             categorySlug
-            ]?.[subcategorySlug]
-            : brandProductsData?.[brandSlug]?.[
+            ]?.[
+            subcategorySlug
+            ]
+            : brandProductsData?.[country]?.brands?.[
+            brandSlug
+            ]?.[
             categorySlug
             ];
     const [sortBy, setSortBy] = useState("default");
@@ -114,8 +121,8 @@ function BrandProductsGrid() {
                             key={product.slug}
                             to={
                                 subcategorySlug
-                                    ? `/brands/${brandSlug}/${categorySlug}/subcategory/${subcategorySlug}/${product.slug}`
-                                    : `/brands/${brandSlug}/${categorySlug}/${product.slug}`
+                                    ? `/brands/${country}/${brandSlug}/${categorySlug}/subcategory/${subcategorySlug}/${product.slug}`
+                                    : `/brands/${country}/${brandSlug}/${categorySlug}/${product.slug}`
                             }
                             aria-label={`View details for ${product.title}`}
                         >

@@ -42,7 +42,7 @@ function AboutUs() {
       </Helmet>
       <main className='aboutUs'>
         <AboutUsHero />
-        <Highlights />
+        {/* <Highlights /> */}
         <OurStory />
         <WhatMakesDifferent />
         <MissionVision />

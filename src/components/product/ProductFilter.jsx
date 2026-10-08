@@ -1,55 +1,52 @@
 function ProductFilter({
-  options,
-  selected,
+  options = [],
+  selected = [],
   onSelect,
-  type
+  type,
 }) {
   return (
     <div className="filter-options">
-      {
-        options?.map((item) => (
+      {options.map((item) => {
+        const checked =
+          type === "category"
+            ? selected === item.value
+            : selected.includes(item.value);
+
+        return (
           <label
-            key={item.value}
+            key={`${type}-${item.value}`}
             className="filter-option"
-            htmlFor="Our Product Filter"
           >
             <input
               type="checkbox"
-              checked={
-                type === "category"
-                  ?
-                  selected === item.value
-                  :
-                  selected?.includes(item.value)
-              }
+              checked={checked}
               onChange={() => {
                 if (type === "category") {
                   onSelect(item.value);
+                  return;
                 }
-                else {
-                  if (selected.includes(item.value)) {
-                    onSelect(
-                      selected.filter(
-                        v => v !== item.value
-                      )
-                    );
-                  }
-                  else {
-                    onSelect([
-                      ...selected,
-                      item.value
-                    ]);
-                  }
+
+                if (checked) {
+                  onSelect(
+                    selected.filter(
+                      (v) => v !== item.value
+                    )
+                  );
+                } else {
+                  onSelect([
+                    ...selected,
+                    item.value,
+                  ]);
                 }
               }}
             />
-            <span>
-              {item.label}
-            </span>
+
+            <span>{item.label}</span>
           </label>
-        ))
-      }
+        );
+      })}
     </div>
-  )
+  );
 }
+
 export default ProductFilter;

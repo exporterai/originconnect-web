@@ -6,6 +6,7 @@ import WhatWeDo from "@/components/home/WhatWeDo";
 import WhoWeServe from "@/components/home/WhoWeServe";
 import useLanguage from '@/hooks/useLanguage';
 import { Helmet } from 'react-helmet-async';
+import CountryBar from "@/components/layout/CountryBar";
 
 const Home = () => {
   const { seo } = useLanguage();
@@ -40,6 +41,13 @@ const Home = () => {
       </Helmet>
       <main>
         <HomeHero />
+        <CountryBar
+          countryIds={[
+            "turkey",
+            "india",
+            "germany",
+          ]}
+        />
         <WhatWeDo />
         <ManufacturingEcosystem />
         <HowWeWork />

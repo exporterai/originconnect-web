@@ -33,9 +33,9 @@ function MissionVision() {
                 key={index}
                 className="missionVision-card"
               >
-                <h4 className="title">
+                <span className="title">
                   {item.title}
-                </h4>
+                </span>
                 <div className="title-line"></div>
                 <h3>
                   {item.heading}

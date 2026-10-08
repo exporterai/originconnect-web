@@ -10,10 +10,11 @@
 @import "@/styles/products.css";
 @import "@/styles/home.css";
 @import "@/styles/aboutUs.css";
-@import "@/styles/service.css";
+@import "@/styles/services.css";
 @import "@/styles/categories.css";
 @import "@/styles/countrybar.css";
 @import "@/styles/brands.css";
+@import "@/styles/countryBrands.css";
 @import "@/styles/brandCategory.css";
 @import "@/styles/brandProductDetails.css";
 @import "@/styles/contact.css";

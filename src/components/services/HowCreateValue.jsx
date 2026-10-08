@@ -1,5 +1,5 @@
 import React from 'react'
-import { howCreateValueData } from '@/data/service/howCreateValue'
+import { howCreateValueData } from '@/data/services/howCreateValue'
 import useLanguage from "@/hooks/useLanguage";
 
 function HowCreateValue() {

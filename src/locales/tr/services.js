@@ -1,10 +1,10 @@
-export const serviceHero = {
+export const servicesHero = {
   title: "Küresel Büyüme İçin Esnek İş Ortaklığı Modelleri",
   description:
     "İster Hindistan'dan tedarik yapıyor olun, ister özel markanızı oluşturuyor ya da yeni pazarlara açılıyor olun, Origin Connect büyümeniz için gerekli uzmanlığı ve üretim ağına erişimi sağlar.",
 };
 
-export const serviceLetsConnect = {
+export const servicesLetsConnect = {
   title: "Birlikte Çalışalım",
   description:
     "Hindistan'dan ürün tedarik etmek, özel marka programı geliştirmek veya uluslararası pazarlara açılmak istiyorsanız, Origin Connect sizi doğru ağ, uzmanlık ve iş ortaklıklarıyla buluşturur.",

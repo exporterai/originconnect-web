@@ -1,9 +1,9 @@
 import React from 'react'
 import BrandsHero from '@/components/brands/BrandsHero'
-import BrandsGrid from '@/components/brands/BrandsGrid'
-import LetsConnect from '@/components/service/LetsConnect'
+import LetsConnect from '@/components/services/LetsConnect'
 import useLanguage from '@/hooks/useLanguage';
 import { Helmet } from 'react-helmet-async';
+import BrandsCountryGrid from '@/components/brands/BrandsCountryGrid';
 
 function Brands() {
   const { seo } = useLanguage();
@@ -38,7 +38,7 @@ function Brands() {
       </Helmet>
       <main className="brands">
         <BrandsHero />
-        <BrandsGrid />
+        <BrandsCountryGrid />
         <LetsConnect />
       </main>
     </>

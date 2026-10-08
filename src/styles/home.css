@@ -414,7 +414,7 @@
 /* ==========================
   Responsive
 ========================== */
-@media(max-width:991px) {
+@media(max-width:992px) {
     .homeHeroCard {
         height: 500px;
     }
@@ -441,7 +441,7 @@
     }
 }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
     .homeHeroCard {
         height: 450px;
     }
@@ -497,7 +497,7 @@
     }
 }
 
-@media(max-width:567px) {
+@media(max-width:576px) {
     /* .homeHeroCard-content {
         transform: translateY(70%);
     } */

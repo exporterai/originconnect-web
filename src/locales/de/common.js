@@ -7,5 +7,6 @@ export const countryNames = {
   uk: "Vereinigtes Königreich",
   germany: "Deutschland",
   turkey: "Türkei",
+  brazil: "Brasilien",
 };
 

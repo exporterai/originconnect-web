@@ -16,6 +16,7 @@ import useLanguage from "@/hooks/useLanguage";
 const BrandProductImageSwiper = () => {
   const {
     brandSlug,
+    country,
     categorySlug,
     subcategorySlug,
     productSlug,
@@ -27,27 +28,34 @@ const BrandProductImageSwiper = () => {
 
   const productData =
     subcategorySlug
-      ? brandProductsData?.[brandSlug]?.[
+      ? brandProductsData?.[country]?.brands?.[brandSlug]?.[
       categorySlug
       ]?.[subcategorySlug]?.[
       productSlug
       ]
-      : brandProductsData?.[brandSlug]?.[
+      : brandProductsData?.[country]?.brands?.[brandSlug]?.[
       categorySlug
       ]?.[
       productSlug
       ];
   const productContent =
     subcategorySlug
-      ? brandProductsContent?.[brandSlug]
-      ?.[categorySlug]
-      ?.[subcategorySlug]
-      ?.[productSlug]
-      : brandProductsContent?.[brandSlug]
-      ?.[categorySlug]
-      ?.[productSlug];
+      ? brandProductsContent?.[country]?.brands?.[brandSlug]?.[
+      categorySlug
+      ]?.[
+      subcategorySlug
+      ]?.[
+      productSlug
+      ]
+      : brandProductsContent?.[country]?.brands?.[brandSlug]?.[
+      categorySlug
+      ]?.[
+      productSlug
+      ];
 
   if (!productData || !productContent) {
+    console.log("productData", productData);
+    console.log("productContent", productContent);
     return null;
   }
   const formattedBrandName = brandSlug
@@ -109,18 +117,17 @@ const BrandProductImageSwiper = () => {
             }}
             className="brandProductImageSwiper"
           >
-            {productData.gallery.map(
-              (image, index) => (
-                <SwiperSlide key={index}>
-                  <div className="brandProductImageSwiper-slide">
-                    <img
-                      src={image}
-                      alt={productContent.title}
-                      loading="lazy"
-                    />
-                  </div>
-                </SwiperSlide>
-              )
+            {productData.gallery?.map((image, index) => (
+              <SwiperSlide key={index}>
+                <div className="brandProductImageSwiper-slide">
+                  <img
+                    src={image}
+                    alt={productContent.title}
+                    loading="lazy"
+                  />
+                </div>
+              </SwiperSlide>
+            )
             )}
           </Swiper>
         </div>

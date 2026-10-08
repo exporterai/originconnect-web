@@ -80,6 +80,7 @@ export const officeSectionContent = {
   secondaryContact: "Zweiter Ansprechpartner",
   offices: {
     india: "Büro Indien",
+    brazil: "Büro Brasilien",
     uk: "Büro Vereinigtes Königreich",
     germany: "Büro Deutschland",
     turkiye: "Büro Türkei",
@@ -87,6 +88,7 @@ export const officeSectionContent = {
 };
 
 export const countries = [
+  "Brasilien",
   "Indien",
   "Vereinigtes Königreich",
   "Deutschland",

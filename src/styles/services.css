@@ -1,19 +1,19 @@
-.service .category-tag {
+.services .category-tag {
   font-weight: 700;
   font-family: 'Jost', serif;
   /* color: #FFFFFF; */
   color: #e7e7e7;
 }
 
-.service .light-bg .category-tag {
-  color: #7a634e ;
+.services .light-bg .category-tag {
+  color: #7a634e;
 }
 
 
 /* ==========================
   Service Hero  
 ========================== */
-.serviceHero-wrapper {
+.servicesHero-wrapper {
   position: relative;
   min-height: 400px;
   overflow: hidden;
@@ -25,13 +25,13 @@
   align-items: center;
 }
 
-.serviceHero-content {
+.servicesHero-content {
   position: relative;
   z-index: 2;
   max-width: 500px;
 }
 
-.serviceHero .overlay {
+.servicesHero .overlay {
   position: absolute;
   inset: 0;
   background:
@@ -41,7 +41,7 @@
 /* ==========================
   Service HowCreateValue  
 ========================== */
-.service .howCreateValue-grid {
+.services .howCreateValue-grid {
   margin-top: 35px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -49,7 +49,7 @@
 }
 
 /* CARD */
-.service .howCreateValue-card {
+.services .howCreateValue-card {
   border: 1px solid #BEAA97;
   border-radius: 11px;
   overflow: hidden;
@@ -57,7 +57,7 @@
   height: 100%;
 }
 
-.service .howCreateValue-card:hover {
+.services .howCreateValue-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, .07);
 }
@@ -65,14 +65,14 @@
 /* ==========================
 TOP CONTENT
 ========================== */
-.service .howCreateValue-content {
+.services .howCreateValue-content {
   padding: 20px 16px;
   text-align: center;
   min-height: 230px;
 
 }
 
-.service .howCreateValue-icon {
+.services .howCreateValue-icon {
   width: 58px;
   height: 58px;
   border-radius: 50%;
@@ -85,13 +85,13 @@ TOP CONTENT
   margin: 0 auto 18px;
 }
 
-.service .howCreateValue-icon .icon-svg {
+.services .howCreateValue-icon .icon-svg {
   width: 26px;
   height: 26px;
 }
 
 /* TITLE */
-.service .howCreateValue-content h3 {
+.services .howCreateValue-content h3 {
   font-size: 16px;
   font-weight: 550;
   line-height: 1.2;
@@ -101,7 +101,7 @@ TOP CONTENT
 }
 
 /* PARA */
-.service .howCreateValue-content p {
+.services .howCreateValue-content p {
   color: #4B5563;
   font-size: 14px;
   line-height: 1.5;
@@ -110,12 +110,12 @@ TOP CONTENT
 /* ==========================
 IMAGE
 ========================== */
-.service .howCreateValue-image-wrapper {
+.services .howCreateValue-image-wrapper {
   width: 100%;
   height: 185px;
 }
 
-.service .howCreateValue-image {
+.services .howCreateValue-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -125,18 +125,18 @@ IMAGE
 /* ==========================
 BOTTOM POINTER
 ========================== */
-.service .howCreateValue-pointer {
+.services .howCreateValue-pointer {
   padding: 24px;
 }
 
-.service .howCreateValue-pointer h4 {
+.services .howCreateValue-pointer h4 {
   /* text-align: center; */
   font-size: 17px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.service .howCreateValue-pointer ul {
+.services .howCreateValue-pointer ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -145,7 +145,7 @@ BOTTOM POINTER
   gap: 5px;
 }
 
-.service .howCreateValue-pointer li {
+.services .howCreateValue-pointer li {
   position: relative;
   padding-left: 18px;
   color: #3E4145;
@@ -154,7 +154,7 @@ BOTTOM POINTER
 }
 
 /* GOLDEN DOT */
-.service .howCreateValue-pointer li::before {
+.services .howCreateValue-pointer li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -168,7 +168,7 @@ BOTTOM POINTER
 /* ==========================
   Service HOW WORK TOGETHER  
 ========================== */
-.service .howWorkTogether-grid {
+.services .howWorkTogether-grid {
   margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -176,14 +176,14 @@ BOTTOM POINTER
 }
 
 /* EACH ITEM */
-.service .howWorkTogether-grid>div {
+.services .howWorkTogether-grid>div {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
 /* CARD */
-.service .howWorkTogether-card {
+.services .howWorkTogether-card {
   max-width: 200px;
   text-align: center;
   display: flex;
@@ -193,7 +193,7 @@ BOTTOM POINTER
 
 
 /* ICON */
-.service .howWorkTogether-card .icon {
+.services .howWorkTogether-card .icon {
   width: 73px;
   height: 73px;
   border-radius: 50%;
@@ -205,13 +205,13 @@ BOTTOM POINTER
   margin-bottom: 10px;
 }
 
-.service .howWorkTogether-card .icon svg {
+.services .howWorkTogether-card .icon svg {
   width: 32px;
   height: 32px;
 }
 
 /* STEP */
-.service .howWorkTogether-card .step {
+.services .howWorkTogether-card .step {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -221,7 +221,7 @@ BOTTOM POINTER
 }
 
 /* TITLE */
-.service .howWorkTogether-card h3 {
+.services .howWorkTogether-card h3 {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -232,7 +232,7 @@ BOTTOM POINTER
 }
 
 /* PARA */
-.service .howWorkTogether-card p {
+.services .howWorkTogether-card p {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.4;
@@ -243,7 +243,7 @@ BOTTOM POINTER
 /* ==========================
 ARROW
 ========================== */
-.service .howWorkTogether-grid .arrow-wrapper {
+.services .howWorkTogether-grid .arrow-wrapper {
   position: absolute;
   top: 15px;
   right: -18px;
@@ -253,7 +253,7 @@ ARROW
   justify-content: center;
 }
 
-.service .howWorkTogether-grid .arrow {
+.services .howWorkTogether-grid .arrow {
   color: rgba(255, 255, 255, .9);
   font-size: 40px;
   line-height: 1;
@@ -262,7 +262,7 @@ ARROW
 /* ==========================
   Service Lets Connect
 ========================== */
-.service .letsConnect-wrapper {
+.services .letsConnect-wrapper {
   position: relative;
   min-height: 300px;
   overflow: hidden;
@@ -274,22 +274,22 @@ ARROW
   align-items: center;
 }
 
-.service .letsConnect-content {
+.services .letsConnect-content {
   position: relative;
   z-index: 2;
   max-width: 500px;
 }
 
-.service .letsConnect-heading-border {
+.services .letsConnect-heading-border {
   width: 120px;
   border: 1px solid #80664E;
   margin-bottom: 20px;
 }
 
 /* Button */
-.service .letsConnect-btn {
+.services .letsConnect-btn {
   border: none;
-  background: #886f58 ;
+  background: #886f58;
   color: #fcfcfc;
   padding: 9px 15px;
   border-radius: 50px;
@@ -303,7 +303,7 @@ ARROW
   transition: .3s ease;
 }
 
-.service .letsConnect-btn span {
+.services .letsConnect-btn span {
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -314,7 +314,7 @@ ARROW
   justify-content: center;
 }
 
-.service .letsConnect-btn:hover {
+.services .letsConnect-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(255, 255, 255, .15);
 }
@@ -323,123 +323,126 @@ ARROW
   RESPONSIVE
 ========================== */
 @media (max-width:1200px) {
-  .service .howWorkTogether-grid {
+  .services .howWorkTogether-grid {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
   }
 }
 
 @media (max-width:992px) {
-  .service .howCreateValue-grid {
+  .services .howCreateValue-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .service .howCreateValue-content {
+  .services .howCreateValue-content {
     min-height: 200px;
   }
 
-  .service .howCreateValue-icon {
+  .services .howCreateValue-icon {
     width: 45px;
     height: 45px;
   }
 
-  .service .howCreateValue-icon .icon-svg {
+  .services .howCreateValue-icon .icon-svg {
     width: 20px;
     height: 20px;
   }
 }
 
 @media (max-width:768px) {
-  .serviceHero .overlay {
+  .servicesHero .overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(125deg, rgba(14, 12, 10, 0.98) 0%, rgba(14, 12, 10, 0.75232) 11.54%, rgba(14, 12, 10, 0.6) 39.81%, rgba(14, 12, 10, 0) 66.63%);
   }
 
-  .serviceHero-content {
+  .servicesHero-content {
     text-align: center;
     margin-inline: auto;
   }
 
-  .service .letsConnect-content {
+  .services .letsConnect-content {
     max-width: 400px;
   }
 
-  .service .letsConnect-btn {
+  .services .letsConnect-btn {
     font-size: 11px;
   }
 
-  .service .howWorkTogether-grid {
+  .services .howWorkTogether-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px 20px;
   }
 
-  .service .howWorkTogether-card {
+  .services .howWorkTogether-card {
     width: 100%;
     max-width: 220px;
   }
 
-  .service .howWorkTogether-card .icon {
+  .services .howWorkTogether-card .icon {
     width: 60px;
     height: 60px;
   }
 
-  .service .howWorkTogether-card .icon svg {
+  .services .howWorkTogether-card .icon svg {
     width: 26px;
     height: 26px;
   }
 
-  .service .howWorkTogether-card h3 {
+  .services .howWorkTogether-card h3 {
     font-size: 18px;
     letter-spacing: 1px;
   }
-  .service .howCreateValue-content {
-        min-height: 210px;
-    }
+
+  .services .howCreateValue-content {
+    min-height: 210px;
+  }
 }
 
 @media (max-width:576px) {
-  .service .letsConnect-btn {
+  .services .letsConnect-btn {
     padding: 5px 12px;
     font-size: 10px;
   }
 
-  .service .howCreateValue-grid {
-    grid-template-columns: 1fr;
-  }
-.service .howCreateValue-content {
-        min-height: 160px;
-    }
-  .service .howWorkTogether-grid {
+  .services .howCreateValue-grid {
     grid-template-columns: 1fr;
   }
 
-  .service .howWorkTogether-card {
+  .services .howCreateValue-content {
+    min-height: 160px;
+  }
+
+  .services .howWorkTogether-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services .howWorkTogether-card {
     margin-bottom: 10px;
     max-width: 300px;
   }
 
-  .service .howWorkTogether-card .icon {
+  .services .howWorkTogether-card .icon {
     width: 50px;
     height: 50px;
   }
 
-  .service .howWorkTogether-card .icon svg {
+  .services .howWorkTogether-card .icon svg {
     width: 20px;
     height: 20px;
   }
 
-  .service .howWorkTogether-card h3 {
+  .services .howWorkTogether-card h3 {
     font-size: 16px;
   }
 
-  .service .howWorkTogether-grid>div {
+  .services .howWorkTogether-grid>div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .service .howWorkTogether-grid .arrow-wrapper {
+  .services .howWorkTogether-grid .arrow-wrapper {
     position: static;
     width: 100%;
     display: flex;

@@ -1,3 +1,4 @@
+import CountryBrands from "@/pages/brands/CountryBrands";
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 
@@ -11,7 +12,7 @@ const BrandProductDetails = lazy(() => import("@/pages/brands/BrandProductDetail
 const BrandSubCategory = lazy(() => import("@/pages/brands/BrandSubCategory"));
 const Categories = lazy(() => import("@/pages/Categories"));
 const CategoryLanding = lazy(() => import("@/pages/CategoryLanding"));
-const Service = lazy(() => import("@/pages/Service"));
+const Services = lazy(() => import("@/pages/Services"));
 const Contact = lazy(() => import("@/pages/Contact"));
 const BrochureDownloadPage = lazy(() =>
   import("@/pages/brochure/BrochureDownloadPage")
@@ -27,39 +28,35 @@ const AppRoutes = () => {
         <Route path="/product/:slug" element={<ProductDetails />} />
 
         <Route path="/brands" element={<Brands />} />
+        <Route path="/brands/:country" element={<CountryBrands />} />
         <Route
-          path="/brands/:brandSlug/:categorySlug"
+          path="/brands/:country/:brandSlug/:categorySlug"
           element={<BrandCategory />}
         />
         <Route
-          path="/brands/:brandSlug/:categorySlug/:productSlug"
+          path="/brands/:country/:brandSlug/:categorySlug/:productSlug"
           element={<BrandProductDetails />}
         />
         <Route
-          path="/brands/:brandSlug/:categorySlug/subcategory/:subcategorySlug"
+          path="/brands/:country/:brandSlug/:categorySlug/subcategory/:subcategorySlug"
           element={<BrandSubCategory />}
         />
         <Route
-          path="/brands/:brandSlug/:categorySlug/subcategory/:subcategorySlug/:productSlug"
+          path="/brands/:country/:brandSlug/:categorySlug/subcategory/:subcategorySlug/:productSlug"
           element={<BrandProductDetails />}
         />
-
         <Route
           path="/brochure/:slug"
           element={<BrochureDownloadPage />}
         />
-
         <Route path="/categories" element={<Categories />} />
         <Route
           path="/categories/:category"
           element={<CategoryLanding />}
         />
-
-        <Route path="/services" element={<Service />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
-
         <Route path="*" element={<NotFound />} />
-
         <Route
           path="/preview-brochure/:slug?"
           element={<BrochureDownloadPage />}
