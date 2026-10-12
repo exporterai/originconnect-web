@@ -1,4 +1,3 @@
-import AboutUsHero from '@/components/aboutUs/AboutUsHero'
 import Highlights from '@/components/aboutUs/Highlights'
 import HowCreateValue from '@/components/aboutUs/HowCreateValue'
 import LetsConnect from '@/components/aboutUs/LetsConnect'
@@ -8,6 +7,7 @@ import WhatMakesDifferent from '@/components/aboutUs/WhatMakesDifferent'
 import useLanguage from '@/hooks/useLanguage'
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
+import HomeHero from "@/components/home/HomeHero";
 
 function AboutUs() {
   const { seo } = useLanguage();
@@ -41,7 +41,7 @@ function AboutUs() {
         />
       </Helmet>
       <main className='aboutUs'>
-        <AboutUsHero />
+        <HomeHero />
         {/* <Highlights /> */}
         <OurStory />
         <WhatMakesDifferent />

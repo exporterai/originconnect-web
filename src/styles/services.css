@@ -13,7 +13,7 @@
 /* ==========================
   Service Hero  
 ========================== */
-.servicesHero-wrapper {
+/* .servicesHero-wrapper {
   position: relative;
   min-height: 400px;
   overflow: hidden;
@@ -36,7 +36,389 @@
   inset: 0;
   background:
     linear-gradient(90deg, rgba(14, 12, 10, 0.98) 0%, rgba(14, 12, 10, 0.75232) 11.54%, rgba(14, 12, 10, 0.6) 29.81%, rgba(14, 12, 10, 0) 46.63%);
+} */
+
+.servicesHero {
+  width: 100%;
+  overflow: hidden;
 }
+
+.servicesHero-wrapper {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  /* min-height: 620px; */
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #17100b;
+}
+
+.servicesHero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(90deg,
+      rgba(15, 10, 7, 0.94) 0%,
+      rgba(15, 10, 7, 0.82) 24%,
+      rgba(15, 10, 7, 0.48) 68%,
+      rgba(15, 10, 7, 0.08) 96%,
+      transparent 100%);
+}
+
+.servicesHero-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.servicesHero-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(260px, 320px) minmax(300px, 460px);
+  align-items: center;
+  /* justify-content: start; */
+  gap: clamp(32px, 4vw, 68px);
+  padding: 40px 0;
+}
+
+/* Main headline: one word per line */
+.servicesHero-heading {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
+
+.servicesHero-heading h1 {
+  margin: 0;
+  /* font-family: Georgia, "Times New Roman", serif; */
+  font-size: clamp(30px, 3.1vw, 48px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1.1px;
+  position: relative;
+}
+
+.servicesHero-heading h1::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  width: 80px;
+  height: 2px;
+  margin-top: 20px;
+  background: #d9b16c;
+}
+
+.servicesHero-heading h1 span {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+}
+
+/* Country panel */
+.servicesHero-countries {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  max-width: 320px;
+  min-width: 0;
+}
+
+.servicesHero-tag {
+  position: relative;
+  margin: 0 0 24px;
+  color: #e5bb70;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3.5px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.servicesHero-tag::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 48px;
+  height: 1.5px;
+  background: #d9b16c;
+}
+
+.servicesHero-countryList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.servicesHero-countryCard {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  min-height: 66px;
+  padding: 9px 12px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(25, 17, 11, 0.88);
+  border: 1px solid rgba(220, 176, 103, 0.82);
+  border-radius: 11px;
+  backdrop-filter: blur(8px);
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.servicesHero-countryCard:hover {
+  background: rgba(76, 49, 24, 0.96);
+  border-color: #f2d39a;
+  transform: translateX(3px);
+}
+
+.servicesHero-flag {
+  display: block;
+  flex-shrink: 0;
+  width: 48px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.servicesHero-countryInfo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.servicesHero-countryName {
+  color: #fffaf1;
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+.servicesHero-domain {
+  color: #d5c9ba;
+  font-size: 12px;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.servicesHero-arrow {
+  flex-shrink: 0;
+  color: #dfb66f;
+  transition: transform 0.25s ease;
+}
+
+.servicesHero-countryCard:hover .servicesHero-arrow {
+  transform: translate(3px, -3px);
+}
+
+.servicesHero-countryCard.is-active {
+  background: rgba(105, 73, 32, 0.65);
+  border: 1px solid #f7c36c;
+  box-shadow:
+    0 0 0 1px rgba(247, 195, 108, 0.18),
+    0 0 18px rgba(247, 195, 108, 0.22);
+  animation: activeCountryPulse 2s ease-in-out infinite;
+}
+
+.servicesHero-countryCard.is-active .servicesHero-countryName {
+  color: #f7c36c;
+}
+
+.servicesHero-countryCard.is-active .servicesHero-arrow {
+  color: #fff0c9;
+}
+
+@keyframes activeCountryPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 1px rgba(247, 195, 108, 0.15),
+      0 0 8px rgba(247, 195, 108, 0.12);
+  }
+
+  50% {
+    box-shadow: 0 0 0 1px rgba(247, 195, 108, 0.55),
+      0 0 20px rgba(247, 195, 108, 0.35);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .servicesHero-countryCard.is-active {
+    animation: none;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .servicesHero-wrapper {
+    /* min-height: 570px; */
+    background-position: 57% center;
+  }
+
+  .servicesHero-content {
+    grid-template-columns: minmax(220px, 270px) minmax(0, 1fr);
+    gap: 28px;
+    padding: 36px 0;
+  }
+
+  .servicesHero-heading h1 {
+    font-size: clamp(32px, 4vw, 40px);
+    letter-spacing: -0.8px;
+  }
+
+  .servicesHero-countries {
+    max-width: 270px;
+  }
+
+  .servicesHero-countryCard {
+    min-height: 60px;
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .servicesHero-flag {
+    width: 40px;
+    height: 27px;
+  }
+
+  .servicesHero-countryName {
+    font-size: 15px;
+  }
+
+  .servicesHero-domain {
+    font-size: 11px;
+  }
+
+  .servicesHero-tag {
+    font-size: 12px;
+    letter-spacing: 2.5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .servicesHero-wrapper {
+    /* min-height: auto; */
+    align-items: stretch;
+    background-position: 67% center;
+  }
+
+  .servicesHero-overlay {
+    background: linear-gradient(90deg,
+        rgba(15, 10, 7, 0.97) 0%,
+        rgba(15, 10, 7, 0.57) 48%,
+        rgba(15, 10, 7, 0.17) 100%);
+  }
+
+  .servicesHero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+    padding: 38px 0;
+  }
+
+  /* Heading first on mobile */
+  .servicesHero-heading {
+    order: 1;
+    width: 100%;
+  }
+
+  .servicesHero-heading h1 {
+    font-size: clamp(32px, 7.4vw, 42px);
+    line-height: 1.06;
+    letter-spacing: -0.7px;
+  }
+
+  .servicesHero-countries {
+    order: 2;
+    max-width: 440px;
+  }
+
+  .servicesHero-tag {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-top: 30px;
+  }
+
+  .servicesHero-tag::after {
+    right: 0;
+    left: 184px;
+    bottom: 8px;
+    height: 1.5px;
+  }
+
+  .servicesHero-countryList {
+    gap: 8px;
+  }
+
+  .servicesHero-countryCard {
+    min-height: 62px;
+    gap: 13px;
+    padding: 9px 12px;
+    border-radius: 9px;
+  }
+
+  .servicesHero-flag {
+    width: 44px;
+    height: 29px;
+  }
+
+  .servicesHero-countryName {
+    font-size: 16px;
+  }
+
+  .servicesHero-domain {
+    font-size: 12px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 380px) {
+  .servicesHero-content {
+    gap: 25px;
+    padding: 30px 0;
+  }
+
+  .servicesHero-heading h1 {
+    font-size: 30px;
+  }
+
+  .servicesHero-countryCard {
+    gap: 9px;
+    padding: 8px;
+  }
+
+  .servicesHero-flag {
+    width: 38px;
+    height: 26px;
+  }
+
+  .servicesHero-countryName {
+    font-size: 14px;
+  }
+
+  .servicesHero-domain {
+    font-size: 10px;
+  }
+
+  .servicesHero-arrow {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 
 /* ==========================
   Service HowCreateValue  
@@ -350,16 +732,16 @@ ARROW
 }
 
 @media (max-width:768px) {
-  .servicesHero .overlay {
+  /* .servicesHero .overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(125deg, rgba(14, 12, 10, 0.98) 0%, rgba(14, 12, 10, 0.75232) 11.54%, rgba(14, 12, 10, 0.6) 39.81%, rgba(14, 12, 10, 0) 66.63%);
-  }
+  } */
 
-  .servicesHero-content {
+  /* .servicesHero-content {
     text-align: center;
     margin-inline: auto;
-  }
+  } */
 
   .services .letsConnect-content {
     max-width: 400px;

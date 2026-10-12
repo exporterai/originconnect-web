@@ -1,7 +1,7 @@
 import HowCreateValue from '@/components/services/HowCreateValue'
 import HowWorkTogether from '@/components/services/HowWorkTogether'
 import LetsConnect from '@/components/services/LetsConnect'
-import ServicesHero from '@/components/services/ServicesHero'
+import AboutUsHero from '@/components/aboutUs/AboutUsHero'
 import useLanguage from '@/hooks/useLanguage'
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
@@ -38,7 +38,7 @@ function Services() {
         />
       </Helmet>
       <main className='services'>
-        <ServicesHero />
+        <AboutUsHero />
         <HowCreateValue />
         <HowWorkTogether />
         <LetsConnect />

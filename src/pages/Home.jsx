@@ -1,4 +1,4 @@
-import HomeHero from "@/components/home/HomeHero";
+
 import HowWeWork from "@/components/home/HowWeWork";
 import ManufacturingEcosystem from "@/components/home/ManufacturingEcosystem";
 import OriginConnectModel from "@/components/home/OriginConnectModel";
@@ -7,6 +7,7 @@ import WhoWeServe from "@/components/home/WhoWeServe";
 import useLanguage from '@/hooks/useLanguage';
 import { Helmet } from 'react-helmet-async';
 import CountryBar from "@/components/layout/CountryBar";
+import ServicesHero from "@/components/services/ServicesHero";
 
 const Home = () => {
   const { seo } = useLanguage();
@@ -40,14 +41,14 @@ const Home = () => {
         />
       </Helmet>
       <main>
-        <HomeHero />
-        <CountryBar
+        {/* <CountryBar
           countryIds={[
             "turkey",
             "india",
             "germany",
           ]}
-        />
+        /> */}
+        <ServicesHero />
         <WhatWeDo />
         <ManufacturingEcosystem />
         <HowWeWork />

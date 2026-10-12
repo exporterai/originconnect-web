@@ -8,7 +8,7 @@ export const footerData = {
       { label: "Vereinigtes Königreich", url: "https://originconnect.uk" },
       { label: "Deutschland", url: "https://originconnect.de" },
       { label: "Türkei", url: "https://originconnect.tr" },
-      { label: "Brasilien", url: "https://originconnect.brazil.in" },
+      { label: "Brasilien", url: "https://brazil.originconnect.in/" },
     ],
   },
   sections: [

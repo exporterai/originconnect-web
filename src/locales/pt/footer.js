@@ -21,7 +21,7 @@ export const footerData = {
       },
       {
           label: "Brasil",
-          url: "https://originconnect.brazil.in",
+          url: "https://brazil.originconnect.in/",
       },
       // {
       //     label: "França",

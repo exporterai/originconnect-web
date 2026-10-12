@@ -1,5 +1,17 @@
 import originConnectModel from "@/assets/images/home/originConnectModelHI.svg";
 
+export const homeHeroContent = {
+  tag: "हमारी वैश्विक उपस्थिति",
+  heading: [
+    { label: "विश्वसनीय", color: "#FFFAF1" },
+    { label: "निर्माताओं", color: "#F7C36C" },
+    { label: "को", color: "#FFFAF1" },
+    { label: "वैश्विक", color: "#F7C36C" },
+    { label: "खरीदारों", color: "#FFFAF1" },
+    { label: "से जोड़ते हैं", color: "#F7C36C" },
+  ],
+};
+
 export const homeHeroSlides = [
   {
     id: 1,

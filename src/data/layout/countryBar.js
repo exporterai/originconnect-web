@@ -8,8 +8,8 @@ export const countryBarData = [
   {
     id: "brazil",
     code: "BR",
-    domain: "originconnect.brazil.in",
-    url: "https://originconnect.brazil.in",
+    domain: "brazil.originconnect.in",
+    url: "https://brazil.originconnect.in/",
   },
   {
     id: "turkey",

@@ -13,11 +13,11 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      {isHomePage && (
+      {/* {isHomePage && (
         <CountryBar
           countryIds={["uk", "brazil"]}
         />
-      )}
+      )} */}
       <Navbar />
       <AppRoutes />
       <Footer />

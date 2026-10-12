@@ -33,7 +33,7 @@ export const officeContacts = [
   {
     id: "brazil",
     countryCode: "BR",
-    website: "https://www.originconnect.brazil.in",
+    website: "https://brazil.originconnect.in/",
     address: {
       line1: "The Discovery, Borivali East",
       line2: "Mumbai, India - 400066",

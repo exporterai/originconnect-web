@@ -1,5 +1,17 @@
 import originConnectModel from "@/assets/images/home/originConnectModelTR.svg";
 
+export const homeHeroContent = {
+  tag: "KÜRESEL VARLIĞIMIZ",
+  heading: [
+    { label: "Güvenilir", color: "#FFFAF1" },
+    { label: "Üreticileri", color: "#F7C36C" },
+    { label: "Küresel", color: "#FFFAF1" },
+    { label: "Alıcılarla", color: "#F7C36C" },
+    { label: "Bir Araya", color: "#FFFAF1" },
+    { label: "Getiriyoruz", color: "#F7C36C" },
+  ],
+};
+
 export const homeHeroSlides = [
   {
     id: 1,

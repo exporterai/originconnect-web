@@ -14,29 +14,29 @@ import turkeyCountryHero from '@/assets/images/brands/turkey/countryHero.webp'
 import turkeyBrandBg from '@/assets/images/brands/india/brandBG.webp'
 
 export const countriesData = {
-    india: {
-        code: "IN",
-        heroImage: indiaCountryHero,
-        brandBackground: indiaBrandBg,
-    },
-    uk: {
-        code: "GB",
-        heroImage: ukCountryHero,
-        brandBackground: ukBrandBg,
-    },
     brazil: {
         code: "BR",
         heroImage: brazilCountryHero,
         brandBackground: brazilBrandBg,
     },
-    germany: {
-        code: "DE",
-        heroImage: germanyCountryHero,
-        brandBackground: germanyBrandBg,
+    india: {
+        code: "IN",
+        heroImage: indiaCountryHero,
+        brandBackground: indiaBrandBg,
     },
-    turkey: {
-        code: "TR",
-        heroImage: turkeyCountryHero,
-        brandBackground: turkeyBrandBg,
-    },
+    // uk: {
+    //     code: "GB",
+    //     heroImage: ukCountryHero,
+    //     brandBackground: ukBrandBg,
+    // },
+    // germany: {
+    //     code: "DE",
+    //     heroImage: germanyCountryHero,
+    //     brandBackground: germanyBrandBg,
+    // },
+    // turkey: {
+    //     code: "TR",
+    //     heroImage: turkeyCountryHero,
+    //     brandBackground: turkeyBrandBg,
+    // },
 }

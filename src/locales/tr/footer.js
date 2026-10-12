@@ -21,7 +21,7 @@ export const footerData = {
       },
       {
         label: "Brezilya",
-        url: "https://originconnect.brazil.in",
+        url: "https://brazil.originconnect.in/",
       },
     ],
   },

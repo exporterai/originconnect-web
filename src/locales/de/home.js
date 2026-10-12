@@ -1,6 +1,18 @@
 
 import originConnectModel from '@/assets/images/home/originConnectModelDE.svg'
 
+export const homeHeroContent = {
+  tag: "UNSERE GLOBALE PRÄSENZ",
+  heading: [
+    { label: "Wir", color: "#FFFAF1" },
+    { label: "verbinden", color: "#F7C36C" },
+    { label: "zuverlässige", color: "#FFFAF1" },
+    { label: "Hersteller", color: "#F7C36C" },
+    { label: "mit globalen", color: "#FFFAF1" },
+    { label: "Käufern", color: "#F7C36C" },
+  ],
+};
+
 export const homeHeroSlides = [
     {
         id: 1,

@@ -22,7 +22,7 @@ export const footerData = {
       },
       {
         label: "ब्राज़ील",
-        url: "https://originconnect.brazil.in",
+        url: "https://brazil.originconnect.in/",
       },
     ],
   },
