@@ -7,14 +7,6 @@ function BrandsCountryGrid() {
   return (
     <section className="brandsCountryGrid">
       <div className="container">
-        <div className="brandsCountryGrid-header">
-          <h2 className="dark-heading">
-            {brandsCountryGrid.title}
-          </h2>
-          <p>
-            {brandsCountryGrid.description}
-          </p>
-        </div>
         <div className="brandsCountryGrid-grid">
           {Object.entries(countriesData).map(
             ([countryKey, countryData]) => (

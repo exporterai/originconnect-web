@@ -171,7 +171,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <a href="https://wa.me/919227041987" class="fixed-whatsapp" target="_blank">
+            <a href="https://wa.me/919227041987" className="fixed-whatsapp" target="_blank">
                 <img src={fixedWhatsapp} alt="fixed-Whatsapp"/>
             </a>
         </footer>

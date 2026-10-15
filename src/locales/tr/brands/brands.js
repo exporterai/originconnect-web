@@ -1,14 +1,8 @@
 export const brandsHero = {
-  tag: "MARKALAR",
-  title: "Endüstriyel Markalar ve Kategoriler",
-  description:
-    "Origin Connect ekosistemi üzerinden şu anda mevcut olan üretim kategorilerini keşfedin.",
+  title: "Bir Marka Seçin (Ülkeye Göre)",
 };
 
 export const brandsCountryGrid = {
-  title: "Bir Ülke Seçin",
-  description:
-    "Endüstriyel markalarını ve kategorilerini görüntülemek için bir ülke seçin.",
   countries: {
     india: {
       title: "Hindistan",

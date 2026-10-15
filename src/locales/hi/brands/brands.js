@@ -1,14 +1,8 @@
 export const brandsHero = {
-  tag: "ब्रांड्स",
-  title: "औद्योगिक ब्रांड्स और श्रेणियां",
-  description:
-    "Origin Connect इकोसिस्टम के माध्यम से वर्तमान में उपलब्ध विनिर्माण श्रेणियों को एक्सप्लोर करें।",
+  title: "एक ब्रांड चुनें (देश के अनुसार)",
 };
 
 export const brandsCountryGrid = {
-  title: "देश चुनें",
-  description:
-    "औद्योगिक ब्रांड्स और श्रेणियों को देखने के लिए एक देश चुनें।",
   countries: {
     india: {
       title: "भारत",

@@ -1,14 +1,8 @@
 export const brandsHero = {
-    tag: "MARCAS",
-    title: "Marcas Industriais e Categorias",
-    description:
-        "Explore as categorias de fabricação atualmente disponíveis no ecossistema Origin Connect.",
+    title: "Selecione uma Marca (por País)",
 };
 
 export const brandsCountryGrid = {
-  title: "Selecione um País",
-  description:
-    "Escolha um país para ver suas marcas industriais e categorias.",
   countries: {
     india: {
       title: "Índia",

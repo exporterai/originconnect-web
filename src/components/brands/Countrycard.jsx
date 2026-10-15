@@ -48,8 +48,8 @@ function Countrycard({ countryKey, countryData }) {
             className="countryCard-flag"
           />
           <h3>{content.title}</h3>
-          <div className="countryCard-divider" />
-          <p>{content.tag}</p>
+          {/* <div className="countryCard-divider" /> */}
+          {/* <p>{content.tag}</p> */}
         </div>
       </div>
       {/* RIGHT */}
